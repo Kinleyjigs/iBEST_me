@@ -168,23 +168,48 @@ export default function Home() {
           <div className="h-full w-1/5 "></div>
           <div className="h-full w-3/5 ">
             <div className="w-full h-1/4 flex flex-row space-x-24">
-              <div className="w-3/12 h-full bg-lightBlue rounded">
-
+              <div className="w-3/12 h-full bg-lightBlue rounded flex flex-col">
+                <div className="h-3/4 w-full bg-red-50"></div>
+                <div className="h-1/4 w-full bg-green-50"></div>
               </div>
-              <div className="w-3/12 h-full bg-lightBlue rounded"></div>
-              <div className="w-3/12 h-full bg-lightBlue rounded"></div>
+              <div className="w-3/12 h-full bg-lightBlue rounded flex flex-col">
+                <div className="h-3/4 w-full bg-red-50"></div>
+                <div className="h-1/4 w-full bg-green-50"></div>
+              </div>
+              <div className="w-3/12 h-full bg-lightBlue rounded flex flex-col">
+                <div className="h-3/4 w-full bg-red-50"></div>
+                <div className="h-1/4 w-full bg-green-50"></div>
+              </div>
             </div>
             <div className="w-full h-10 "></div>
             <div className="w-full h-1/4 flex flex-row space-x-24">
-              <div className="w-3/12 h-full bg-lightBlue rounded"></div>
-              <div className="w-3/12 h-full bg-lightBlue rounded"></div>
-              <div className="w-3/12 h-full bg-lightBlue rounded"></div>
+              <div className="w-3/12 h-full bg-lightBlue rounded flex flex-col">
+                <div className="h-3/4 w-full bg-red-50"></div>
+                <div className="h-1/4 w-full bg-green-50"></div>
+              </div>
+              <div className="w-3/12 h-full bg-lightBlue rounded flex flex-col">
+                <div className="h-3/4 w-full bg-red-50"></div>
+                <div className="h-1/4 w-full bg-green-50"></div>
+              </div>
+              <div className="w-3/12 h-full bg-lightBlue rounded flex flex-col">
+                <div className="h-3/4 w-full bg-red-50"></div>
+                <div className="h-1/4 w-full bg-green-50"></div>
+              </div>
             </div>
             <div className="w-full h-10"></div>
             <div className="w-full h-1/4 flex flex-row space-x-24">
-              <div className="w-3/12 h-full bg-lightBlue rounded"></div>
-              <div className="w-3/12 h-full bg-lightBlue rounded"></div>
-              <div className="w-3/12 h-full bg-lightBlue rounded"></div>
+              <div className="w-3/12 h-full bg-lightBlue rounded flex flex-col">
+                <div className="h-3/4 w-full bg-red-50"></div>
+                <div className="h-1/4 w-full bg-green-50"></div>
+              </div>
+              <div className="w-3/12 h-full bg-lightBlue rounded flex flex-col">
+                <div className="h-3/4 w-full bg-red-50"></div>
+                <div className="h-1/4 w-full bg-green-50"></div>
+              </div>
+              <div className="w-3/12 h-full bg-lightBlue rounded flex flex-col">
+                <div className="h-3/4 w-full bg-red-50"></div>
+                <div className="h-1/4 w-full bg-green-50"></div>
+              </div>
             </div>
           </div>
           <div className="h-full w-1/5"></div>
