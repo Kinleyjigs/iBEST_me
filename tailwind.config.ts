@@ -26,6 +26,8 @@ const config: Config = {
 		colors: {
 			blue :'#ecfeff',
 			blueDark : '#043853',
+			bblue:'#C2DFE7',
+			lightStrok: '#E8E3E3',
 			lightBlue : '#ddf3fd',			
 			background: "hsl(var(--background))",
 			foreground: "hsl(var(--foreground))",
@@ -69,7 +71,10 @@ const config: Config = {
 			},
 		},
 		backgroundImage: {
-			homepage_image: "url('./images/building.jpg')", // Moved to the correct section
+			homepage_image: "url('./images/building.jpg')",
+			testamonial1: "url('./images/drKarma.jpg')",
+			image1: "url('./images/dasho1.png')",
+			passu: "url('./images/passu.jpg')",
 		},
 		borderRadius: {
 			lg: "var(--radius)",
