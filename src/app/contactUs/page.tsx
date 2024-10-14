@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import { useState } from 'react';   
 import NavBar from '../../reusable_components/nav_bar/page'; 

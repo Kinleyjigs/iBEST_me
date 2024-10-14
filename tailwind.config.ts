@@ -24,6 +24,7 @@ const config: Config = {
 			slideLeft: "slideLeft 1s ease-in-out",
 		},
 		colors: {
+			bb: '#aac5e1',
 			blue :'#ecfeff',
 			blueDark : '#043853',
 			bblue:'#C2DFE7',
@@ -75,6 +76,16 @@ const config: Config = {
 			testamonial1: "url('./images/drKarma.jpg')",
 			image1: "url('./images/dasho1.png')",
 			passu: "url('./images/passu.jpg')",
+			traning: "url('./images/traning.jpg')",
+			about: "url('./images/about.png')",
+			one: "url('./images/one.jpg')",
+			two: "url('./images/two.jpg')",
+			three: "url('./images/three.jpg')",	
+			four: "url('./images/four.jpg')",	
+			five: "url('./images/five.jpg')",	
+			six: "url('./images/six.jpg')",	
+			seven: "url('./images/seven.webp')",	
+
 		},
 		borderRadius: {
 			lg: "var(--radius)",

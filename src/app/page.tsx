@@ -333,7 +333,7 @@ export default function Home() {
                             <div className="h-3/6 bg-blue-50 bg-[url('./images/drKarma.jpg')]"></div>
                             <div className="h-3/6 ">
                               <h1 className="pt-5">
-                              "The Legend of Pemi Tshewang Tashi, a project of the Loden entrepreneur Tharchen and his iBEST team, takes Bhutanese cinematography to a whole new level. Combining creativity and culture, innovation and history, art and entertainment, the film brings one of the most celebrated Bhutanese stories to the big screen in the form of a beautifully crafted animation.”
+                                "The Legend of Pemi Tshewang Tashi, a project of the Loden entrepreneur Tharchen and his iBEST team, takes Bhutanese cinematography to a whole new level. Combining creativity and culture, innovation and history, art and entertainment, the film brings one of the most celebrated Bhutanese stories to the big screen in the form of a beautifully crafted animation.”
                               </h1>
                             </div>
                           </div>
