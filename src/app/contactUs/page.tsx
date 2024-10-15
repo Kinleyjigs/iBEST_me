@@ -110,7 +110,7 @@ function MyComponent() {
             <div className="w-5/6 ml-20 mt-20 rounded-lg overflow-hidden"> {/* map */}
             <iframe width="100%" height="600" className="rounded-lg" // Add this line for rounded corners 
             src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=ibest,%20thimphu+(ibest)&amp;t=h&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-            <a href="https://www.gps.ie/">gps trackers</a> </iframe>
+            <a href="https://www.gps.ie/">gps trackers</a></iframe>
             </div>
 
             

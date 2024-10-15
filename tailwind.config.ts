@@ -85,6 +85,8 @@ const config: Config = {
 			five: "url('./images/five.jpg')",	
 			six: "url('./images/six.jpg')",	
 			seven: "url('./images/seven.webp')",	
+			this: "url('./images/this.png')",
+			co: "url('./images/co.png')",
 
 		},
 		borderRadius: {
