@@ -1,4 +1,8 @@
 "use client";
+<<<<<<< HEAD
+=======
+
+>>>>>>> ca23059d380b55334eb674c47b76cfd1784351d3
 import React from 'react';
 import { useState } from 'react';   
 import NavBar from '../../reusable_components/nav_bar/page'; 
@@ -38,11 +42,12 @@ function MyComponent() {
                 <h1 className='text-2xl'>Address</h1>
                 <h2><span className="flex items-center"><LuPhoneCall className="mr-3 text-xl "/> +975 02 33 96 07</span></h2>
                 <h3><span className="flex items-center"><CgMail className="mr-3 text-xl"/> ibestbhutan@gamil.com</span></h3>
-                <h3><span className="flex items-center"><GrLocation className="mr-3 text-xl"/>Changzamtog, Zamdo Lam, Thimphu-Babesa,Expressway Thimphu</span></h3>
+                <h3><span className="flex items-center"><GrLocation className="mr-3 text-xl"/>Changzamtog, Zamdo Lam,Thimphu-Babesa,Expressway Thimphu</span></h3>
 
             </div>
             </div>
         </div>  
+    
 );
 }
 export default MyComponent;
