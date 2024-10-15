@@ -1,8 +1,4 @@
 "use client";
-<<<<<<< HEAD
-=======
-
->>>>>>> ca23059d380b55334eb674c47b76cfd1784351d3
 import React from 'react';
 import { useState } from 'react';   
 import NavBar from '../../reusable_components/nav_bar/page'; 
@@ -16,7 +12,7 @@ function MyComponent() {
 
     const [email, setEmail]= useState('');
 
-    const handleSubmit = async(e) => {
+    const handleSubmit = async(e: { preventDefault: () => void; }) => {
         e.preventDefault();
         console.log(email);
     };
