@@ -6,6 +6,7 @@ const config: Config = {
 		"./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
 		"./src/components/**/*.{js,ts,jsx,tsx,mdx}",
 		"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+		'./features/**/*.{js,ts,jsx,tsx}',
 	],
 	theme: {
 		extend: {
@@ -26,6 +27,7 @@ const config: Config = {
 		colors: {
 			bb: '#aac5e1',
 			blue :'#ecfeff',
+			color:'#1ca2e9',
 			blueDark : '#043853',
 			bblue:'#C2DFE7',
 			lightStrok: '#E8E3E3',

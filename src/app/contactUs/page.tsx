@@ -7,7 +7,7 @@ import { LuPhoneCall } from "react-icons/lu";
 import { CgMail } from "react-icons/cg";
 import { GrLocation } from "react-icons/gr";
 import ReCAPTCHA from "react-google-recaptcha";
-
+import Footer from '../../reusable_components/footer/page';
 
 function MyComponent() {
     const [name, setName] = useState('');
@@ -113,9 +113,12 @@ function MyComponent() {
             <a href="https://www.gps.ie/">gps trackers</a></iframe>
             </div>
 
+            <Footer />
+
             
         </div>
-        
+
+
     );
 }
 

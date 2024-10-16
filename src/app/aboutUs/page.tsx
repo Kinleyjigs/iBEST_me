@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar from '../../reusable_components/nav_bar/page'; 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import Footer from '../../reusable_components/footer/page';
 
 import {
     Card,
@@ -191,6 +192,8 @@ function MyComponent() {
                 </div>
             </div>
             <div className="w-screen h-screen bg-purple-50"></div>
+
+            <Footer />
         </div>
     );
 }
