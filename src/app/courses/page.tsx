@@ -23,15 +23,37 @@ function MyComponent() {
                 </div>
                 <div className="w-3/5 h-2/6 mt-12 bg-[url('./images/co.png')] bg-cover bg-center"></div>
             </div>
-            <div className="w-screen h-screen bg-yellow-200 flex items-center justify-center flex-col">
-                <div className="w-3/5 h-full bg-green-100 flex items-center justify-center flex-col">
-                    <div className='bg-bb space-y-5'>
+            <div className="w-screen h-screen flex items-center justify-center flex-col">
+                <div className="w-3/5 h-full flex items-center justify-center flex-col">
+                    <div className='space-y-5'>
                         <h1>With the increasing economic activities in the country, and most youth joining the workforce, the need to guide and assist young entrepreneurs and small business establishment is becoming a necessity!</h1>
                         <h1>Through iBEST Consultancy Services, with the team of energetic and enthusiastic experts, we provide our clients with real-time market studies and analysis through which project's feasibility are done. We advise and recommend our clients on the projects they want to execute and the pertinent business processes they have to integrate to make their projects successful.</h1>
                         <h1>Beyond business project proposal writing with strong financial background, we do help and write project proposals for grant applications which are mainly required by the Civil Society Organizations.</h1>
                     </div>
-                    <h1 className='pt-10 pb-10'>OUR COMPETENCIES</h1>
-                    <div className="w-full h-3/6 bg-black"></div>
+                    <h1 className='pt-10 pb-10 text-2xl font-semibold'>OUR COMPETENCIES</h1>
+                    <div className="w-full h-3/6 flex flex-col space-y-14">
+                        <div className="w-full h-1/4 flex flex-row space-x-8">
+                            <div className="w-2/12 h-full bg-black rounded bg-[url('./images/1.jpeg')] bg-cover bg-center"></div>
+                            <div className="w-2/12 h-full bg-black rounded bg-[url('./images/2.jpg')] bg-cover bg-center"></div>
+                            <div className="w-2/12 h-full bg-black rounded bg-[url('./images/3.jpeg')] bg-cover bg-center"></div>
+                            <div className="w-2/12 h-full bg-black rounded bg-[url('./images/4.webp')] bg-cover bg-center"></div>
+                            <div className="w-2/12 h-full bg-black rounded bg-[url('./images/5.jpg')] bg-cover bg-center"></div>
+                        </div>
+                        <div className="w-full h-1/4 flex flex-row space-x-8">
+                            <div className="w-2/12 h-full bg-black rounded bg-[url('./images/6.jpg')] bg-cover bg-center"></div>
+                            <div className="w-2/12 h-full bg-black rounded bg-[url('./images/10.webp')] bg-cover bg-center"></div>
+                            <div className="w-2/12 h-full bg-black rounded bg-[url('./images/8.jpg')] bg-cover bg-center"></div>
+                            <div className="w-2/12 h-full bg-black rounded bg-[url('./images/9.webp')] bg-cover bg-center"></div>
+                            <div className="w-2/12 h-full bg-black rounded bg-[url('./images/7.jpg')] bg-cover bg-center"></div>
+                        </div>
+                        <div className="w-full h-1/4 flex flex-row space-x-8">
+                            <div className="w-2/12 h-full bg-black rounded bg-[url('./images/11.webp')] bg-cover bg-center"></div>
+                            <div className="w-2/12 h-full bg-black rounded bg-[url('./images/12.png')] bg-cover bg-center"></div>
+                            <div className="w-2/12 h-full bg-black rounded bg-[url('./images/13.jpg')] bg-cover bg-center"></div>
+                            <div className="w-2/12 h-full bg-black rounded bg-[url('./images/14.jpg')] bg-cover bg-center"></div>
+                            <div className="w-2/12 h-full bg-black rounded bg-[url('./images/15.jpg')] bg-cover bg-center"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="w-screen h-screen bg-red-200"></div>
