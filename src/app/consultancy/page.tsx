@@ -11,7 +11,11 @@ function MyComponent() {
         <div className='landingpage'>
             <NavBar />
 
+
+
+
         </div>
+
     );
 }
 

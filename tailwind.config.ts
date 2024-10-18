@@ -3,10 +3,11 @@ import type { Config } from "tailwindcss";
 const config: Config = {
 	darkMode: ["class"],
 	content: [
-		"./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-		"./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-		"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-		'./features/**/*.{js,ts,jsx,tsx}',
+		"./app/**/*.{js,ts,jsx,tsx,mdx}",
+		"./pages/**/*.{js,ts,jsx,tsx,mdx}",
+		"./components/**/*.{js,ts,jsx,tsx,mdx}",
+		// Or if using `src` directory:
+		"./src/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	theme: {
 		extend: {
@@ -89,6 +90,22 @@ const config: Config = {
 			seven: "url('./images/seven.webp')",	
 			this: "url('./images/this.png')",
 			co: "url('./images/co.png')",
+			c1: "url('./images/1.jpeg')",
+			c2: "url('./images/2.jpg')",
+			c3: "url('./images/3.jpeg')",
+			c4: "url('./images/4.webp')",
+			c5: "url('./images/5.jpg')",
+			c6: "url('./images/6.jpg')",
+			c7: "url('./images/7.jpg')",
+			c8: "url('./images/8.jpg')",
+			c9: "url('./images/9.webp')",
+			c10: "url('./images/10.webp')",
+			c11: "url('./images/11.webp')",
+			c12: "url('./images/12.png')",
+			c13: "url('./images/13.jpg')",
+			c14: "url('./images/14.jpg')",
+			c15: "url('./images/15.jpg')",
+
 
 		},
 		borderRadius: {

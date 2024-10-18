@@ -6,8 +6,11 @@ import { Button } from "@/components/ui/button";
 import { LuPhoneCall } from "react-icons/lu";
 import { CgMail } from "react-icons/cg";
 import { GrLocation } from "react-icons/gr";
-import ReCAPTCHA from "react-google-recaptcha";
-import Footer from '../../reusable_components/footer/page';
+import dynamic from 'next/dynamic';
+import Footer from "../../reusable_components/footer/page";
+
+// Dynamically import ReCAPTCHA without server-side rendering
+const ReCAPTCHA = dynamic(() => import('react-google-recaptcha'), { ssr: false });
 
 function MyComponent() {
     const [name, setName] = useState('');
@@ -16,15 +19,17 @@ function MyComponent() {
     const [message, setMessage] = useState('');
     const [capVal, setCapVal] = useState('');
     const [isFormValid, setIsFormValid] = useState(false);
+    const [isMounted, setIsMounted] = useState(false);
+
+    useEffect(() => {
+        // Ensure components that depend on the browser are mounted
+        setIsMounted(true);
+    }, []);
 
     useEffect(() => {
         // Check if all fields are filled
-        if (name && email && phone && message) {
-            setIsFormValid(true);
-        } else {
-            setIsFormValid(false);
-        }
-    }, [name, email, phone, message]);
+        setIsFormValid(!!name && !!email && !!phone && !!message && !!capVal);
+    }, [name, email, phone, message, capVal]);
 
     const handleSubmit = async (e: { preventDefault: () => void; }) => {
         e.preventDefault();
@@ -35,15 +40,14 @@ function MyComponent() {
 
         // Send the message here
         console.log({ name, email, phone, message });
-
     };
 
     return (
-        <div className='contact us'>
+        <div className='contact-us'>
             <NavBar />
 
             <h1 className="text-3xl font-bold mt-9 text-center">Contact Us</h1>
-            <div className="flex items-start justify-start  mt-9 ml-20 space-x-40">
+            <div className="flex items-start justify-start mt-9 ml-20 space-x-40">
                 <div className="w-96">
                     <form onSubmit={handleSubmit}>
                         <Input
@@ -63,7 +67,7 @@ function MyComponent() {
                         />
 
                         <Input
-                            type="number"
+                            type="text"
                             placeholder="Phone Number"
                             className="mb-4"
                             value={phone}
@@ -78,19 +82,21 @@ function MyComponent() {
                             onChange={(e) => setMessage(e.target.value)}
                         />
 
-                        {isFormValid ? (
+                        {isMounted && (
                             <ReCAPTCHA
                                 sitekey="6Lf23WEqAAAAAFcJbC3unv-Q7TW7ASXozeZfHme9"
                                 onChange={(token) => setCapVal(token || '')}
                             />
-                        ) : (
+                        )}
+
+                        {!isFormValid && (
                             <p className="text-red-500 mb-4">Please fill in all fields to enable reCAPTCHA</p>
                         )}
 
                         <Button
                             variant="outline"
                             className="w-24 bg-cyan-900 hover:bg-cyan-600 hover:text-white text-white"
-                            disabled={!capVal || !isFormValid}
+                            disabled={!isFormValid}
                         >
                             SEND
                         </Button>
@@ -103,22 +109,24 @@ function MyComponent() {
                     <h2><span className="flex items-center"><LuPhoneCall className="mr-3 text-xl "/> +975 02 33 96 07</span></h2>
                     <h3><span className="flex items-center"><CgMail className="mr-3 text-xl"/> ibestbhutan@gamil.com</span></h3>
                     <h3><span className="flex items-center"><GrLocation className="mr-3 text-xl"/>Changzamtog, Zamdo Lam,Thimphu-Babesa,Expressway Thimphu</span></h3>
-                    
                 </div>
             </div>
 
-            <div className="w-5/6 ml-20 mt-20 rounded-lg overflow-hidden"> {/* map */}
-            <iframe width="100%" height="600" className="rounded-lg" // Add this line for rounded corners 
-            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=ibest,%20thimphu+(ibest)&amp;t=h&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-            <a href="https://www.gps.ie/">gps trackers</a></iframe>
-            </div>
+            {/* Map iframe */}
+            {isMounted && (
+                <div className="w-5/6 ml-20 mt-20 rounded-lg overflow-hidden">
+                    <iframe 
+                        width="100%" 
+                        height="600" 
+                        className="rounded-lg" 
+                        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=ibest,%20thimphu+(ibest)&amp;t=h&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                    >
+                    </iframe>
+                </div>
+            )}
 
             <Footer />
-
-            
         </div>
-
-
     );
 }
 

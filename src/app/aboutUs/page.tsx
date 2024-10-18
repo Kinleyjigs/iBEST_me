@@ -1,7 +1,8 @@
 import React from 'react';
 import NavBar from '../../reusable_components/nav_bar/page'; 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import Footer from '../../reusable_components/footer/page';
+import Footer from "../../reusable_components/footer/page";
+
 
 import {
     Card,
@@ -174,7 +175,7 @@ function MyComponent() {
             </div>
             <div className="w-screen h-screen flex flex-col space-y-16 items-center justify-center">
                 <div className="w-4/5 h-2/5 flex flex-row">
-                <div className="w-2/5 h-full flex items-center justify-center">
+                <div className="w-2/5 h-full flex items-center justify-center pb-10">
                         <ResizablePanelGroup direction="vertical" className="h-full w-4/6 rounded-lg border  bg-slate-500">
                             <ResizablePanel defaultSize={50}>
                                 <div className="flex h-full items-center justify-center p-6 bg-[url('./images/seven.webp')] bg-cover">
@@ -190,10 +191,14 @@ function MyComponent() {
                         </ResizablePanelGroup>
                     </div>
                 </div>
+                <div className="w-full h-12"></div>
+                <Footer />
             </div>
-            <div className="w-screen h-screen bg-purple-50"></div>
 
-            <Footer />
+
+            
+
+
         </div>
     );
 }

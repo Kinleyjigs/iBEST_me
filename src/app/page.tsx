@@ -14,7 +14,7 @@ import { TbSpeakerphone } from "react-icons/tb";
 import { LiaChalkboardTeacherSolid } from "react-icons/lia";
 import { GrMultimedia } from "react-icons/gr";
 import { MdDeveloperMode } from "react-icons/md";
-
+import Footer from "../../src/reusable_components/footer/page";
 
 import {
   NavigationMenu,
@@ -66,7 +66,7 @@ export default function Home() {
             </div>
           </div>
           <div className="h-full w-2/6 bg-white flex items-center justify-center">
-            <h1>iBest Institute and Consultancy</h1>
+            <h1 className="text-3xl">iBest Institute and Consultancy</h1>
           </div>
           <div className="h-full w-3/6 bg-white align-middle flex items-center justify-center space-x-4 float-right">
             <NavigationMenu>
@@ -370,8 +370,14 @@ export default function Home() {
           </div>
           
         </div>
+
       </div>
-      <div className="w-screen h-screen bg-white"></div>
+      <div className="mt-20">
+        <Footer />
+      </div>
+    
+
+      
 
     </div>
     
