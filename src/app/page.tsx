@@ -294,8 +294,6 @@ export default function Home() {
           </div>
           <div className="h-full w-1/5"></div>
         </div>
-
-
       </div>
       <div className="w-screen h-screen flex flex-row justify-center">
         <div className="h-full w-5/12 flex items-center justify-center flex-col">
