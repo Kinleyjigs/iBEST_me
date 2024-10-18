@@ -11,6 +11,13 @@ const config: Config = {
 	],
 	theme: {
 		extend: {
+			dropShadow: {
+				'3xl': '0 35px 35px rgba(0, 0, 0, 0.25)',
+				'4xl': [
+					'0 35px 35px rgba(0, 0, 0, 0.25)',
+					'0 45px 65px rgba(0, 0, 0, 0.15)'
+				]
+			},
 		keyframes: {
 			slideRight: {
 			"0%": { opacity: "0", marginLeft: "-600px" },
@@ -105,6 +112,20 @@ const config: Config = {
 			c13: "url('./images/13.jpg')",
 			c14: "url('./images/14.jpg')",
 			c15: "url('./images/15.jpg')",
+			cc1: "url('./images/c1.jpg')",
+			cc2: "url('./images/cc2.webp')",
+			courses1: "url('./images/courses1.png')",
+			lifeSkill: "url('./images/lifeSkill.jpg')",
+			leader: "url('./images/leader.png')",
+			management: "url('./images/management.jpeg')",
+			finance: "url('./images/finance.jpg')",
+			en: "url('./images/en.jpeg')",
+			media: "url('./images/media.jpg')",
+			flim: "url('./images/flim.jpg')",
+			mo: "url('./images/mo.jpg')",
+			ict: "url('./images/ict.jpg')",
+
+
 
 
 		},

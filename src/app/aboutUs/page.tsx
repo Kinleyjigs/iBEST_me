@@ -81,8 +81,8 @@ function MyComponent() {
                             <ResizableHandle />
                             <ResizablePanel defaultSize={50}>
                                 <div className="flex h-full items-center justify-center p-6 flex-col">
-                                    <h1>Clear Pathways Between Training Programs</h1><br />
-                                    <p>Emphasize collaboration among courses to ensure trainees and employers understand program objectives and outcomes.</p>
+                                    <h1 className='text-white'>Clear Pathways Between Training Programs</h1><br />
+                                    <p className='text-white'>Emphasize collaboration among courses to ensure trainees and employers understand program objectives and outcomes.</p>
                                 </div>
                             </ResizablePanel>
                         </ResizablePanelGroup>
@@ -97,8 +97,8 @@ function MyComponent() {
                             <ResizableHandle />
                             <ResizablePanel defaultSize={50}>
                                 <div className="h-full items-center justify-center p-6 flex flex-col">
-                                    <h1>Single Point of Contact</h1><br />
-                                    <p>Highlight the  institute's role in providing a transparent interface between practice, policy, education, and research.</p>
+                                    <h1 className='text-white'>Single Point of Contact</h1><br />
+                                    <p className='text-white'>Highlight the  institute's role in providing a transparent interface between practice, policy, education, and research.</p>
                                 </div>
                             </ResizablePanel>
                         </ResizablePanelGroup>
@@ -116,8 +116,8 @@ function MyComponent() {
                             <ResizableHandle />
                             <ResizablePanel defaultSize={50}>
                                 <div className="flex h-full items-center justify-center p-6 flex-col">
-                                    <h1>Meet Workforce Development Needs</h1><br />
-                                    <p>Showcase the institute's efforts to provide rapid-response workforce training for corporate corporate and government agencies.</p>
+                                    <h1 className='text-white'>Meet Workforce Development Needs</h1><br />
+                                    <p className='text-white'>Showcase the institute's efforts to provide rapid-response workforce training for corporate corporate and government agencies.</p>
                                 </div>
                             </ResizablePanel>
                         </ResizablePanelGroup>
@@ -132,8 +132,8 @@ function MyComponent() {
                             <ResizableHandle />
                             <ResizablePanel defaultSize={50}>
                                 <div className="h-full items-center justify-center p-6 flex flex-col">
-                                    <h1>Promote Innovative Research and Training</h1><br />
-                                    <p>Describe the interdisciplinary and collaborative research opportunities offered by the institute.</p>
+                                    <h1 className='text-white'>Promote Innovative Research and Training</h1><br />
+                                    <p className='text-white'>Describe the interdisciplinary and collaborative research opportunities offered by the institute.</p>
                                 </div>
                             </ResizablePanel>
                         </ResizablePanelGroup>
@@ -149,8 +149,8 @@ function MyComponent() {
                             <ResizableHandle />
                             <ResizablePanel defaultSize={50}>
                                 <div className="flex h-full items-center justify-center p-6 flex-col">
-                                    <h1>Leadership in Industry</h1><br />
-                                    <p>Focus on the institute's role in providing leadership through advocacy, seminars, and training, particularly in tourism and hospitality.</p>
+                                    <h1 className='text-white'>Leadership in Industry</h1><br />
+                                    <p className='text-white'>Focus on the institute's role in providing leadership through advocacy, seminars, and training, particularly in tourism and hospitality.</p>
                                 </div>
                             </ResizablePanel>
                         </ResizablePanelGroup>
@@ -165,8 +165,8 @@ function MyComponent() {
                             <ResizableHandle />
                             <ResizablePanel defaultSize={50}>
                                 <div className="h-full items-center justify-center p-6 flex flex-col">
-                                    <h1>Professional Development and Consultancy</h1><br />
-                                    <p>Highlight the innovative professional development and consultancy services available.</p>
+                                    <h1 className='text-white'>Professional Development and Consultancy</h1><br />
+                                    <p className='text-white'>Highlight the innovative professional development and consultancy services available.</p>
                                 </div>
                             </ResizablePanel>
                         </ResizablePanelGroup>
@@ -184,8 +184,8 @@ function MyComponent() {
                             <ResizableHandle />
                             <ResizablePanel defaultSize={50}>
                                 <div className="flex h-full items-center justify-center p-6 flex-col">
-                                    <h1>Encourage Economic Development</h1><br />
-                                    <p>Describe initiatives aimed at developing rural entrepreneurs and supporting agricultural exports.</p>
+                                    <h1 className='text-white'>Encourage Economic Development</h1><br />
+                                    <p className='text-white'>Describe initiatives aimed at developing rural entrepreneurs and supporting agricultural exports.</p>
                                 </div>
                             </ResizablePanel>
                         </ResizablePanelGroup>
