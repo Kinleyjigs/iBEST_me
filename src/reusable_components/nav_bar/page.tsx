@@ -44,7 +44,7 @@ const NavigationBar = () => {
             </div>
           </div>
           {/* Center title */}
-          <div className="h-full w-2/6 flex items-center justify-center">
+          <div className="h-full w-2/6 flex items-center justify-stretch">
             <h1>iBEST Institute and Consultancy</h1>
           </div>
           {/* Right side navigation */}

@@ -12,29 +12,24 @@ function MyComponent() {
         <div className='landingpage'>
             <NavBar />
             <div className="w-screen h-screen flex flex-col">
-                <div className="w-full h-3/5 bg-[url('./images/courses1.png')] bg-center bg-cover flex items-center justify-center mb-5">
+                <div className="w-full h-3/5 bg-[url('./images/courses1.png')] bg-center bg-cover flex items-center justify-center ">
                     <h1 className='font-extrabold text-3xl text-white'>Services</h1>
                 </div>
-                <div className="w-full h-20 flex items-center justify-center">
+                <div className="w-full h-2/5 flex flex-col items-center justify-end space-y-5 relative pb-5">
                     <h1 className='font-semibold text-2xl'> Courses</h1>
-                </div>
-                <div className="w-full h-20 flex items-center justify-center relative">
-                    <Button className='w-1/6 relative drop-shadow-md hover:drop-shadow-xl'><a href="/courses">Courses</a></Button><Button className='w-1/6 ml-5 relative drop-shadow-md hover:drop-shadow-xl'><a href="/consultancy">Consultancy</a></Button>
-                </div>
-                <div className="w-full h-1/5 flex flex-col items-center justify-end space-y-5 relative">
                     <div className="w-2/5 h-16 bg-lightBlue rounded flex items-center justify-center relative drop-shadow-md hover:drop-shadow-xl">
                         <h1>Life Skills Courses</h1>
                     </div>
                     <div className="w-2/5 h-16 bg-lightBlue rounded flex items-center justify-center relative drop-shadow-md hover:drop-shadow-xl">
                         <h1>Leadership Courses </h1>
                     </div>
-                </div>
-            </div>     
-            <div className="w-screen h-screen flex items-center justify-center">
-                <div className="w-2/5 h-full space-y-5 ">
-                    <div className="w-full h-16 bg-lightBlue rounded mt-5 flex items-center justify-center relative drop-shadow-md hover:drop-shadow-xl">
+                    <div className="w-2/5 h-16 bg-lightBlue rounded mt-5 flex items-center justify-center relative drop-shadow-md hover:drop-shadow-xl">
                         <h1>Management Courses</h1>
                     </div>
+                </div>
+            </div>     
+            <div className="w-screen h-screen flex items-center bg-green-200 justify-center">
+                <div className="w-2/5 h-full space-y-5 ">
                     <div className="w-full h-16 bg-lightBlue rounded flex items-center justify-center relative drop-shadow-md hover:drop-shadow-xl">
                         <h1>Accounting and Financial Courses</h1>
                     </div>
