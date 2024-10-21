@@ -27,10 +27,20 @@ const config: Config = {
 			"0%": { opacity: "0", marginRight: "-600px" },
 			"100%": { opacity: "1", marginRight: "0" },
 			},
+			"loop-scroll": {
+				from: { transform: "translateX(0)" },
+				to: { transform: "translateX(-50%)" },
+			},
+			scroll: {
+				'0%': { transform: 'translateX(0)' },
+				'100%': { transform: 'translateX(calc(-250px * 7))' },
+			},
 		},
 		animation: {
 			slideRight: "slideRight 1s ease-in-out",
 			slideLeft: "slideLeft 1s ease-in-out",
+			"loop-scroll": "loop-scroll 20s linear infinite"
+
 		},
 		colors: {
 			bb: '#aac5e1',
