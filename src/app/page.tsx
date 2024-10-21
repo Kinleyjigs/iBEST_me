@@ -202,7 +202,7 @@ export default function Home() {
                     <TbMoneybag className="h-24 w-24"/>
                   </div>
                   <div className="w-full h-1/4 bg-lightBlue flex items-center justify-center">
-                    <h1>Finence</h1>
+                    <h1>Finance</h1>
                   </div>
                 </div>
                 <div className="h-1/4 w-full bg-white"></div>
@@ -263,7 +263,7 @@ export default function Home() {
                     <LiaChalkboardTeacherSolid className="w-24 h-24"/>
                   </div>
                   <div className="w-full h-1/4 bg-lightBlue flex items-center justify-center">
-                    <h1>Traning</h1>
+                    <h1>Training</h1>
                   </div>
                 </div>
                 <div className="h-1/4 w-full bg-white"></div>
