@@ -2,13 +2,11 @@ import React from 'react';
 import NavBar from '../../reusable_components/nav_bar/page'; 
 import { Button } from "@/components/ui/button"
 import Footer from '@/reusable_components/footer/page';
-
 import {
     ResizableHandle,
     ResizablePanel,
     ResizablePanelGroup,
 } from "@/components/ui/resizable"
-
 function MyComponent() {
     return (
         <div className='landingpage'>
@@ -219,7 +217,6 @@ function MyComponent() {
                     <Footer />
                 </div>
             </div>          
-
         </div>      
     );
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import myImage from '../../images/Website Pictures/aboutus.jpg';
 import NavBar from '../../reusable_components/nav_bar/page'; 
 import { Button } from "@/components/ui/button"
 import pic1 from '../images/1.jpeg'
@@ -18,7 +17,6 @@ import pic12 from '../images/12.png'
 import pic13 from '../images/13.jpg'
 import pic14 from '../images/14.jpg'
 import pic15 from '../images/15.jpg'
-import ibestPic from '../images/ib.jpg'
 import {
     ResizableHandle,
     ResizablePanel,
@@ -250,7 +248,6 @@ function MyComponent() {
             </div>
             <div className="w-screen  bg-pink-200">
                 <Footer />
-            
             </div>            
         </div>      
     );

@@ -6,7 +6,6 @@ import Link from "next/link"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { cn } from "@/lib/utils"
 import Headroom from "react-headroom"
-
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -15,7 +14,6 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  NavigationMenuViewport,
 } from "@/components/ui/navigation-menu"
 
 const components: { title: string; href: string; description: string }[] = [
@@ -37,7 +35,6 @@ const NavigationBar = () => {
       {/* Sticky Navigation */}
       <div className="fixed top-0 left-0 w-full h-24 bg-white backdrop-blur-md z-50 shadow-md">
         <div className="flex flex-row h-full w-full">
-
           {/* Left side logo */}
           <div className="h-full w-1/6 flex items-center justify-center">
             <div className="w-20 h-20 bg-red-400 rounded-full">
@@ -46,12 +43,10 @@ const NavigationBar = () => {
               </Avatar>
             </div>
           </div>
-
           {/* Center title */}
           <div className="h-full w-2/6 flex items-center justify-center">
             <h1>iBEST Institute and Consultancy</h1>
           </div>
-
           {/* Right side navigation */}
           <div className="h-full w-3/6 flex items-center justify-center space-x-4">
             <NavigationMenu>
@@ -98,7 +93,6 @@ const NavigationBar = () => {
           </div>
         </div>
       </div>
-
       {/* Add padding to the main content to prevent overlap */}
       <div className="pt-24">
         {/* Your main page content goes here */}
