@@ -2,6 +2,8 @@ import React from 'react';
 import NavBar from '../../reusable_components/nav_bar/page'; 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import Footer from "../../reusable_components/footer/page";
+import Team from "../../reusable_components/team/page"
+
 import {
     Card,
     CardDescription,
@@ -186,10 +188,13 @@ function MyComponent() {
                             </ResizablePanel>
                         </ResizablePanelGroup>
                     </div>
+                    
                 </div>
-                <div className="w-full h-12"></div>
+
+                <Team />
+
+                </div>
                 <Footer />
-            </div>
         </div>
     );
 }

@@ -22,8 +22,8 @@ const Footer: React.FC = () => {
                         />
                     </Avatar>
                 </div>
-                <h1 className="text-white mt-1.5 ml-28">iBest Institute and Technology</h1>
-                <h2 className="text-white text-xl ml-20 mt-4">Get skilled today for a bright future!</h2>
+                <h1 className="text-white mt-2 ml-28">iBest Institute and Technology</h1>
+
                 <div className="flex mt-14 ml-28 space-x-4">
                     {/* Instagram */}
                     <a href="https://www.instagram.com/ibest_institute/" target="_blank" rel="noopener noreferrer">
@@ -105,7 +105,7 @@ const Footer: React.FC = () => {
                 </div>
             </div>
             <div className="absolute bottom-0 w-full text-center text-white pb-4">
-                Copyright © iBEST STUDIOS 2024
+                Copyright © iBEST Institute & Consultancy 2024
             </div>
     </div>
     );
