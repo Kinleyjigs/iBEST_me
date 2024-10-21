@@ -13,7 +13,6 @@ import Link from "next/link";
 const Footer: React.FC = () => {
     return (
         <div className="relative w-screen h-80 bg-sky-950 mt-20">
-
             <div className="absolute top-10">
                 <div className="ml-48">
                     <Avatar className="w-16 h-16">
@@ -23,10 +22,8 @@ const Footer: React.FC = () => {
                         />
                     </Avatar>
                 </div>
-
                 <h1 className="text-white mt-1.5 ml-28">iBest Institute and Technology</h1>
                 <h2 className="text-white text-xl ml-20 mt-4">Get skilled today for a bright future!</h2>
-
                 <div className="flex mt-14 ml-28 space-x-4">
                     {/* Instagram */}
                     <a href="https://www.instagram.com/ibest_institute/" target="_blank" rel="noopener noreferrer">
@@ -35,7 +32,6 @@ const Footer: React.FC = () => {
                         <img src={Insta.src} alt="Instagram Hover" className="w-8 h-8 hidden group-hover:block" />
                     </div>
                     </a>
-
                     {/* Facebook */}
                     <a href="https://www.facebook.com/ibestinstitute/" target="_blank" rel="noopener noreferrer">
                     <div className="group">
@@ -43,7 +39,6 @@ const Footer: React.FC = () => {
                         <img src={Facebook.src} alt="Facebook Hover" className="w-8 h-8 hidden group-hover:block" />
                     </div>
                     </a>
-
                     {/* Twitter */}
                     <a href="https://x.com/ibestbhutan" target="_blank" rel="noopener noreferrer">
                     <div className="group">
@@ -51,7 +46,6 @@ const Footer: React.FC = () => {
                         <img src={Twitter.src} alt="Twitter Hover" className="w-8 h-8 hidden group-hover:block" />
                     </div>
                     </a>
-
                     {/* LinkedIn */}
                     <a href="https://www.linkedin.com/in/ibestbhutan/" target="_blank" rel="noopener noreferrer">
                     <div className="group">
@@ -59,10 +53,8 @@ const Footer: React.FC = () => {
                         <img src={Linkedin.src} alt="LinkedIn Hover" className="w-8 h-8 hidden group-hover:block" />
                     </div> 
                     </a> 
-
                 </div>
             </div>
-
             <div className="flex justify-start ml-20 gap-x-20 text-white absolute top-14 left-96 "> {/* Flexbox for alignment, ml for left margin, gap for spacing */}
                 <div>
                     <h1 className="font-black hover:text-gray-400">
@@ -78,7 +70,6 @@ const Footer: React.FC = () => {
                         Testimonials
                     </h4> 
                 </div>
-
                 <div>
                     <h1 className="font-black hover:text-gray-400">
                         <a href="/aboutUs">ABOUT US</a>
@@ -90,7 +81,6 @@ const Footer: React.FC = () => {
                     <h4 className="hover:text-gray-400">Objectives</h4> 
                     <h5 className="hover:text-gray-400">Team</h5>
                 </div>
-
                 <div>
                     <h1 className="font-black hover:text-gray-400">
                         <a href="/courses">SERVICES</a>
@@ -102,7 +92,6 @@ const Footer: React.FC = () => {
                         <a href="/consultancy">Consultancy</a>
                     </h3> 
                 </div>
-
                 <div>
                     <h1 className="font-black">Other iBest Websites</h1>
                     <h2 className="hover:text-gray-400">
@@ -115,12 +104,9 @@ const Footer: React.FC = () => {
                         <a href="https://www.ibeststudios.com/">iBest Studios</a></h4> 
                 </div>
             </div>
-
             <div className="absolute bottom-0 w-full text-center text-white pb-4">
                 Copyright © iBEST STUDIOS 2024
             </div>
-
-
     </div>
     );
 };

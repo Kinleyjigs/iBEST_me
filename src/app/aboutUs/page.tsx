@@ -2,21 +2,17 @@ import React from 'react';
 import NavBar from '../../reusable_components/nav_bar/page'; 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import Footer from "../../reusable_components/footer/page";
-
-
 import {
     Card,
     CardDescription,
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
-
 import {
     ResizableHandle,
     ResizablePanel,
     ResizablePanelGroup,
 } from "@/components/ui/resizable"
-
 function MyComponent() {
     return (
         <div>
@@ -194,11 +190,6 @@ function MyComponent() {
                 <div className="w-full h-12"></div>
                 <Footer />
             </div>
-
-
-            
-
-
         </div>
     );
 }
