@@ -1,13 +1,13 @@
 import * as React from "react";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
-import Insta from "../../images/instagram.png";
-import Insta1 from "../../images/instagram1.png";
-import Facebook from "../../images/facebook.png";
-import Facebook1 from "../../images/facebook1.png";
-import Twitter from "../../images/twitter.png";
-import Twitter1 from "../../images/twitter1.png";
-import Linkedin from "../../images/linkedin.png";
-import Linkedin1 from "../../images/linkedin1.png";
+import Insta from "../../images/footer/instagram.png";
+import Insta1 from "../../images/footer/instagram1.png";
+import Facebook from "../../images/footer/facebook.png";
+import Facebook1 from "../../images/footer/facebook1.png";
+import Twitter from "../../images/footer/twitter.png";
+import Twitter1 from "../../images/footer/twitter1.png";
+import Linkedin from "../../images/footer/linkedin.png";
+import Linkedin1 from "../../images/footer/linkedin1.png";
 import Link from "next/link";
 
 const Footer: React.FC = () => {
