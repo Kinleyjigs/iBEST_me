@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Sonam from "../../images/team/director.png";
 import Rinchen from "../../images/team/CEO.png";
 import Tharchen from "../../images/team/founder.png";
@@ -20,32 +21,48 @@ const teamMembers = [
 ];
 
 const Team = () => {
+    const [isPaused, setIsPaused] = useState(false);
+
+    const handleMouseEnter = () => {
+        setIsPaused(true); // Pause the animation
+    };
+
+    const handleMouseLeave = () => {
+        setIsPaused(false); // Resume the animation
+    };
+
     return (
         <div className="overflow-hidden mx-auto relative">
-            <div className="text-2xl font-semibold text-center">Our Team</div>
-            {/* Black box container with full screen width */}
-            <div className="bg-white w-screen py-8 px-4 ">
-                {/* Optional Heading */}
-                {/* <h1 className="text-2xl font-semibold mb-4 text-white">Our Team</h1> */}
-
-                {/* Container for infinite scrolling */}
+            <div className="text-2xl font-semibold text-center mb-8">Our Team</div>
+            <div className="bg-black w-screen py-8 px-4"> {/* Container for infinite scrolling */}
+                
                 <div className="overflow-hidden relative">
-                    <div className="w-full relative slide-track flex animate-scroll">
-                        <div className="flex space-x-16 animate-loop-scroll">
-                            {/* Original team members */}
+                    <div 
+                        className={`w-full relative slide-track flex animate-scroll ${isPaused ? 'paused-animation' : ''}`} // Toggle play-state
+                    >
+                        <div className="flex space-x-16">
                             {teamMembers.map((member, index) => (
-                                <div key={index} className="relative w-40 min-h-48">
-                                    <img src={member.img.src} alt={member.name} className="" />
+                                <div 
+                                    key={index} 
+                                    className="relative w-40 min-h-48"
+                                    onMouseEnter={handleMouseEnter}
+                                    onMouseLeave={handleMouseLeave}
+                                >
+                                    <img src={member.img.src} alt={member.name} className="w-full h-auto" />
                                     <div className="absolute inset-0 flex flex-col items-center justify-end text-white">
                                         <h1 className="text-lg font-semibold">{member.name}</h1>
                                         <h2 className="text-sm">{member.title}</h2>
                                     </div>
                                 </div>
                             ))}
-                            {/* Duplicate team members for seamless scrolling */}
                             {teamMembers.map((member, index) => (
-                                <div key={index + teamMembers.length} className="relative w-40 min-h-48">
-                                    <img src={member.img.src} alt={member.name} className="" />
+                                <div 
+                                    key={index + teamMembers.length} 
+                                    className="relative w-40 min-h-48"
+                                    onMouseEnter={handleMouseEnter}
+                                    onMouseLeave={handleMouseLeave}
+                                >
+                                    <img src={member.img.src} alt={member.name} className="w-full h-auto" />
                                     <div className="absolute inset-0 flex flex-col items-center justify-end text-white">
                                         <h1 className="text-lg font-semibold">{member.name}</h1>
                                         <h2 className="text-sm">{member.title}</h2>
