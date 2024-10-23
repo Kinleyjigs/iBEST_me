@@ -28,14 +28,15 @@ const config: Config = {
 				"100%": { opacity: "1", marginRight: "0" },
 				},
 				scroll: {
-				"0%": { transform: "translateX(0)" },
-				"100%": { transform: "translateX(calc(-250px * 8))" },
-				},
+					"0%": { transform: "translateX(0)" },
+					"100%": { transform: "translateX(calc(-192px * 8))" },
+				}
+				
 			},
 			animation: {
 				slideRight: "slideRight 1s ease-in-out",
 				slideLeft: "slideLeft 1s ease-in-out",
-				scroll: "scroll 20s linear infinite", 
+				scroll: "scroll 30s linear infinite", 
 			},
 			
 			

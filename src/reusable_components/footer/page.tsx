@@ -15,12 +15,14 @@ const Footer: React.FC = () => {
         <div className="relative w-screen h-80 bg-sky-950 mt-20">
             <div className="absolute top-10">
                 <div className="ml-48">
+                <Link href="/">
                     <Avatar className="w-16 h-16">
                         <AvatarImage
                             src={"https://scontent.fpbh1-1.fna.fbcdn.net/v/t39.30808-6/327248969_3545587495677789_7126060281644009145_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=_YS7nsXTa6gQ7kNvgGAx6Xr&_nc_ht=scontent.fpbh1-1.fna&_nc_gid=AOeNRGlaOUExbn-66G9IkKN&oh=00_AYD09QCasPzsAaZlofYWkfgA4xu8cuYQKNJhciqPI0hP4A&oe=671688B4"} 
                             alt="Logo" 
                         />
                     </Avatar>
+                </Link>
                 </div>
                 <h1 className="text-white mt-2 ml-28">iBest Institute and Technology</h1>
 

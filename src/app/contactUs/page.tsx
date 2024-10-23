@@ -41,34 +41,33 @@ function MyComponent() {
         <div className='contact-us'>
             <NavBar />
             <h1 className="text-3xl font-bold mt-9 text-center">Contact Us</h1>
-            <div className="flex items-start justify-start mt-9 ml-20 space-x-40">
-                <div className="w-96">
+            <div className="flex items-start justify-start mt-9 ml-36 space-x-40">
+                <div className="w-96 ">
                     <form onSubmit={handleSubmit}>
                         <Input
                             type="text"
                             placeholder="Name"
-                            className="mb-4"
+                            className="mb-4 h-10"
                             value={name}
                             onChange={(e) => setName(e.target.value)}
                         />
                         <Input
                             type="email"
                             placeholder="Email"
-                            className="mb-4"
+                            className="mb-4 h-10"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                         />
                         <Input
                             type="text"
                             placeholder="Phone Number"
-                            className="mb-4"
+                            className="mb-4 h-10"
                             value={phone}
                             onChange={(e) => setPhone(e.target.value)}
                         />
-                        <Input
-                            type="text"
+                        <textarea
                             placeholder="Message"
-                            className="mb-4"
+                            className="mb-4 h-28 w-full resize-none p-2 border rounded-md focus:outline-none focus:border-black"
                             value={message}
                             onChange={(e) => setMessage(e.target.value)}
                         />
@@ -100,7 +99,7 @@ function MyComponent() {
             </div>
             {/* Map iframe */}
             {isMounted && (
-                <div className="w-5/6 ml-20 mt-20 rounded-lg overflow-hidden">
+                <div className="w-5/6 ml-32 mt-20 rounded-lg overflow-hidden">
                     <iframe 
                         width="100%" 
                         height="600" 

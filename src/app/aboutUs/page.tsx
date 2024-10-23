@@ -3,6 +3,7 @@ import NavBar from '../../reusable_components/nav_bar/page';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import Footer from "../../reusable_components/footer/page";
 import Team from "../../reusable_components/team/page"
+import Purpose from "../../reusable_components/purpose&value/page"
 
 import {
     Card,
@@ -36,38 +37,7 @@ function MyComponent() {
                 </div>
             </div>
             <div className="w-screen h-screen flex flex-col items-center justify-center space-y-24">
-                <Tabs defaultValue="account" className="w-2/5">
-                    <TabsList className="grid w-full grid-cols-2 bg-blueDark">
-                        <TabsTrigger value="purpose">Our Purpose</TabsTrigger>
-                        <TabsTrigger value="values">Our Values</TabsTrigger>
-                    </TabsList>
-                    <TabsContent value="purpose">
-                        <Card>
-                        <CardHeader className='flex items-center justify-center space-y-4'>
-                            <CardTitle>Our Purpose</CardTitle>
-                            <CardDescription>
-                            <p className='text-blueDark'>iBEST is dedicated towards improving the lives of <br /> our clients and communities around us and beyond <br /> through our excellence learning experience driven by <br /> research. Our maxim is “…aspire to learn more and apply”.</p>
-                            </CardDescription>
-                        </CardHeader>
-                        </Card>
-                    </TabsContent>
-                    <TabsContent value="values">
-                        <Card>
-                        <CardHeader className=' flex items-center justify-center space-y-4'>
-                            <CardTitle>Our Values</CardTitle>
-                            <CardDescription>
-                                <ul className={"list-disc list-inside space-y-4"} >
-                                    <li>Integrity: Uphold honesty and human values.</li>
-                                    <li>Boldness: Foster innovation and leadership.</li>
-                                    <li>Empathy: Build connections through understanding.</li>
-                                    <li>Social Responsibility: Contribute to community growth.</li>
-                                    <li>Trust: Prioritize transparency and accountability.</li>
-                                </ul>
-                            </CardDescription>
-                        </CardHeader>
-                        </Card>
-                    </TabsContent>
-                </Tabs>
+                <Purpose />
                 <h1 className='text-2xl font-semibold'>OUR OBJECTIVES</h1>
                 <div className="w-4/5 h-2/5 flex flex-row">
                     <div className="w-2/5 h-full flex items-center justify-center">

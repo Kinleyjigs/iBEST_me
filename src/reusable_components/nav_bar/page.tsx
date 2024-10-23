@@ -38,9 +38,12 @@ const NavigationBar = () => {
           {/* Left side logo */}
           <div className="h-full w-1/6 flex items-center justify-center">
             <div className="w-20 h-20 bg-red-400 rounded-full">
+            <Link href="/">
               <Avatar className="w-20 h-20 border-current">
                 <AvatarImage src="https://scontent.fpbh1-1.fna.fbcdn.net/v/t39.30808-1/327248969_3545587495677789_7126060281644009145_n.jpg?stp=dst-jpg_s480x480&_nc_cat=109&ccb=1-7&_nc_sid=f4b9fd&_nc_ohc=y6S4kvC5zfIQ7kNvgHzE-2B&_nc_ht=scontent.fpbh1-1.fna&_nc_gid=AWAcEURGlTurvQwTak5fKf6&oh=00_AYDzHNpv-wOB_P23qCPDvC9PKRM0F9hi4p1D7E610boDGQ&oe=670C1672" alt="@shadcn" />
               </Avatar>
+              </Link>
+      
             </div>
           </div>
           {/* Center title */}
