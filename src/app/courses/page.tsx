@@ -2,6 +2,8 @@ import React from 'react';
 import NavBar from '../../reusable_components/nav_bar/page'; 
 import { Button } from "@/components/ui/button"
 import Footer from '@/reusable_components/footer/page';
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import logo from "../images/logo1.jpg"
 import {
     ResizableHandle,
     ResizablePanel,
@@ -13,205 +15,327 @@ function MyComponent() {
             <NavBar />
             <div className="w-screen h-screen flex flex-col">
                 <div className="w-full h-3/5 bg-[url('./images/courses1.png')] bg-center bg-cover flex items-center justify-center ">
-                    <h1 className='font-extrabold text-3xl text-white'>Services</h1>
+                    <h1 className='font-extrabold text-4xl text-white'>Courses</h1>
                 </div>
-                <div className="w-full h-2/5 flex flex-col items-center justify-end space-y-5 relative pb-5">
-                    <h1 className='font-semibold text-2xl'> Courses</h1>
-                    <div className="w-2/5 h-16 bg-lightBlue rounded flex items-center justify-center relative drop-shadow-md hover:drop-shadow-xl">
+                <div className="w-full h-2/5 flex flex-col items-center justify-center relative ">
+                    <div className="w-full h-auto bg-blue-500 text-white py-10 px-5 flex justify-center items-center">
+                        <div className="text-center space-y-4 max-w-4xl">
+                            <h1 className="text-4xl font-bold text-black">Welcome to iBEST INSTITUTE</h1>
+                            <p className="text-lg text-black">
+                                One of Bhutan's elite, QMS-certified training hubs, recognized by the Ministry of Labour and Human Resources. Our expert-led courses aren’t just about knowledge, they’re about real-world impact. We break the boundaries of traditional learning, taking you beyond the classroom for hands-on, next-level skills.
+                            </p>
+                            <p className="text-lg font-semibold text-black">
+                                Ready to stay ahead of the game? Join our dynamic programs designed to meet today's fast-evolving workforce demands!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+            <div className="w-screen h-screen flex items-center justify-center">
+                <div className="w-2/5 h-full space-y-3 ">
+                    <div className="w-full h-20 bg-lightBlue rounded flex items-center justify-center relative drop-shadow-md hover:drop-shadow-xl">
                         <h1>Life Skills Courses</h1>
                     </div>
-                    <div className="w-2/5 h-16 bg-lightBlue rounded flex items-center justify-center relative drop-shadow-md hover:drop-shadow-xl">
+                    <div className="w-full h-20 bg-lightBlue rounded flex items-center justify-center relative drop-shadow-md hover:drop-shadow-xl">
                         <h1>Leadership Courses </h1>
                     </div>
-                    <div className="w-2/5 h-16 bg-lightBlue rounded mt-5 flex items-center justify-center relative drop-shadow-md hover:drop-shadow-xl">
+                    <div className="w-full h-20 bg-lightBlue rounded mt-5 flex items-center justify-center relative drop-shadow-md hover:drop-shadow-xl">
                         <h1>Management Courses</h1>
                     </div>
-                </div>
-            </div>     
-            <div className="w-screen h-screen flex items-center bg-green-200 justify-center">
-                <div className="w-2/5 h-full space-y-5 ">
-                    <div className="w-full h-16 bg-lightBlue rounded flex items-center justify-center relative drop-shadow-md hover:drop-shadow-xl">
+                    <div className="w-full h-20 bg-lightBlue rounded flex items-center justify-center relative drop-shadow-md hover:drop-shadow-xl">
                         <h1>Accounting and Financial Courses</h1>
                     </div>
-                    <div className="w-full h-16 bg-lightBlue rounded flex items-center justify-center relative drop-shadow-md hover:drop-shadow-xl">
+                    <div className="w-full h-20 bg-lightBlue rounded flex items-center justify-center relative drop-shadow-md hover:drop-shadow-xl">
                         <h1>Entrepreneurship Courses</h1>
                     </div>
-                    <div className="w-full h-16 bg-lightBlue rounded flex items-center justify-center relative drop-shadow-md hover:drop-shadow-xl">
+                    <div className="w-full h-20 bg-lightBlue rounded flex items-center justify-center relative drop-shadow-md hover:drop-shadow-xl">
                         <h1>Multimedia Courses</h1>
                     </div>
-                    <div className="w-full h-16 bg-lightBlue rounded flex items-center justify-center relative drop-shadow-md hover:drop-shadow-xl">
+                    <div className="w-full h-20 bg-lightBlue rounded flex items-center justify-center relative drop-shadow-md hover:drop-shadow-xl">
                         <h1>Film Studies Courses</h1>
                     </div>
-                    <div className="w-full h-16 bg-lightBlue rounded flex items-center justify-center relative drop-shadow-md hover:drop-shadow-xl">
+                    <div className="w-full h-20 bg-lightBlue rounded flex items-center justify-center relative drop-shadow-md hover:drop-shadow-xl">
                         <h1>Technical and Engineering Courses</h1>
                     </div>
-                    <div className="w-full h-16 bg-lightBlue rounded flex items-center justify-center relative drop-shadow-md hover:drop-shadow-xl">
+                    <div className="w-full h-20 bg-lightBlue rounded flex items-center justify-center relative drop-shadow-md hover:drop-shadow-xl">
                         <h1>IT Courses</h1>
                     </div>
-                    <div className="w-full h-56 flex items-center justify-center animate-slideRight">
-                        <h1 className='text-2xl font-semibold pt-36'>Courses Available</h1>
+                </div>
+            </div>
+            <div className="w-screen h-screen flex flex-row items-center justify-center relative">
+                <div className="w-1/2 h-4/5 m-5 bg-gray-50 rounded-2xl flex flex-col space-y-2 items-center justify-center relative drop-shadow-md hover:drop-shadow-xl border border-slate-300 hover:border-indigo-300">
+                    <div className="w-11/12 h-1/3 rounded-2xl bg-[url('./images/iBEST_files/lifeSkill.jpg')] bg-cover"></div>
+                    <div className="w-11/12 h-3/5 flex flex-col space-y-3">
+                    <div className="h-1/6 flex items-center pl-5">
+                        <div className="h-10 w-10 rounded-full border border-gray-300 overflow-hidden flex items-center justify-center">
+                            <Avatar className="w-full h-full border-current">
+                                <AvatarImage src={logo.src} alt="@shadcn" />
+                                <AvatarFallback>iBEST</AvatarFallback>
+                            </Avatar>
+                        </div>
+                        <div className="ml-5">
+                            <p className="font-light text-sm">iBest Institute</p>
+                            </div>
+                        </div>
+                        <div className="w-full h-5/6 bg-gray-100 flex flex-col space-y-4 p-5 rounded-2xl">
+                            <h1 className="font-bold text-xl">Life Skills Courses</h1>
+                            <p className="font-bold">What You'll Learn:</p>
+                            <ul className="list-disc list-inside space-y-2">
+                                <li><strong>Integrity:</strong> Uphold honesty and human values.</li>
+                                <li><strong>Boldness:</strong> Foster innovation and leadership.</li>
+                                <li><strong>Empathy:</strong> Build connections through understanding.</li>
+                                <li><strong>Social Responsibility:</strong> Contribute to community growth.</li>
+                                <li><strong>Trust:</strong> Prioritize transparency and accountability.</li>
+                            </ul>
+                            <p className="font-bold">Who This Course Is For:</p>
+                            <p className="text-sm">Ideal for anyone seeking to improve personal and professional skills.</p>
+                        </div>
                     </div>
                 </div>
-            </div>          
-            <div className="w-screen h-screen flex flex-col space-y-16 items-center justify-center">
-                <div className="w-4/5 h-2/5 flex flex-row">
-                    <div className="w-2/5 h-full flex items-center justify-center">
-                        <ResizablePanelGroup direction="vertical" className="h-full w-4/6 rounded-lg border  bg-slate-500">
-                            <ResizablePanel defaultSize={50}>
-                                <div className="flex h-full items-center justify-center p-6 bg-[url('./images/lifeSkill.jpg')] bg-cover">
-                                </div>
-                            </ResizablePanel>
-                            <ResizableHandle />
-                            <ResizablePanel defaultSize={50}>
-                                <div className="flex h-full items-center justify-center p-6 flex-col">
-                                    <h1 className='text-white'>Life Skills Courses</h1><br />
-                                    <p className='text-white'>The life skills course equips trainees with key concepts and practical skills, emphasizing modern applications and strategies.</p>
-                                </div>
-                            </ResizablePanel>
-                        </ResizablePanelGroup>
-                    </div>
-                    <div className="w-1/5 h-full"></div>
-                    <div className="w-2/5 h-full flex items-center justify-center">
-                        <ResizablePanelGroup direction="vertical" className="h-full w-4/6 rounded-lg border  bg-slate-500">
-                            <ResizablePanel defaultSize={50}>
-                                <div className="flex h-full items-center justify-center p-6 bg-[url('./images/leader.png')] bg-cover">
-                                </div>
-                            </ResizablePanel>
-                            <ResizableHandle />
-                            <ResizablePanel defaultSize={50}>
-                                <div className="h-full items-center justify-center p-6 flex flex-col">
-                                    <h1 className='text-white'> Leadership Courses</h1><br />
-                                    <p className='text-white'>Our leadership courses empower trainees enhancing soft skills and establishing personality benchmarks for any career, fostering leadership abilities and promoting personal growth.</p>
-                                </div>
-                            </ResizablePanel>
-                        </ResizablePanelGroup>
-                    </div>
-                </div>
-                <div className="w-4/5 h-2/5 flex flex-row">
-                    <div className="w-2/5 h-full flex items-center justify-center">
-                        <ResizablePanelGroup direction="vertical" className="h-full w-4/6 rounded-lg border  bg-slate-500">
-                            <ResizablePanel defaultSize={50}>
-                                <div className="flex h-full items-center justify-center p-6 bg-[url('./images/management.jpeg')]  bg-center bg-cover">
-                                </div>
-                            </ResizablePanel>
-                            <ResizableHandle />
-                            <ResizablePanel defaultSize={50}>
-                                <div className="flex h-full items-center justify-center p-6 flex-col">
-                                    <h1 className='text-white'>Management Courses</h1><br />
-                                    <p className='text-white'>Our management courses equip trainees with essential skills in communication, planning, organizing, leading, and decision making for effective management.</p>
-                                </div>
-                            </ResizablePanel>
-                        </ResizablePanelGroup>
-                    </div>
-                    <div className="w-1/5 h-full"></div>
-                    <div className="w-2/5 h-full flex items-center justify-center">
-                        <ResizablePanelGroup direction="vertical" className="h-full w-4/6 rounded-lg border  bg-slate-500">
-                            <ResizablePanel defaultSize={50}>
-                                <div className="flex h-full items-center justify-center p-6 bg-[url('./images/finance.jpg')] bg-cover">
-                                </div>
-                            </ResizablePanel>
-                            <ResizableHandle />
-                            <ResizablePanel defaultSize={50}>
-                                <div className="h-full items-center justify-center p-6 flex flex-col">
-                                    <h1 className='text-white'>Accounting and Financial Courses</h1><br />
-                                    <p className='text-white'>Our accounting and financial management courses provide practical and theoretical knowledge, enabling trainees to analyze financial situations and apply skills in today's market.</p>
-                                </div>
-                            </ResizablePanel>
-                        </ResizablePanelGroup>
+                <div className="w-1/2 h-4/5 m-5 bg-gray-50 rounded-2xl flex flex-col space-y-2 items-center justify-center relative drop-shadow-md hover:drop-shadow-xl border border-slate-300 hover:border-indigo-300">
+                    <div className="w-11/12 h-1/3 rounded-2xl bg-[url('./images/iBEST_files/leaders.jpg')] bg-cover"></div>
+                    <div className="w-11/12 h-3/5 flex flex-col space-y-3">
+                    <div className="h-1/6 flex items-center pl-5">
+                        <div className="h-10 w-10 rounded-full border border-gray-300 overflow-hidden flex items-center justify-center">
+                            <Avatar className="w-full h-full border-current">
+                                <AvatarImage src={logo.src} alt="@shadcn" />
+                                <AvatarFallback>iBEST</AvatarFallback>
+                            </Avatar>
+                        </div>
+                        <div className="ml-5">
+                            <p className="font-light text-sm">iBest Institute</p>
+                            </div>
+                        </div>
+                        <div className="w-full h-5/6 bg-gray-100 flex flex-col space-y-4 p-5 rounded-2xl">
+                            <h1 className="font-bold text-xl">Leadership Courses</h1>
+                            <p className="font-bold">What You'll Learn:</p>
+                            <ul className="list-disc list-inside space-y-2">
+                                <li><strong>Leadership Empowerment</strong>: Essential tools for leadership.</li>
+                                <li><strong>Soft Skills Development</strong>: Enhance professional growth.</li>
+                                <li><strong>Personality Benchmarks</strong>: Set standards for any career.</li>
+                                <li><strong>Leadership Foundation</strong>: Build a strong leadership base.</li>
+                                <li><strong>Personal Growth</strong>: Promote overall development.</li>
+                            </ul>
+                            <p className="font-bold">Who This Course Is For:</p>
+                            <p className="text-sm">Ideal for anyone seeking to improve personal and professional skills.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div className="w-screen h-screen flex flex-col space-y-16 items-center justify-center">
-                <div className="w-4/5 h-2/5 flex flex-row">
-                    <div className="w-2/5 h-full flex items-center justify-center">
-                        <ResizablePanelGroup direction="vertical" className="h-full w-4/6 rounded-lg border  bg-slate-500">
-                            <ResizablePanel defaultSize={50}>
-                                <div className="flex h-full items-center justify-center p-6 bg-[url('./images/en.jpeg')] bg-cover">
-                                </div>
-                            </ResizablePanel>
-                            <ResizableHandle />
-                            <ResizablePanel defaultSize={50}>
-                                <div className="flex h-full items-center justify-center p-6 flex-col">
-                                    <h1 className='text-white'>Entrepreneurship Courses</h1><br />
-                                    <p className='text-white'>Our entrepreneurship courses teach the essential concepts and skills for business success, focusing on sales, marketing, and management while developing a business.</p>
-                                </div>
-                            </ResizablePanel>
-                        </ResizablePanelGroup>
-                    </div>
-                    <div className="w-1/5 h-full"></div>
-                    <div className="w-2/5 h-full flex items-center justify-center">
-                        <ResizablePanelGroup direction="vertical" className="h-full w-4/6 rounded-lg border  bg-slate-500">
-                            <ResizablePanel defaultSize={50}>
-                                <div className="flex h-full items-center justify-center p-6 bg-[url('./images/media.jpg')] bg-cover">
-                                </div>
-                            </ResizablePanel>
-                            <ResizableHandle />
-                            <ResizablePanel defaultSize={50}>
-                                <div className="h-full items-center justify-center p-6 flex flex-col">
-                                    <h1 className='text-white'>Multimedia Courses</h1><br />
-                                    <p className='text-white'>As a leading multimedia company, iBEST offers courses where trainees learn from experts, gaining hands-on experience with tools and equipment to create exceptional multimedia content.</p>
-                                </div>
-                            </ResizablePanel>
-                        </ResizablePanelGroup>
+            <div className="w-screen h-screen flex flex-row items-center justify-center relative">
+                <div className="w-1/2 h-4/5 m-5 bg-gray-50 rounded-2xl flex flex-col space-y-2 items-center justify-center relative drop-shadow-md hover:drop-shadow-xl border border-slate-300 hover:border-indigo-300">
+                    <div className="w-11/12 h-1/3 rounded-2xl bg-[url('./images/man.jpg')] bg-cover bg-center"></div>
+                    <div className="w-11/12 h-3/5 flex flex-col space-y-3">
+                    <div className="h-1/6 flex items-center pl-5">
+                        <div className="h-10 w-10 rounded-full border border-gray-300 overflow-hidden flex items-center justify-center">
+                            <Avatar className="w-full h-full border-current">
+                                <AvatarImage src={logo.src} alt="@shadcn" />
+                                <AvatarFallback>iBEST</AvatarFallback>
+                            </Avatar>
+                        </div>
+                        <div className="ml-5">
+                            <p className="font-light text-sm">iBest Institute</p>
+                            </div>
+                        </div>
+                        <div className="w-full h-5/6 bg-gray-100 flex flex-col space-y-4 p-5 rounded-2xl">
+                            <h1 className="font-bold text-xl">Management Courses</h1>
+                            <p className="font-bold">What You'll Learn:</p>
+                            <ul className="list-disc list-inside space-y-2">
+                                <li><strong>Management Package:</strong> Essential for decision-making roles.</li>
+                                <li><strong>Communication Skills:</strong> Master effective communication.</li>
+                                <li><strong>Planning & Organizing:</strong> Key strategies for efficiency.</li>
+                                <li><strong>Leadership:</strong> Develop vital leadership skills.</li>
+                                <li><strong>Management Functions:</strong> Core management processes.</li>
+                            </ul>
+                            <p className="font-bold">Who This Course Is For:</p>
+                            <p className="text-sm">Ideal for anyone seeking to improve personal and professional skills.</p>
+                        </div>
                     </div>
                 </div>
-                <div className="w-4/5 h-2/5 flex flex-row">
-                    <div className="w-2/5 h-full flex items-center justify-center">
-                        <ResizablePanelGroup direction="vertical" className="h-full w-4/6 rounded-lg border  bg-slate-500">
-                            <ResizablePanel defaultSize={50}>
-                                <div className="flex h-full items-center justify-center p-6 bg-[url('./images/flim.jpg')] bg-cover">
-                                </div>
-                            </ResizablePanel>
-                            <ResizableHandle />
-                            <ResizablePanel defaultSize={50}>
-                                <div className="flex h-full items-center justify-center p-6 flex-col">
-                                    <h1 className='text-white'>Film Studies Courses</h1><br />
-                                    <p className='text-white'>This course covers the fundamentals of film and video production, blending theory with hands-on practice. Trainees learn the basics of filmmaking and explore the film and cinema industry..</p>
-                                </div>
-                            </ResizablePanel>
-                        </ResizablePanelGroup>
-                    </div>
-                    <div className="w-1/5 h-full"></div>
-                    <div className="w-2/5 h-full flex items-center justify-center">
-                        <ResizablePanelGroup direction="vertical" className="h-full w-4/6 rounded-lg border  bg-slate-500">
-                            <ResizablePanel defaultSize={50}>
-                                <div className="flex h-full items-center justify-center p-6 bg-[url('./images/mo.jpg')] bg-cover">
-                                </div>
-                            </ResizablePanel>
-                            <ResizableHandle />
-                            <ResizablePanel defaultSize={50}>
-                                <div className="h-full items-center justify-center p-6 flex flex-col">
-                                    <h1 className='text-white'>Technical and Engineering Courses</h1><br />
-                                    <p className='text-white'>iBEST Engineering and Technology courses blend theory and practical skills, focusing on essential tools and mechanics for operational and maintenance skills in today's tech-driven world.</p>
-                                </div>
-                            </ResizablePanel>
-                        </ResizablePanelGroup>
+                <div className="w-1/2 h-4/5 m-5 bg-gray-50 rounded-2xl flex flex-col space-y-2 items-center justify-center relative drop-shadow-md hover:drop-shadow-xl border border-slate-300 hover:border-indigo-300">
+                    <div className="w-11/12 h-1/3 rounded-2xl bg-[url('./images/fin.JPG')] bg-center bg-cover"></div>
+                    <div className="w-11/12 h-3/5 flex flex-col space-y-3">
+                    <div className="h-1/6 flex items-center pl-5">
+                        <div className="h-10 w-10 rounded-full border border-gray-300 overflow-hidden flex items-center justify-center">
+                            <Avatar className="w-full h-full border-current">
+                                <AvatarImage src={logo.src} alt="@shadcn" />
+                                <AvatarFallback>iBEST</AvatarFallback>
+                            </Avatar>
+                        </div>
+                        <div className="ml-5">
+                            <p className="font-light text-sm">iBest Institute</p>
+                            </div>
+                        </div>
+                        <div className="w-full h-5/6 bg-gray-100 flex flex-col space-y-4 p-5 rounded-2xl">
+                            <h1 className="font-bold text-xl">Accounting and Financial Courses</h1>
+                            <p className="font-bold">What You'll Learn:</p>
+                            <ul className="list-disc list-inside space-y-2">
+                                <li><strong>Financial Management: </strong>Build confidence in management.</li>
+                                <li><strong>Accounting Insights:</strong> Practical and theoretical concepts.</li>
+                                <li><strong>Active Learning:</strong> Engage for deeper understanding.</li>
+                                <li><strong>Financial Analysis:</strong> Address complex challenges.</li>
+                                <li><strong>Market Skills:</strong> Apply knowledge in real-world scenarios.</li>
+                            </ul>
+                            <p className="font-bold">Who This Course Is For:</p>
+                            <p className="text-sm">Ideal for anyone seeking to improve personal and professional skills.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div className="w-screen h-screen flex flex-col space-y-16 items-center justify-center">
-                <div className="w-full h-2/5 flex flex-row">
-                    <div className="w-32 h-80 bg-white"></div>
-                    <div className="w-96 h-full bg-white">
-                        <ResizablePanelGroup direction="vertical" className="h-full w-4/6 rounded-lg border  bg-slate-500">
-                            <ResizablePanel defaultSize={50}>
-                                <div className="flex h-full items-center justify-center p-6 bg-[url('./images/ict.jpg')] bg-cover"></div>
-                            </ResizablePanel>
-                            <ResizableHandle />
-                            <ResizablePanel defaultSize={50}>
-                                <div className="flex h-full items-center justify-center p-6 flex-col">
-                                    <h1 className='text-white'>IT Courses</h1><br />
-                                    <p className='text-white'>iBEST Engineering and Technology courses equip trainees with essential operational skills for today’s tech-driven world, blending theory and practical learning.</p>
-                                </div>
-                            </ResizablePanel>
-                        </ResizablePanelGroup>
+            <div className="w-screen h-screen flex flex-row items-center justify-center relative">
+                <div className="w-1/2 h-4/5 m-5 bg-gray-50 rounded-2xl flex flex-col space-y-2 items-center justify-center relative drop-shadow-md hover:drop-shadow-xl border border-slate-300 hover:border-indigo-300">
+                    <div className="w-11/12 h-1/3 rounded-2xl bg-[url('./images/le.JPG')] bg-cover"></div>
+                    <div className="w-11/12 h-3/5 flex flex-col space-y-3">
+                    <div className="h-1/6 flex items-center pl-5">
+                        <div className="h-10 w-10 rounded-full border border-gray-300 overflow-hidden flex items-center justify-center">
+                            <Avatar className="w-full h-full border-current">
+                                <AvatarImage src={logo.src} alt="@shadcn" />
+                                <AvatarFallback>iBEST</AvatarFallback>
+                            </Avatar>
+                        </div>
+                        <div className="ml-5">
+                            <p className="font-light text-sm">iBest Institute</p>
+                            </div>
+                        </div>
+                        <div className="w-full h-5/6 bg-gray-100 flex flex-col space-y-4 p-5 rounded-2xl">
+                            <h1 className="font-bold text-xl">Entrepreneurship Courses</h1>
+                            <p className="font-bold">What You'll Learn:</p>
+                            <ul className="list-disc list-inside space-y-2">
+                                <li><strong>Entrepreneurial Concepts:</strong> Learn principles and skills.</li>
+                                <li><strong>Diverse Courses:</strong> Explore business real applications.</li>
+                                <li><strong>Empowered Decisions:</strong> Analyze marketing effectively.</li>
+                                <li><strong>Critical Thinking:</strong> Make informed decisions.</li>
+                                <li><strong>Business Planning:</strong> Formulate a robust business plan.</li>
+                            </ul>
+                            <p className="font-bold">Who This Course Is For:</p>
+                            <p className="text-sm">Ideal for anyone seeking to improve personal and professional skills.</p>
+                        </div>
                     </div>
                 </div>
-                <div className="w-full h-1/5 "></div>
-                <div className="w-full h-2/5 ">
-                    <Footer />
+                <div className="w-1/2 h-4/5 m-5 bg-gray-50 rounded-2xl flex flex-col space-y-2 items-center justify-center relative drop-shadow-md hover:drop-shadow-xl border border-slate-300 hover:border-indigo-300">
+                    <div className="w-11/12 h-1/3 rounded-2xl bg-[url('./images/multi.JPG')] bg-cover"></div>
+                    <div className="w-11/12 h-3/5 flex flex-col space-y-3">
+                    <div className="h-1/6 flex items-center pl-5">
+                        <div className="h-10 w-10 rounded-full border border-gray-300 overflow-hidden flex items-center justify-center">
+                            <Avatar className="w-full h-full border-current">
+                                <AvatarImage src={logo.src} alt="@shadcn" />
+                                <AvatarFallback>iBEST</AvatarFallback>
+                            </Avatar>
+                        </div>
+                        <div className="ml-5">
+                            <p className="font-light text-sm">iBest Institute</p>
+                            </div>
+                        </div>
+                        <div className="w-full h-5/6 bg-gray-100 flex flex-col space-y-4 p-5 rounded-2xl">
+                            <h1 className="font-bold text-xl">Multimedia Courses</h1>
+                            <p className="font-bold">What You'll Learn:</p>
+                            <ul className="list-disc list-inside space-y-2">
+                                <li><strong>Expert Learning:</strong> Learn from industry professionals.</li>
+                                <li><strong>Wide Course Range:</strong> Explore diverse multimedia solutions.</li>
+                                <li><strong>Hands-On Practice:</strong> Gain practical skills with equipment.</li>
+                                <li><strong>Creative Development:</strong> Create extraordinary content.</li>
+                                <li><strong>Trusted Leader:</strong> Experience a top multimedia company.</li>
+                            </ul>
+                            <p className="font-bold">Who This Course Is For:</p>
+                            <p className="text-sm">Ideal for anyone seeking to improve personal and professional skills.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>          
+            </div>
+            <div className="w-screen h-screen flex flex-row items-center justify-center relative">
+                <div className="w-1/2 h-4/5 m-5 bg-gray-50 rounded-2xl flex flex-col space-y-2 items-center justify-center relative drop-shadow-md hover:drop-shadow-xl border border-slate-300 hover:border-indigo-300">
+                    <div className="w-11/12 h-1/3 rounded-2xl bg-[url('./images/TEP.jpg')] bg-cover"></div>
+                    <div className="w-11/12 h-3/5 flex flex-col space-y-3">
+                    <div className="h-1/6 flex items-center pl-5">
+                        <div className="h-10 w-10 rounded-full border border-gray-300 overflow-hidden flex items-center justify-center">
+                            <Avatar className="w-full h-full border-current">
+                                <AvatarImage src={logo.src} alt="@shadcn" />
+                                <AvatarFallback>iBEST</AvatarFallback>
+                            </Avatar>
+                        </div>
+                        <div className="ml-5">
+                            <p className="font-light text-sm">iBest Institute</p>
+                            </div>
+                        </div>
+                        <div className="w-full h-5/6 bg-gray-100 flex flex-col space-y-4 p-5 rounded-2xl">
+                            <h1 className="font-bold text-xl">Film Studies Courses</h1>
+                            <p className="font-bold">What You'll Learn:</p>
+                            <ul className="list-disc list-inside space-y-2">
+                                <li><strong>Fundamentals:</strong> Basics of film and video production.</li>
+                                <li><strong>Theoretical & Practical:</strong> Theory meets hands-on learning.</li>
+                                <li><strong>Key Aspects:</strong> Essential filmmaking elements.</li>
+                                <li><strong>Practical Experience:</strong> Hands-on skill development.</li>
+                                <li><strong>Cinematic Journey:</strong> Explore film and cinema production.</li>
+                            </ul>
+                            <p className="font-bold">Who This Course Is For:</p>
+                            <p className="text-sm">Ideal for anyone seeking to improve personal and professional skills.</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="w-1/2 h-4/5 m-5 bg-gray-50 rounded-2xl flex flex-col space-y-2 items-center justify-center relative drop-shadow-md hover:drop-shadow-xl border border-slate-300 hover:border-indigo-300">
+                    <div className="w-11/12 h-1/3 rounded-2xl bg-[url('./images/finance.jpg')] bg-cover"></div>
+                    <div className="w-11/12 h-3/5 flex flex-col space-y-3">
+                    <div className="h-1/6 flex items-center pl-5">
+                        <div className="h-10 w-10 rounded-full border border-gray-300 overflow-hidden flex items-center justify-center">
+                            <Avatar className="w-full h-full border-current">
+                                <AvatarImage src={logo.src} alt="@shadcn" />
+                                <AvatarFallback>iBEST</AvatarFallback>
+                            </Avatar>
+                        </div>
+                        <div className="ml-5">
+                            <p className="font-light text-sm">iBest Institute</p>
+                            </div>
+                        </div>
+                        <div className="w-full h-5/6 bg-gray-100 flex flex-col space-y-4 p-5 rounded-2xl">
+                            <h1 className="font-bold text-xl">Technical and Engineering Courses</h1>
+                            <p className="font-bold">What You'll Learn:</p>
+                            <ul className="list-disc list-inside space-y-2">
+                                <li><strong>Relevant Courses:</strong> Key areas in engineering field.</li>
+                                <li><strong>Operational Skills:</strong> Basic maintenance techniques.</li>
+                                <li><strong>Theoretical Knowledge:</strong> Concepts of tools and mechanics.</li>
+                                <li><strong>Combined Learning:</strong> Theory and practical approaches.</li>
+                                <li><strong>Essential Skills:</strong> Skills for a tech-driven world.</li>
+                            </ul>
+                            <p className="font-bold">Who This Course Is For:</p>
+                            <p className="text-sm">Ideal for anyone seeking to improve personal and professional skills.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="w-screen h-screen flex flex-col items-center justify-center relative">
+                <div className="w-1/2 h-4/5 m-5 bg-gray-50 rounded-2xl flex flex-col space-y-2 items-center justify-center relative drop-shadow-md hover:drop-shadow-xl border border-slate-300 hover:border-indigo-300">
+                    <div className="w-11/12 h-1/3 rounded-2xl bg-[url('./images/it.JPG')] bg-cover"></div>
+                    <div className="w-11/12 h-3/5 flex flex-col space-y-3">
+                    <div className="h-1/6 flex items-center pl-5">
+                        <div className="h-10 w-10 rounded-full border border-gray-300 overflow-hidden flex items-center justify-center">
+                            <Avatar className="w-full h-full border-current">
+                                <AvatarImage src={logo.src} alt="@shadcn" />
+                                <AvatarFallback>iBEST</AvatarFallback>
+                            </Avatar>
+                        </div>
+                        <div className="ml-5">
+                            <p className="font-light text-sm">iBest Institute</p>
+                            </div>
+                        </div>
+                        <div className="w-full h-5/6 bg-gray-100 flex flex-col space-y-4 p-5 rounded-2xl">
+                            <h1 className="font-bold text-xl">ICT Courses</h1>
+                            <p className="font-bold">What You'll Learn:</p>
+                            <ul className="list-disc list-inside space-y-2">
+                                <li><strong>IT Education:</strong> Systems, hardware, and operating systems.</li>
+                                <li><strong>Basic Skills:</strong> Proficient in Word, PowerPoint, and Excel.</li>
+                                <li><strong>Advanced Topics:</strong> Learn digital analytics and programming.</li>
+                                <li><strong>Digital Skills:</strong> Essential for today’s tech landscape.</li>
+                                <li><strong>Blended Learning:</strong> Integrates online and traditional methods.</li>
+                            </ul>
+                            <p className="font-bold">Who This Course Is For:</p>
+                            <p className="text-sm">Ideal for anyone seeking to improve personal and professional skills.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            <div>
+                <Footer />
+            </div>       
         </div>      
     );
 }

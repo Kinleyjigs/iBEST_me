@@ -28,21 +28,23 @@ function MyComponent() {
     return (
         <div className='landingpage'>
             <NavBar />
-            <div className="w-screen h-screen flex flex-col items-center justify-center bg-red-50">
+            <div className="w-screen h-screen flex flex-col  bg-red-50">
                 <div className="w-full h-3/5 bg-[url('./images/this.png')] bg-center bg-cover flex items-center justify-center mb-5">
-                    <h1 className='font-extrabold text-3xl text-white'>Services</h1>
+                    <h1 className='font-extrabold text-4xl text-white'>Consultancy</h1>
                 </div>
-                <div className="w-full h-20 flex items-center justify-center">
-                    <h1 className='font-semibold text-2xl'> Why iBest</h1>
+                <div className="text-center p-14 space-y-5">
+                    <h1 className="text-3xl font-bold mb-4">Welcome to iBEST Consultancy Services</h1>
+                    <p className="text-lg">
+                        Empowering Bhutan's future since 2014, we've guided over 500 clients toward success. Our mission is to drive national growth by helping individuals and businesses reach their full potential.
+                    </p>
+                    <p className="text-lg font-semibold mt-4">Together, let's build a brighter Bhutan.</p>
+                    <h1 className='text-3xl font-bold pt-14'>Why iBEST</h1>
                 </div>
-                <div className="w-full h-20 flex items-center justify-center">
-                    <Button className='w-1/6'><a href="/courses">Courses</a></Button><Button className='w-1/6 ml-5'><a href="/consultancy">Consultancy</a></Button>
-                </div>
-                <div className="w-3/5 h-2/6 mt-12 bg-[url('./images/co.png')] bg-cover bg-center"></div>
             </div>
             <div className="w-screen h-screen flex items-center justify-center flex-col">
                 <div className="w-3/5 h-full flex items-center justify-center flex-col">
-                    <div className='space-y-5'>
+                    <div className='space-y-5 flex items-center justify-center flex-col'>
+                        
                         <h1>With the increasing economic activities in the country, and most youth joining the workforce, the need to guide and assist young entrepreneurs and small business establishment is becoming a necessity!</h1>
                         <h1>Through iBEST Consultancy Services, with the team of energetic and enthusiastic experts, we provide our clients with real-time market studies and analysis through which project's feasibility are done. We advise and recommend our clients on the projects they want to execute and the pertinent business processes they have to integrate to make their projects successful.</h1>
                         <h1>Beyond business project proposal writing with strong financial background, we do help and write project proposals for grant applications which are mainly required by the Civil Society Organizations.</h1>
@@ -237,7 +239,7 @@ function MyComponent() {
                                 <ResizableHandle />
                                 <ResizablePanel defaultSize={50}>
                                     <div className="h-full items-center justify-center p-6 flex flex-col">
-                                        <p>We mentor clients from setup to operation, and they continue to seek our expertise.</p>
+                                        <p className='text-white'>We mentor clients from setup to operation, and they continue to seek our expertise.</p>
                                     </div>
                                 </ResizablePanel>
                             </ResizablePanelGroup>

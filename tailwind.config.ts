@@ -115,7 +115,7 @@ const config: Config = {
 			cc1: "url('./images/c1.jpg')",
 			cc2: "url('./images/cc2.webp')",
 			courses1: "url('./images/courses1.png')",
-			lifeSkill: "url('./images/lifeSkill.jpg')",
+			lifeSkill: "url('./images/iBEST_files/lifeSkill.jpg')",
 			leader: "url('./images/leader.png')",
 			management: "url('./images/management.jpeg')",
 			finance: "url('./images/finance.jpg')",
@@ -124,10 +124,20 @@ const config: Config = {
 			flim: "url('./images/flim.jpg')",
 			mo: "url('./images/mo.jpg')",
 			ict: "url('./images/ict.jpg')",
+			ooo: "url('./images/iBEST_files/leaders.jpg')",
+			baba: "url('./images/baba.jpeg')",
+			man: "url('./images/man.jpg')",
+			fin: "url('./images/fin.JPG')",
+			multi: "url('./images/multi.JPG')",
+			tep: "url('./images/TEP.jpg')",
+			le: "url('./images/le.JPG')",
+			it: "url('./images/it.JPG')",
 
 
 
 
+
+			
 		},
 		borderRadius: {
 			lg: "var(--radius)",

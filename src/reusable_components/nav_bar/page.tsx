@@ -9,7 +9,6 @@ import Headroom from "react-headroom"
 import {
   NavigationMenu,
   NavigationMenuContent,
-  NavigationMenuIndicator,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
@@ -45,7 +44,7 @@ const NavigationBar = () => {
           </div>
           {/* Center title */}
           <div className="h-full w-2/6 flex items-center justify-center">
-            <h1 className="text-black text-xl ml-20 ">Get skilled today for a bright future!</h1>
+            <h1 className="text-black  ml-20 ">Get skilled today for a bright future!</h1>
           </div>
           {/* Right side navigation */}
           <div className="h-full w-3/6 flex items-center justify-center space-x-4">

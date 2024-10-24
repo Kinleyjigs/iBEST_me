@@ -19,13 +19,13 @@ function MyComponent() {
             <div className="w-screen h-screen">
                 <NavBar />
                 <div className="w-full h-2/6 bg-[url('./images/traning.jpg')] bg-cover flex items-center justify-center text-white">
-                    <h1 className='text-3xl font-bold'>About Us</h1>
+                    <h1 className='text-4xl font-bold'>About Us</h1>
                 </div>
                 <div className="w-full h-3/6 bg-bb flex flex-row">
                     <div className="w-1/2 h-full bg-[url('./images/about.png')] bg-cover bg-bottom"></div>
                     <div className="w-1/2 h-full bg-bb flex items-center justify-center">
                         <div>
-                            <h1 className='text-2xl font-semibold pt-10 pb-5'>Our Vision</h1>
+                            <h1 className='text-3xl font-semibold pt-10 pb-5'>Our Vision</h1>
                             <h1 className='text-xl animate-slideRight'>“To become an acclaimed institution</h1>
                             <h1 className='text-xl'>and one-stop learning center in Bhutan</h1>
                             <h1 className='text-xl animate-slideRight'>and beyond”</h1>
@@ -42,7 +42,7 @@ function MyComponent() {
                     <TabsContent value="purpose">
                         <Card>
                         <CardHeader className='flex items-center justify-center space-y-4'>
-                            <CardTitle>Our Purpose</CardTitle>
+                            <CardTitle >Our Purpose</CardTitle>
                             <CardDescription>
                             <p className='text-blueDark'>iBEST is dedicated towards improving the lives of <br /> our clients and communities around us and beyond <br /> through our excellence learning experience driven by <br /> research. Our maxim is “…aspire to learn more and apply”.</p>
                             </CardDescription>
@@ -66,7 +66,7 @@ function MyComponent() {
                         </Card>
                     </TabsContent>
                 </Tabs>
-                <h1 className='text-2xl font-semibold'>OUR OBJECTIVES</h1>
+                <h1 className='text-2xl font-semibold'>Our Objectives</h1>
                 <div className="w-4/5 h-2/5 flex flex-row">
                     <div className="w-2/5 h-full flex items-center justify-center">
                         <ResizablePanelGroup direction="vertical" className="h-full w-4/6 rounded-lg border  bg-slate-500">
