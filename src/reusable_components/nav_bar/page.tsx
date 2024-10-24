@@ -4,6 +4,7 @@ import * as React from "react"
 import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu"
 import Link from "next/link"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import Logo from "../../images/Website Pictures/logo.jpg"
 import { cn } from "@/lib/utils"
 import Headroom from "react-headroom"
 import {
@@ -40,15 +41,15 @@ const NavigationBar = () => {
             <div className="w-20 h-20 bg-red-400 rounded-full">
             <Link href="/">
               <Avatar className="w-20 h-20 border-current">
-                <AvatarImage src="https://scontent.fpbh1-1.fna.fbcdn.net/v/t39.30808-1/327248969_3545587495677789_7126060281644009145_n.jpg?stp=dst-jpg_s480x480&_nc_cat=109&ccb=1-7&_nc_sid=f4b9fd&_nc_ohc=y6S4kvC5zfIQ7kNvgHzE-2B&_nc_ht=scontent.fpbh1-1.fna&_nc_gid=AWAcEURGlTurvQwTak5fKf6&oh=00_AYDzHNpv-wOB_P23qCPDvC9PKRM0F9hi4p1D7E610boDGQ&oe=670C1672" alt="@shadcn" />
+              <AvatarImage src={Logo.src} alt="@shadcn" />  
               </Avatar>
               </Link>
       
             </div>
           </div>
           {/* Center title */}
-          <div className="h-full w-2/6 flex items-center justify-center">
-            <h1 className="text-black text-xl ml-20 ">Get skilled today for a bright future!</h1>
+          <div className="w-2/6 flex items-center ">
+            <h1 className="text-black text-xl ">Get skilled today for a bright future!</h1>
           </div>
           {/* Right side navigation */}
           <div className="h-full w-3/6 flex items-center justify-center space-x-4">
