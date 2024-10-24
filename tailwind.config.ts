@@ -18,20 +18,28 @@ const config: Config = {
 					'0 45px 65px rgba(0, 0, 0, 0.15)'
 				]
 			},
-		keyframes: {
-			slideRight: {
-			"0%": { opacity: "0", marginLeft: "-600px" },
-			"100%": { opacity: "1", marginLeft: "0" },
+			keyframes: {
+				slideRight: {
+				"0%": { opacity: "0", marginLeft: "-250px" },
+				"100%": { opacity: "1", marginLeft: "0" },
+				},
+				slideLeft: {
+				"0%": { opacity: "0", marginRight: "-250px" },
+				"100%": { opacity: "1", marginRight: "0" },
+				},
+				scroll: {
+					"0%": { transform: "translateX(0)" },
+					"100%": { transform: "translateX(calc(-192px * 8))" },
+				}
+				
 			},
-			slideLeft: {
-			"0%": { opacity: "0", marginRight: "-600px" },
-			"100%": { opacity: "1", marginRight: "0" },
+			animation: {
+				slideRight: "slideRight 1s ease-in-out",
+				slideLeft: "slideLeft 1s ease-in-out",
+				scroll: "scroll 30s linear infinite", 
 			},
-		},
-		animation: {
-			slideRight: "slideRight 1s ease-in-out",
-			slideLeft: "slideLeft 1s ease-in-out",
-		},
+			
+			
 		colors: {
 			bb: '#aac5e1',
 			blue :'#ecfeff',
@@ -146,7 +154,16 @@ const config: Config = {
 		},
 		},
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [
+		require("tailwindcss-animate"),
+		function ({ addUtilities }: { addUtilities: (utilities: Record<string, any>) => void }) {
+		addUtilities({
+			".paused-animation": {
+			animationPlayState: "paused !important",
+			},
+		});
+		},
+	],
 };
 
 export default config;

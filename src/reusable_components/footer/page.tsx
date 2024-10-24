@@ -8,6 +8,7 @@ import Twitter from "../../images/footer/twitter.png";
 import Twitter1 from "../../images/footer/twitter1.png";
 import Linkedin from "../../images/footer/linkedin.png";
 import Linkedin1 from "../../images/footer/linkedin1.png";
+import Logo from "../../images/Website Pictures/logo.jpg"
 import Link from "next/link";
 
 const Footer: React.FC = () => {
@@ -15,15 +16,14 @@ const Footer: React.FC = () => {
         <div className="relative w-screen h-80 bg-sky-950 mt-20">
             <div className="absolute top-10">
                 <div className="ml-48">
+                <Link href="/">
                     <Avatar className="w-16 h-16">
-                        <AvatarImage
-                            src={"https://scontent.fpbh1-1.fna.fbcdn.net/v/t39.30808-6/327248969_3545587495677789_7126060281644009145_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=_YS7nsXTa6gQ7kNvgGAx6Xr&_nc_ht=scontent.fpbh1-1.fna&_nc_gid=AOeNRGlaOUExbn-66G9IkKN&oh=00_AYD09QCasPzsAaZlofYWkfgA4xu8cuYQKNJhciqPI0hP4A&oe=671688B4"} 
-                            alt="Logo" 
-                        />
+                    <AvatarImage src={Logo.src} alt="@shadcn" />  
                     </Avatar>
+                </Link>
                 </div>
-                <h1 className="text-white mt-1.5 ml-28">iBest Institute and Technology</h1>
-                <h2 className="text-white text-xl ml-20 mt-4">Get skilled today for a bright future!</h2>
+                <h1 className="text-white mt-2 ml-28">iBest Institute and Technology</h1>
+
                 <div className="flex mt-14 ml-28 space-x-4">
                     {/* Instagram */}
                     <a href="https://www.instagram.com/ibest_institute/" target="_blank" rel="noopener noreferrer">
@@ -105,7 +105,7 @@ const Footer: React.FC = () => {
                 </div>
             </div>
             <div className="absolute bottom-0 w-full text-center text-white pb-4">
-                Copyright © iBEST STUDIOS 2024
+                Copyright © iBEST Institute & Consultancy 2024
             </div>
     </div>
     );
