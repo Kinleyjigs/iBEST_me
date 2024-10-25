@@ -34,7 +34,7 @@ const Team = () => {
     return (
         <div className="overflow-hidden mx-auto relative">
             <div className="text-2xl font-semibold text-center mb-4"> 
-                OUR TEAM
+                Our Team
             </div>
             <div className="bg-white w-screen py-4 px-4 overflow-hidden">
                 <div 

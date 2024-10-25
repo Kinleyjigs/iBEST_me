@@ -55,31 +55,20 @@ const Footer: React.FC = () => {
                     </a> 
                 </div>
             </div>
-            <div className="flex justify-start ml-20 gap-x-20 text-white absolute top-14 left-96 "> {/* Flexbox for alignment, ml for left margin, gap for spacing */}
+            <div className="flex justify-start ml-10 gap-x-14 text-white absolute top-14 left-96"> {/* Flexbox for alignment, ml for left margin, gap for spacing */}
                 <div>
                     <h1 className="font-black hover:text-gray-400">
                         <a href="/">HOME</a>
                     </h1>
                     <h2 className="hover:text-gray-400">
-                        <Link href="/mission">Mission</Link>
+                        <Link href="#mission">Mission</Link>
                     </h2>
                     <h3 className="hover:text-gray-400">
-                        Competencies
+                        <Link href="#experties">Competencies</Link>
                     </h3>
                     <h4 className="hover:text-gray-400">
-                        Testimonials
+                        <Link href="#testimonials">Testimonials</Link>
                     </h4> 
-                </div>
-                <div>
-                    <h1 className="font-black hover:text-gray-400">
-                        <a href="/aboutUs">ABOUT US</a>
-                    </h1>
-                    <h2 className="hover:text-gray-400">
-                        Vision
-                    </h2>
-                    <h3 className="hover:text-gray-400">Purpose & Values</h3>
-                    <h4 className="hover:text-gray-400">Objectives</h4> 
-                    <h5 className="hover:text-gray-400">Team</h5>
                 </div>
                 <div>
                     <h1 className="font-black hover:text-gray-400">
@@ -93,6 +82,23 @@ const Footer: React.FC = () => {
                     </h3> 
                 </div>
                 <div>
+                    <h1 className="font-black hover:text-gray-400">
+                        <a href="/aboutUs">ABOUT US</a>
+                    </h1>
+                    <h2 className="hover:text-gray-400">
+                        <Link href="#vission">Vision</Link>
+                    </h2>
+                    <h3 className="hover:text-gray-400">
+                        <Link href="#values"> Purpose & Values</Link>
+                    </h3>
+                    <h4 className="hover:text-gray-400">
+                        <Link href="#Objectives">Objectives</Link>
+                    </h4> 
+                    <h5 className="hover:text-gray-400">
+                        <Link href="#Team">Team</Link>
+                    </h5>
+                </div>
+                <div >
                     <h1 className="font-black">Other iBest Websites</h1>
                     <h2 className="hover:text-gray-400">
                         <a href="https://www.ibestbhutan.com/">iBest Bhutan</a>

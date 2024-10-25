@@ -49,7 +49,7 @@ export default function Home() {
           <div className="w-full h-1/6 flex items-center justify-center">
             <h1 className="text-2xl font-semibold pt-5">Certified Training Institute Registered with </h1>
           </div>
-          <div className="w-full h-5/6 flex items-center justify-center space-x-10">
+          <div id="mission" className="w-full h-5/6 flex items-center justify-center space-x-10">
             <Avatar className="w-48 h-48 border-current animate-slideLeft">
               <AvatarImage src="https://www.bmhc.gov.bt/wp-content/uploads/2023/07/tvet.png" alt="@shadcn" />
               <AvatarFallback>TVET</AvatarFallback>
@@ -65,9 +65,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-screen h-screen flex  flex-col items-center justify-center">
-        <div className="w-full h-1/6 flex items-center justify-center ">
-          <h1 className="text-2xl font-semibold text-blueDark pt-7">MISSIONS</h1>
+      <div  className="w-screen h-screen flex  flex-col items-center justify-center">
+        <div  className="w-full h-1/6 flex items-center justify-center ">
+          <h1 className="text-2xl font-semibold text-blueDark pt-7">Mission</h1>
         </div>
         <div className="w-full h-1/6  flex justify-center">
           <div className="w-2/5 h-2/3 bg-blue rounded flex items-center justify-center">
@@ -90,7 +90,7 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full h-1/6 bg-blue-100 flex justify-center">
-          <div className="w-2/5 h-2/3 bg-blue rounded flex items-center justify-center">
+          <div id="experties" className="w-2/5 h-2/3 bg-blue rounded flex items-center justify-center">
             <h1 className="font-medium">Foster knowledge creation and development.</h1>
           </div>
         </div>
@@ -214,7 +214,7 @@ export default function Home() {
         </div>
       </div>
       <div className="w-screen h-screen flex flex-row justify-center">
-        <div className="h-full w-5/12 flex items-center justify-center flex-col pt-20">
+        <div id="testimonials" className="h-full w-5/12 flex items-center justify-center flex-col pt-20">
           <div className="w-10/12 h-2/6 bg-bblue	stroke-[#E8E3E3] flex items-center justify-center flex-col rounded-md animate-slideRight">
             <h1 className="text-2xl font-semibold pb-5">Did you know ?</h1>
             <p className="pb-5">iBEST INSTITUTE is a Registered Training <br /> Service Provider under</p>
@@ -227,7 +227,7 @@ export default function Home() {
               <p className="text-xl">offers   </p><p className="text-xl relative drop-shadow-md hover:drop-shadow-xl"><a href="/courses" className="font-bold text-blueDark"> Tailor-Made Courses.</a></p>
             </div>
           </div>
-          <h1 className="pt-20 font-semibold text-2xl">TESTIMONIALS</h1>
+          <h1 className="pt-20 font-semibold text-2xl">Testimonials</h1>
           <div className="w-full h-2/4 ">
           <Carousel className="w-full pt-12">
             <CarouselContent>

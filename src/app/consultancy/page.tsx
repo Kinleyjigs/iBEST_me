@@ -28,7 +28,7 @@ function MyComponent() {
     return (
         <div className='landingpage'>
             <NavBar />
-            <div className="w-screen h-screen flex flex-col  bg-red-50">
+            <div className="w-screen h-screen flex flex-col">
                 <div className="w-full h-3/5 bg-[url('./images/this.png')] bg-center bg-cover flex items-center justify-center mb-5">
                     <h1 className='font-extrabold text-4xl text-white'>Consultancy</h1>
                 </div>

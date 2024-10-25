@@ -34,35 +34,35 @@ function MyComponent() {
             <div className="w-screen h-screen flex items-center justify-center">
                 <div className="w-2/5 h-full space-y-3 ">
                     <div className="w-full h-20 bg-lightBlue rounded flex items-center justify-center relative drop-shadow-md hover:drop-shadow-xl">
-                        <h1>Life Skills Courses</h1>
+                        <h1><a href="#one">Life Skills Courses</a></h1>
                     </div>
                     <div className="w-full h-20 bg-lightBlue rounded flex items-center justify-center relative drop-shadow-md hover:drop-shadow-xl">
-                        <h1>Leadership Courses </h1>
+                        <h1><a href="#one">Leadership Courses</a></h1>
                     </div>
                     <div className="w-full h-20 bg-lightBlue rounded mt-5 flex items-center justify-center relative drop-shadow-md hover:drop-shadow-xl">
-                        <h1>Management Courses</h1>
+                        <h1><a href="#two">Management Courses</a></h1>
                     </div>
                     <div className="w-full h-20 bg-lightBlue rounded flex items-center justify-center relative drop-shadow-md hover:drop-shadow-xl">
-                        <h1>Accounting and Financial Courses</h1>
+                        <h1><a href="#two">Accounting and Financial Courses</a></h1>
                     </div>
                     <div className="w-full h-20 bg-lightBlue rounded flex items-center justify-center relative drop-shadow-md hover:drop-shadow-xl">
-                        <h1>Entrepreneurship Courses</h1>
+                        <h1><a href="#three">Entrepreneurship Courses</a></h1>
                     </div>
                     <div className="w-full h-20 bg-lightBlue rounded flex items-center justify-center relative drop-shadow-md hover:drop-shadow-xl">
-                        <h1>Multimedia Courses</h1>
+                        <h1><a href="#three">Multimedia Courses</a></h1>
                     </div>
                     <div className="w-full h-20 bg-lightBlue rounded flex items-center justify-center relative drop-shadow-md hover:drop-shadow-xl">
-                        <h1>Film Studies Courses</h1>
+                        <h1><a href="#four">Film Studies Courses</a></h1>
                     </div>
                     <div className="w-full h-20 bg-lightBlue rounded flex items-center justify-center relative drop-shadow-md hover:drop-shadow-xl">
-                        <h1>Technical and Engineering Courses</h1>
+                        <h1><a href="#four">Technical and Engineering Courses</a></h1>
                     </div>
                     <div className="w-full h-20 bg-lightBlue rounded flex items-center justify-center relative drop-shadow-md hover:drop-shadow-xl">
-                        <h1>IT Courses</h1>
+                        <h1><a href="#five">IT Courses</a></h1>
                     </div>
                 </div>
             </div>
-            <div className="w-screen h-screen flex flex-row items-center justify-center relative">
+            <div id='one' className="w-screen h-screen flex flex-row items-center justify-center relative">
                 <div className="w-1/2 h-4/5 m-5 bg-gray-50 rounded-2xl flex flex-col space-y-2 items-center justify-center relative drop-shadow-md hover:drop-shadow-xl border border-slate-300 hover:border-indigo-300">
                     <div className="w-11/12 h-1/3 rounded-2xl bg-[url('./images/iBEST_files/lifeSkill.jpg')] bg-cover"></div>
                     <div className="w-11/12 h-3/5 flex flex-col space-y-3">
@@ -122,7 +122,7 @@ function MyComponent() {
                     </div>
                 </div>
             </div>
-            <div className="w-screen h-screen flex flex-row items-center justify-center relative">
+            <div id='two' className="w-screen h-screen flex flex-row items-center justify-center relative">
                 <div className="w-1/2 h-4/5 m-5 bg-gray-50 rounded-2xl flex flex-col space-y-2 items-center justify-center relative drop-shadow-md hover:drop-shadow-xl border border-slate-300 hover:border-indigo-300">
                     <div className="w-11/12 h-1/3 rounded-2xl bg-[url('./images/man.jpg')] bg-cover bg-center"></div>
                     <div className="w-11/12 h-3/5 flex flex-col space-y-3">
@@ -182,7 +182,7 @@ function MyComponent() {
                     </div>
                 </div>
             </div>
-            <div className="w-screen h-screen flex flex-row items-center justify-center relative">
+            <div id='three' className="w-screen h-screen flex flex-row items-center justify-center relative">
                 <div className="w-1/2 h-4/5 m-5 bg-gray-50 rounded-2xl flex flex-col space-y-2 items-center justify-center relative drop-shadow-md hover:drop-shadow-xl border border-slate-300 hover:border-indigo-300">
                     <div className="w-11/12 h-1/3 rounded-2xl bg-[url('./images/le.JPG')] bg-cover"></div>
                     <div className="w-11/12 h-3/5 flex flex-col space-y-3">
@@ -242,7 +242,7 @@ function MyComponent() {
                     </div>
                 </div>
             </div>
-            <div className="w-screen h-screen flex flex-row items-center justify-center relative">
+            <div id='four' className="w-screen h-screen flex flex-row items-center justify-center relative">
                 <div className="w-1/2 h-4/5 m-5 bg-gray-50 rounded-2xl flex flex-col space-y-2 items-center justify-center relative drop-shadow-md hover:drop-shadow-xl border border-slate-300 hover:border-indigo-300">
                     <div className="w-11/12 h-1/3 rounded-2xl bg-[url('./images/TEP.jpg')] bg-cover"></div>
                     <div className="w-11/12 h-3/5 flex flex-col space-y-3">
@@ -302,7 +302,7 @@ function MyComponent() {
                     </div>
                 </div>
             </div>
-            <div className="w-screen h-screen flex flex-col items-center justify-center relative">
+            <div id='five' className="w-screen h-screen flex flex-col items-center justify-center relative">
                 <div className="w-1/2 h-4/5 m-5 bg-gray-50 rounded-2xl flex flex-col space-y-2 items-center justify-center relative drop-shadow-md hover:drop-shadow-xl border border-slate-300 hover:border-indigo-300">
                     <div className="w-11/12 h-1/3 rounded-2xl bg-[url('./images/it.JPG')] bg-cover"></div>
                     <div className="w-11/12 h-3/5 flex flex-col space-y-3">

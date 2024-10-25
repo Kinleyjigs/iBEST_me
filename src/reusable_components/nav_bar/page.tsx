@@ -47,8 +47,8 @@ const NavigationBar = () => {
             </div>
           </div>
           {/* Center title */}
-          <div className="h-full w-2/6 flex items-center justify-center">
-            <h1 className="text-black  ml-20 ">Get skilled today for a bright future!</h1>
+          <div className="h-full w-2/6 flex items-center ">
+            <h1 className="text-black text-left">Get skilled today for a bright future!</h1>
 
           </div>
           {/* Right side navigation */}
@@ -59,13 +59,6 @@ const NavigationBar = () => {
                   <Link href="/" legacyBehavior passHref>
                     <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                       Home
-                    </NavigationMenuLink>
-                  </Link>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                  <Link href="/aboutUs" legacyBehavior passHref>
-                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                      About Us
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
@@ -85,6 +78,14 @@ const NavigationBar = () => {
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <Link href="/aboutUs" legacyBehavior passHref>
+                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                      About Us
+                    </NavigationMenuLink>
+                  </Link>
+                </NavigationMenuItem>
+                
                 <NavigationMenuItem>
                   <Link href="/contactUs" legacyBehavior passHref>
                     <NavigationMenuLink className={navigationMenuTriggerStyle()}>

@@ -4,13 +4,6 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import Footer from "../../reusable_components/footer/page";
 import Team from "../../reusable_components/team/page"
 import Purpose from "../../reusable_components/purpose&value/page"
-
-import {
-    Card,
-    CardDescription,
-    CardHeader,
-    CardTitle,
-} from "@/components/ui/card"
 import {
     ResizableHandle,
     ResizablePanel,
@@ -19,12 +12,12 @@ import {
 function MyComponent() {
     return (
         <div>
-            <div className="w-screen h-screen">
+            <div id='vission' className="w-screen h-screen">
                 <NavBar />
                 <div className="w-full h-2/6 bg-[url('./images/traning.jpg')] bg-cover flex items-center justify-center text-white">
                     <h1 className='text-4xl font-bold'>About Us</h1>
                 </div>
-                <div className="w-full h-3/6 bg-bb flex flex-row">
+                <div id='values' className="w-full h-3/6 bg-bb flex flex-row">
                     <div className="w-1/2 h-full bg-[url('./images/about.png')] bg-cover bg-bottom"></div>
                     <div className="w-1/2 h-full bg-bb flex items-center justify-center">
                         <div>
@@ -36,7 +29,7 @@ function MyComponent() {
                     </div>
                 </div>
             </div>
-            <div className="w-screen h-screen flex flex-col items-center justify-center space-y-24">
+            <div id='Objectives' className="w-screen h-screen flex flex-col items-center justify-center space-y-24 ">
                 <Purpose />
                 <h1 className='text-2xl font-semibold'>OUR OBJECTIVES</h1>
                 <div className="w-4/5 h-2/5 flex flex-row">
@@ -151,18 +144,15 @@ function MyComponent() {
                             </ResizablePanel>
                             <ResizableHandle />
                             <ResizablePanel defaultSize={50}>
-                                <div className="flex h-full items-center justify-center p-6 flex-col">
+                                <div id='Team' className="flex h-full items-center justify-center p-6 flex-col">
                                     <h1 className='text-white'>Encourage Economic Development</h1><br />
                                     <p className='text-white'>Describe initiatives aimed at developing rural entrepreneurs and supporting agricultural exports.</p>
                                 </div>
                             </ResizablePanel>
                         </ResizablePanelGroup>
                     </div>
-                    
                 </div>
-
                 <Team />
-
                 </div>
                 <Footer />
         </div>
