@@ -58,8 +58,8 @@ function MyComponent() {
                                     alt="" 
                                     className="relative shadow-none transition-all duration-300 cursor-pointer w-full h-full rounded"
                                 />
-                                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                    <p className="text-white text-center">I have been hovered</p>
+                                <div className="absolute inset-0 flex items-center justify-center bg-white bg-opacity-100 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                    <p className="text-Black text-center">Feasibility Studies</p>
                                 </div>
                             </div>
                             <div className="w-2/12 h-full rounded bg-cover bg-center relative group">
@@ -68,8 +68,8 @@ function MyComponent() {
                                     alt="" 
                                     className="relative shadow-none transition-all duration-300 cursor-pointer w-full h-full rounded"
                                 />
-                                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                    <p className="text-white text-center">I have been hovered</p>
+                                <div className="absolute inset-0 flex items-center justify-center bg-white bg-opacity-100 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                    <p className="text-Black text-center">Grant & Business Project Proposal Writing</p>
                                 </div>
                             </div>
                             <div className="w-2/12 h-full rounded bg-cover bg-center relative group">
@@ -78,8 +78,8 @@ function MyComponent() {
                                     alt="" 
                                     className="relative shadow-none transition-all duration-300 cursor-pointer w-full h-full rounded"
                                 />
-                                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                    <p className="text-white text-center">I have been hovered</p>
+                                <div className="absolute inset-0 flex items-center justify-center bg-white bg-opacity-100 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                    <p className="text-black text-center">Business Planning & Evaluaion</p>
                                 </div>
                             </div>
                             <div className="w-2/12 h-full rounded bg-cover bg-center relative group">
@@ -88,8 +88,8 @@ function MyComponent() {
                                     alt="" 
                                     className="relative shadow-none transition-all duration-300 cursor-pointer w-full h-full rounded"
                                 />
-                                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                    <p className="text-white text-center">I have been hovered</p>
+                                <div className="absolute inset-0 flex items-center justify-center bg-white bg-opacity-100 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                    <p className="text-black text-center">Financial Analysis & Bookkeeping</p>
                                 </div>
                             </div>
                             <div className="w-2/12 h-full rounded bg-cover bg-center relative group">
@@ -98,8 +98,8 @@ function MyComponent() {
                                     alt="" 
                                     className="relative shadow-none transition-all duration-300 cursor-pointer w-full h-full rounded"
                                 />
-                                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                    <p className="text-white text-center">I have been hovered</p>
+                                <div className="absolute inset-0 flex items-center justify-center bg-white bg-opacity-100 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                    <p className="text-black text-center">Income Tax Preparation & Filing (PIT, BIT, CIT)</p>
                                 </div>
                             </div>
                         </div>
@@ -110,8 +110,8 @@ function MyComponent() {
                                     alt="" 
                                     className="relative shadow-none transition-all duration-300 cursor-pointer w-full h-full rounded"
                                 />
-                                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                    <p className="text-white text-center">I have been hovered</p>
+                                <div className="absolute inset-0 flex items-center justify-center bg-white bg-opacity-100 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                    <p className="text-black text-center">Website, Mobile App & Software Development</p>
                                 </div>
                             </div>
                             <div className="w-2/12 h-full rounded bg-cover bg-center relative group">
@@ -120,8 +120,8 @@ function MyComponent() {
                                     alt="" 
                                     className="relative shadow-none transition-all duration-300 cursor-pointer w-full h-full rounded"
                                 />
-                                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                    <p className="text-white text-center">I have been hovered</p>
+                                <div className="absolute inset-0 flex items-center justify-center bg-white bg-opacity-100 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                    <p className="text-black text-center">Animation (2D and 3D) & Visual Effects (VFX)</p>
                                 </div>
                             </div>
                             <div className="w-2/12 h-full rounded bg-cover bg-center relative group">
@@ -130,8 +130,8 @@ function MyComponent() {
                                     alt="" 
                                     className="relative shadow-none transition-all duration-300 cursor-pointer w-full h-full rounded"
                                 />
-                                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                    <p className="text-white text-center">I have been hovered</p>
+                                <div className="absolute inset-0 flex items-center justify-center bg-white bg-opacity-100 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                    <p className="text-black text-center">Grant Business Project & Proposal Writing</p>
                                 </div>
                             </div>
                             <div className="w-2/12 h-full rounded bg-cover bg-center relative group">
@@ -140,8 +140,8 @@ function MyComponent() {
                                     alt="" 
                                     className="relative shadow-none transition-all duration-300 cursor-pointer w-full h-full rounded"
                                 />
-                                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                    <p className="text-white text-center">I have been hovered</p>
+                                <div className="absolute inset-0 flex items-center justify-center bg-white bg-opacity-100 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                    <p className="text-black text-center">Sound Recording & Music Composition</p>
                                 </div>
                             </div>
                             <div className="w-2/12 h-full rounded bg-cover bg-center relative group">
@@ -150,8 +150,8 @@ function MyComponent() {
                                     alt="" 
                                     className="relative shadow-none transition-all duration-300 cursor-pointer w-full h-full rounded"
                                 />
-                                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                    <p className="text-white text-center">I have been hovered</p>
+                                <div className="absolute inset-0 flex items-center justify-center bg-white bg-opacity-100 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                    <p className="text-black text-center">Cinematography & Visual Editing</p>
                                 </div>
                             </div>
                         </div>
@@ -162,8 +162,8 @@ function MyComponent() {
                                     alt="" 
                                     className="relative shadow-none transition-all duration-300 cursor-pointer w-full h-full rounded"
                                 />
-                                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                    <p className="text-white text-center">I have been hovered</p>
+                                <div className="absolute inset-0 flex items-center justify-center bg-white bg-opacity-100 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                    <p className="text-black text-center">Brand Management & Digital Marketing</p>
                                 </div>
                             </div>
                             <div className="w-2/12 h-full rounded bg-cover bg-center relative group">
@@ -172,8 +172,8 @@ function MyComponent() {
                                     alt="" 
                                     className="relative shadow-none transition-all duration-300 cursor-pointer w-full h-full rounded"
                                 />
-                                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                    <p className="text-white text-center">I have been hovered</p>
+                                <div className="absolute inset-0 flex items-center justify-center bg-white bg-opacity-100 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                    <p className="text-black text-center">Entrepreneurship Development</p>
                                 </div>
                             </div>
                             <div className="w-2/12 h-full rounded bg-cover bg-center relative group">
@@ -182,8 +182,8 @@ function MyComponent() {
                                     alt="" 
                                     className="relative shadow-none transition-all duration-300 cursor-pointer w-full h-full rounded"
                                 />
-                                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                    <p className="text-white text-center">I have been hovered</p>
+                                <div className="absolute inset-0 flex items-center justify-center bg-white bg-opacity-100 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                    <p className="text-black text-center">Content, Screenplay, Script Writing</p>
                                 </div>
                             </div>
                             <div className="w-2/12 h-full rounded bg-cover bg-center relative group">
@@ -192,8 +192,8 @@ function MyComponent() {
                                     alt="" 
                                     className="relative shadow-none transition-all duration-300 cursor-pointer w-full h-full rounded"
                                 />
-                                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                    <p className="text-white text-center">I have been hovered</p>
+                                <div className="absolute inset-0 flex items-center justify-center bg-white bg-opacity-100 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                    <p className="text-black text-center">Editing & Proofreading</p>
                                 </div>
                             </div>
                             <div className="w-2/12 h-full rounded bg-cover bg-center relative group">
@@ -202,8 +202,8 @@ function MyComponent() {
                                     alt="" 
                                     className="relative shadow-none transition-all duration-300 cursor-pointer w-full h-full rounded"
                                 />
-                                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                    <p className="text-white text-center">I have been hovered</p>
+                                <div className="absolute inset-0 flex items-center justify-center bg-white bg-opacity-100 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                    <p className="text-black text-center">Market Studies & Strategic Marketing Plan</p>
                                 </div>
                             </div>
                         </div>
