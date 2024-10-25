@@ -14,6 +14,7 @@ import { MdDeveloperMode } from "react-icons/md";
 import Footer from "../../src/reusable_components/footer/page";
 import NavigationBar from "@/reusable_components/nav_bar/page"
 import Logo from "../images/Website Pictures/logo.jpg"
+import Statistics from "../reusable_components/statistics/page"
 import {
   Carousel,
   CarouselContent,
@@ -229,7 +230,7 @@ export default function Home() {
           </div>
           <h1 className="pt-20 font-semibold text-2xl">Testimonials</h1>
           <div className="w-full h-2/4 ">
-          <Carousel className="w-full pt-12">
+          <Carousel className="w-full pt-8">
             <CarouselContent>
               {Array.from({ length: 3 }).map((_, index) => (
                 <CarouselItem key={index}>
@@ -239,19 +240,23 @@ export default function Home() {
                         {/* Block 1 */}
                         {index === 0 && (
                           <div className="w-full h-full flex flex-col justify-between">
-                            <div className="h-3/6 bg-blue-50 bg-[url('./images/drKarma.jpg')]"></div>
-                            <div className="h-3/6 ">
-                              <h1 className="pt-5">
+                            <div className="h-3/5 rounded-lg bg-blue-50 bg-[url('./images/drKarma.jpg')] bg-cover"></div>
+                            <div className="h-2/5 "> 
+                              <h1 className="text-2xl text-black mt-2 text-center">Dr. Karma Phuntsho</h1>
+                              <h2 className="text-lg text-black mt-2 text-center">President, Loden Foundation & Shejun</h2>
+                              <h3 className="pt-5">
                                 "The Legend of Pemi Tshewang Tashi, a project of the Loden entrepreneur Tharchen and his iBEST team, takes Bhutanese cinematography to a whole new level. Combining creativity and culture, innovation and history, art and entertainment, the film brings one of the most celebrated Bhutanese stories to the big screen in the form of a beautifully crafted animation.”
-                              </h1>
+                              </h3>
                             </div>
                           </div>
                         )}
                         {/* Block 2 */}
                         {index === 1 && (
-                          <div className="w-full h-full flex flex-col justify-between">
-                            <div className="h-3/5 bg-[url('./images/dasho1.png')] bg-cover"></div>
+                          <div className="w-full h-full flex flex-col justify-between ">
+                            <div className="h-3/5 rounded-lg bg-[url('./images/dasho1.png')] bg-cover"></div>
                             <div className="h-2/5 ">
+                              <h1 className="text-2xl text-black mt-2 text-center">Dasho Penjore </h1>
+                              <h2 className="text-lg text-black mt-2 text-center">Governor, RMA</h2>
                               <p className="pt-5">
                                 "I want to thank you and your team for partnering with us for BEFIT 2019. We sincerely appreciate iBEST's support in organizing and making the event a success, especially for designing the promotional animation and aiding in social media outreach."                              </p>
                             </div>
@@ -260,8 +265,10 @@ export default function Home() {
                         {/* Block 3 */}
                         {index === 2 && (
                           <div className="w-full h-full flex flex-col justify-between">
-                            <div className="h-3/5 bg-pink-50 bg-[url('./images/passu.jpg')] bg-cover"></div>
+                            <div className="h-3/5 rounded-lg bg-pink-50 bg-[url('./images/passu.jpg')] bg-cover"></div>
                             <div className="h-2/5 bg-gray-50">
+                            <h1 className="text-2xl text-black mt-2 text-center">Mr. Passang Tshering </h1>
+                            <h2 className="text-lg text-black mt-2 text-center">Executive Director, Bhutan Toilet Organization</h2>
                               <p className="pt-5">
                                 "With The Legend of Pemi Tshewang Tashi now in cinemas, it showcases the incredible talent of our youth, driven by more than just training but a true tharchenian push. It's our country's best animation yet, possibly the longest, and stands proudly alongside global standards."                              </p>
                             </div>
@@ -279,12 +286,14 @@ export default function Home() {
           </div>
           
         </div>
+        
+      </div>
+      
+      
+              <Statistics />
+      
 
-      </div>
-      <div className="mt-20 flex items-end flex-col">
-        <div className="h-28 w-full "></div>
-        <Footer />
-      </div>
+      <Footer />
     </div>
     
   );
