@@ -8,6 +8,7 @@ import { CgMail } from "react-icons/cg";
 import { GrLocation } from "react-icons/gr";
 import dynamic from 'next/dynamic';
 import Footer from "../../reusable_components/footer/page";
+import SmallNavBar from "../../reusable_components/small_navbar/page";
 
 const ReCAPTCHA = dynamic(() => import('react-google-recaptcha'), { ssr: false });
 
@@ -24,10 +25,12 @@ function MyComponent() {
         // Ensure components that depend on the browser are mounted
         setIsMounted(true);
     }, []);
+    
     useEffect(() => {
         // Check if all fields are filled
         setIsFormValid(!!name && !!email && !!phone && !!message && !!capVal);
     }, [name, email, phone, message, capVal]);
+    
     const handleSubmit = async (e: { preventDefault: () => void; }) => {
         e.preventDefault();
         if (!capVal) {
@@ -37,17 +40,20 @@ function MyComponent() {
         // Send the message here
         console.log({ name, email, phone, message });
     };
+
     return (
         <div className='contact-us'>
-            <NavBar />
-            <h1 className="text-3xl font-bold mt-9 text-center">Contact Us</h1>
-            <div className="flex items-start justify-start mt-9 ml-36 space-x-40">
-                <div className="w-96 ">
+            <div className="hidden sm:block">
+                <NavBar />
+            </div>
+            <h1 className="text-3xl font-semibold text-center mb-6 ">Contact Us</h1>
+            <div className="flex flex-col sm:flex-row items-start justify-start mt-9 ml-36 space-y-8 sm:space-y-0 sm:space-x-40 text-base leading-relaxed">
+                <div className="w-96 flex flex-col sm:h-w-5/6">
                     <form onSubmit={handleSubmit}>
                         <Input
-                            type="text"
+                            type="text "
                             placeholder="Name"
-                            className="mb-4 h-10"
+                            className="mb-4 "
                             value={name}
                             onChange={(e) => setName(e.target.value)}
                         />
@@ -90,11 +96,23 @@ function MyComponent() {
                     </form>
                 </div>
                 {/* ADDRESS */}
-                <div className="space-y-4 w-7/12">
+                <div className="space-y-4 w-full sm:w-7/12">
                     <h1 className='text-2xl'>Address</h1>
-                    <h2><span className="flex items-center"><LuPhoneCall className="mr-3 text-xl "/> +975 02 33 96 07</span></h2>
-                    <h3><span className="flex items-center"><CgMail className="mr-3 text-xl"/> ibestbhutan@gamil.com</span></h3>
-                    <h3><span className="flex items-center"><GrLocation className="mr-3 text-xl"/>Changzamtog, Zamdo Lam,Thimphu-Babesa,Expressway Thimphu</span></h3>
+                    <h2>
+                        <span className="flex items-center">
+                            <LuPhoneCall className="mr-3 text-xl" /> +975 02 33 96 07
+                        </span>
+                    </h2>
+                    <h3>
+                        <span className="flex items-center">
+                            <CgMail className="mr-3 text-xl" /> ibestbhutan@gmail.com
+                        </span>
+                    </h3>
+                    <h3>
+                        <span className="flex items-center">
+                            <GrLocation className="mr-3 text-xl" /> Changzamtog, Zamdo Lam, Thimphu-Babesa, Expressway Thimphu
+                        </span>
+                    </h3>
                 </div>
             </div>
             {/* Map iframe */}
@@ -110,6 +128,7 @@ function MyComponent() {
                 </div>
             )}
             <Footer />
+            <SmallNavBar />
         </div>
     );
 }

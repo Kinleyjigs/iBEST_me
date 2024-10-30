@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import Image from 'next/image';
 import NavBar from '../../reusable_components/nav_bar/page'; 
@@ -17,6 +18,7 @@ import pic12 from '../images/12.png'
 import pic13 from '../images/13.jpg'
 import pic14 from '../images/14.jpg'
 import pic15 from '../images/15.jpg'
+import SmallNavBar from "../../reusable_components/small_navbar/page";
 import {
     ResizableHandle,
     ResizablePanel,
@@ -29,7 +31,7 @@ function MyComponent() {
         <div className='landingpage'>
             <NavBar />
             <div className="w-screen h-screen flex flex-col">
-                <div className="w-full h-3/5 bg-[url('./images/this.png')] bg-center bg-cover flex items-center justify-center mb-5">
+                <div className="w-full h-3/5 bg-[url('./images/this.png')] bg-center bg-cover flex items-center justify-center ">
                     <h1 className='font-extrabold text-4xl text-white'>Consultancy</h1>
                 </div>
                 <div className="text-center p-14 space-y-5">
@@ -250,6 +252,7 @@ function MyComponent() {
             </div>
             <div className="w-screen  bg-pink-200">
                 <Footer />
+                <SmallNavBar />
             </div>            
         </div>      
     );

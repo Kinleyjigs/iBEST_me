@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
                     </Avatar>
                 </Link>
                 </div>
-                <h1 className="text-white mt-2 ml-28">iBest Institute and Technology</h1>
+                <h1 className="text-white mt-2 ml-28">iBest Institute and Consultancy</h1>
 
                 <div className="flex mt-14 ml-28 space-x-4">
                     {/* Instagram */}
@@ -86,7 +86,7 @@ const Footer: React.FC = () => {
                         <a href="/aboutUs">ABOUT US</a>
                     </h1>
                     <h2 className="hover:text-gray-400">
-                        <Link href="#vission">Vision</Link>
+                        <Link href="#vision">Vision</Link>
                     </h2>
                     <h3 className="hover:text-gray-400">
                         <Link href="#values"> Purpose & Values</Link>

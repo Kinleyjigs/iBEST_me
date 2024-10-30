@@ -13,7 +13,8 @@ const Statistics: React.FC = () => {
     }, []); // Empty dependency array ensures this runs once on mount
 
     return (
-        <div className="w-screen flex flex-col items-center pt-20">
+        
+        <div className=" aboulute flex-col">
             <div className="text-black text-4xl font-semibold text-center mb-8">
                 Statistics
             </div>
