@@ -50,7 +50,7 @@ function MyComponent() {
 
     return (
         <div className="">
-            <div className="hidden sm:block">
+            <div className="hidden sm:block pt-6">
                 <NavBar />
             </div>
             <div className="flex flex-col items-center mt-4">
