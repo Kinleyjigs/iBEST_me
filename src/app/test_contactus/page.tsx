@@ -53,11 +53,12 @@ function MyComponent() {
             <div className="hidden sm:block">
                 <NavBar />
             </div>
-        <div className="grid sm:grid-cols-2 items-start gap-16 p-4 mx-auto max-w-4xl bg-white font-[sans-serif]">
-            <div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center mt-4">
                 <h1 className="text-gray-800 text-3xl font-extrabold">Contact Us</h1>
             </div>
+        <div className="grid sm:grid-cols-2 items-start gap-16 p-4 mx-auto max-w-4xl bg-white font-[sans-serif]">
+            <div>
+
 
             <div className="mt-8">
                     <h1 className="text-gray-800 text-base font-bold">Address</h1>
@@ -138,7 +139,7 @@ function MyComponent() {
 
             </div>
             
-            <form onSubmit={handleSubmit}  className="space-y-4 mt-16">
+            <form onSubmit={handleSubmit}  className="space-y-4 mt-8">
             <div className="text-gray-800 text-base font-bold">Message Us </div>
             
                         <Input
@@ -204,7 +205,6 @@ function MyComponent() {
 
         <SmallNavBar />
         <Footer />
-
 
         </div>
         

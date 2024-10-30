@@ -12,7 +12,7 @@ import { TbSpeakerphone } from "react-icons/tb";
 import { LiaChalkboardTeacherSolid } from "react-icons/lia";
 import { GrMultimedia } from "react-icons/gr";
 import { MdDeveloperMode } from "react-icons/md";
-import Footer from "../../src/reusable_components/footer/page";
+import Footer from "../reusable_components/test_footer/page"
 import NavigationBar from "@/reusable_components/nav_bar/page"
 import Logo from "../images/Website Pictures/logo.jpg"
 import Statistics from "../reusable_components/statistics/page"

@@ -14,14 +14,14 @@ import Link from "next/link";
 const Footer: React.FC = () => {
     return (
         <footer className="bg-sky-950 from-gray-900 via-gray-700 to-gray-900  py-14 px-16 font-sans tracking-wide relative">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         <div>
-          <h2 className="text-white text-lg font-semibold mb-4 hover:text-gray-400">
-          <a href="/">HOME</a>
-          </h2>
-          <ul className="space-y-4">
-            <li>
-              <a href="#mission" className="text-white hover:text-gray-400  text-sm transition-all hover:text-gray-400">Mission</a>
+            <h2 className="text-white text-lg font-semibold mb-4 hover:text-gray-400">
+            <a href="/">HOME</a>
+            </h2>
+            <ul className="space-y-4">
+                <li>
+            <a href="#mission" className="text-white hover:text-gray-400  text-sm transition-all hover:text-gray-400">Mission</a>
             </li>
             <li>
               <a href="#experties" className="text-white hover:text-gray-400  text-sm transition-all">Competencies</a>
@@ -80,7 +80,6 @@ const Footer: React.FC = () => {
             </li>
           </ul>
         </div>
-
 
     </div>
 

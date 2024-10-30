@@ -7,7 +7,7 @@ import { LuPhoneCall } from "react-icons/lu";
 import { CgMail } from "react-icons/cg";
 import { GrLocation } from "react-icons/gr";
 import dynamic from 'next/dynamic';
-import Footer from "../../reusable_components/footer/page";
+import Footer from "../../reusable_components/test_footer/page"
 import SmallNavBar from "../../reusable_components/small_navbar/page";
 
 const ReCAPTCHA = dynamic(() => import('react-google-recaptcha'), { ssr: false });
