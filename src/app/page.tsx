@@ -46,7 +46,7 @@ export default function Home() {
               <h1 className="text-center text-3xl	font-semibold text-white animate-slideLeft"> Bhutan and beyond”</h1>  
           </div>
         </div>
-        <div className="w-full h-2/4">
+        <div className="w-full h-2/4 ">
           <div className="w-full h-1/6 flex items-center justify-center">
             <h1 className="text-2xl font-semibold pt-5">Certified Training Institute Registered with </h1>
           </div>
@@ -214,13 +214,13 @@ export default function Home() {
           <div className="h-full w-1/5"></div>
         </div>
       </div>
-      <div className="w-screen h-screen flex flex-row justify-center">
+      <div className="w-screen h-screen flex flex-row bg-green-100 justify-center">
         <div id="testimonials" className="h-full w-5/12 flex items-center justify-center flex-col pt-20">
           <div className="w-10/12 h-2/6 bg-bblue	stroke-[#E8E3E3] flex items-center justify-center flex-col rounded-md animate-slideRight">
             <h1 className="text-2xl font-semibold pb-5">Did you know ?</h1>
             <p className="pb-5">iBEST INSTITUTE is a Registered Training <br /> Service Provider under</p>
               <ul className={"list-disc list-inside  pb-5"}>
-                  <li>Department of Occupational Standards</li>
+                  <li className="te">Department of Occupational Standards</li>
                   <li>Ministry of Labor and Human Resources</li>
                   <li>Royal Government of Bhutan.</li>
               </ul>
@@ -288,12 +288,10 @@ export default function Home() {
         </div>
         
       </div>
-      
-      
-              <Statistics />
-      
-
-      <Footer />
+      <div className="w-screen h-screen flex flex-col bg-red-100 justify-center">
+        <Statistics />
+        <Footer />
+      </div>
     </div>
     
   );

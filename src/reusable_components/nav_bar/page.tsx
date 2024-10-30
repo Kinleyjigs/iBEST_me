@@ -31,9 +31,9 @@ const components: { title: string; href: string; description: string }[] = [
 
 const NavigationBar = () => {
   return (
-    <Headroom>
+    <Headroom >
       {/* Sticky Navigation */}
-      <div className="fixed top-0 left-0 w-full h-24 bg-white backdrop-blur-md z-50 shadow-md">
+      <div className="fixed top-0 left-0 w-screen md:w-screen h-24 bg-white backdrop-blur-md z-50 shadow-md">
         <div className="flex flex-row h-full w-full">
           {/* Left side logo */}
           <div className="h-full w-1/6 flex items-center justify-center">
@@ -48,7 +48,7 @@ const NavigationBar = () => {
           </div>
           {/* Center title */}
           <div className="h-full w-2/6 flex items-center ">
-            <h1 className="text-black text-left">Get skilled today for a bright future!</h1>
+            <h1 className="text-black text-left md:text-sm lg:text-lg">Get skilled today for a bright future!</h1>
 
           </div>
           {/* Right side navigation */}
