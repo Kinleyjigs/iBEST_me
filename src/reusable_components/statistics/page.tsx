@@ -22,9 +22,9 @@ const Statistics: React.FC = () => {
                         <div className="w-12 h-12 md:w-20 md:h-20">
                             <img src={Employee.src} alt="Employee" />
                         </div>
-                        <p className="text-base md:text-xl pt-2 text-gray-600">Employee</p>
+                        <p className="text-base md:text-xl pt-3 text-gray-600">Employee</p>
                         <div className="flex items-baseline">
-                            <span className="text-3xl font-extrabold text-blue-600 pt-10 lg:pt-">
+                            <span className="text-3xl font-extrabold text-blue-600 pt-10 md:pt-12 lg:pt-5">
                                 <CountUp 
                                     start={10} // Starting count
                                     end={100} // Ending count
