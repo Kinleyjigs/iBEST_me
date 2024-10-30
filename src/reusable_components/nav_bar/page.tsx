@@ -37,14 +37,13 @@ const NavigationBar = () => {
         <div className="flex flex-row h-full w-full">
           {/* Left side logo */}
           <div className="h-full w-1/6 flex items-center justify-center">
-            <div className="w-20 h-20 bg-red-400 rounded-full">
+          
             <Link href="/">
-              <Avatar className="w-20 h-20 border-current">
+              <Avatar className="bg-red-400 rounded-full border-current w-20 h-20 md:w-16 md:h-16">
               <AvatarImage src={Logo.src} alt="@shadcn" />  
               </Avatar>
-              </Link>
+            </Link>
       
-            </div>
           </div>
           {/* Center title */}
           <div className="h-full w-2/6 flex items-center ">
@@ -107,6 +106,16 @@ const NavigationBar = () => {
 }
 
 export default NavigationBar;
+
+
+
+
+
+
+
+
+
+
 
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,

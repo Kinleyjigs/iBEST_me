@@ -1,6 +1,7 @@
 "use client"
 
 import * as React from "react"
+
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { MdOutlineBusinessCenter } from "react-icons/md";
 import { TbMoneybag } from "react-icons/tb";
@@ -15,6 +16,7 @@ import Footer from "../../src/reusable_components/footer/page";
 import NavigationBar from "@/reusable_components/nav_bar/page"
 import Logo from "../images/Website Pictures/logo.jpg"
 import Statistics from "../reusable_components/statistics/page"
+import SmallNavBar from "../reusable_components/small_navbar/page";
 import {
   Carousel,
   CarouselContent,
@@ -230,7 +232,7 @@ export default function Home() {
           </div>
           <h1 className="pt-20 font-semibold text-2xl">Testimonials</h1>
           <div className="w-full h-2/4 ">
-          <Carousel className="w-full pt-8">
+          <Carousel className="w-full pt-8 ">
             <CarouselContent>
               {Array.from({ length: 3 }).map((_, index) => (
                 <CarouselItem key={index}>
