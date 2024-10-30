@@ -50,7 +50,7 @@ function MyComponent() {
 
     return (
         <div className="">
-            <div className="hidden sm:block">
+            <div className="hidden sm:block pt-6">
                 <NavBar />
             </div>
         <div className="grid sm:grid-cols-2 items-start gap-16 p-4 mx-auto max-w-4xl bg-white font-[sans-serif]">
