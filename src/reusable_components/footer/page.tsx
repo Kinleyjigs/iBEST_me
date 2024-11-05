@@ -13,20 +13,91 @@ import Link from "next/link";
 
 const Footer: React.FC = () => {
     return (
-        <div className="relative w-screen h-80 bg-sky-950 mt-20">
-            <div className="absolute top-10">
-                <div className="ml-48">
-                <Link href="/">
-                    <Avatar className="w-16 h-16">
-                    <AvatarImage src={Logo.src} alt="@shadcn" />  
-                    </Avatar>
-                </Link>
-                </div>
-                <h1 className="text-white mt-2 ml-28">iBest Institute and Consultancy</h1>
+        <footer className="bg-sky-950 from-gray-900 via-gray-700 to-gray-900  py-14 px-16 font-sans tracking-wide relative">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div>
+            <h2 className="text-white text-lg font-semibold mb-2 hover:text-gray-400">
+            <a href="/">HOME</a>
+            </h2>
+            <ul className="space-y-2">
+                <li>
+            <a href="#mission" className="text-white hover:text-gray-400  text-sm transition-all hover:text-gray-400">Mission</a>
+            </li>
+            <li>
+              <a href="#experties" className="text-white hover:text-gray-400  text-sm transition-all">Competencies</a>
+            </li>
+            <li>
+              <a href="#testimonials" className="text-white hover:text-gray-400  text-sm transition-all">Testimonials</a>
+            </li>
+          </ul>
+        </div>
 
-                <div className="flex mt-14 ml-28 space-x-4">
-                    {/* Instagram */}
-                    <a href="https://www.instagram.com/ibest_institute/" target="_blank" rel="noopener noreferrer">
+        <div>
+          <h2 className="text-white text-lg font-semibold mb-2 hover:text-gray-400">
+          <a href="/courses">SERVICES</a>
+          </h2>
+          <ul className="space-y-2">
+            <li>
+              <a href="/courses" className="text-white hover:text-gray-400  text-sm transition-all">Courses</a>
+            </li>
+            <li>
+              <a href="/consultancy" className="text-white hover:text-gray-400  text-sm transition-all">Consultancy</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 className="text-white text-lg font-semibold mb-2 hover:text-gray-400">
+          <a href="/aboutUs">ABOUT US</a>
+          </h2>
+          <ul className="space-y-2">
+            <li>
+              <a href="#vision" className="text-white hover:text-gray-400 text-sm transition-all">Vision</a>
+            </li>
+            <li>
+              <a href="#values" className="text-white hover:text-gray-400  text-sm transition-all">Purpose & Values</a>
+            </li>
+            <li>
+              <a href="#Objectives" className="text-white hover:text-gray-400  text-sm transition-all">Objectives</a>
+            </li>
+            <li>
+              <a href="#Team" className="text-white hover:text-gray-400  text-sm transition-all">Team</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 className="text-white text-lg font-semibold mb-2">Other iBest Websites</h2>
+          <ul className="space-y-2 hover:text-gray-400">
+            <li>
+              <a href="https://www.ibestbhutan.com/" className="text-white hover:text-gray-400  text-sm transition-all">iBest Bhutan</a>
+            </li>
+            <li>
+              <a href="https://ibesttechnologies.bt/" className="text-white hover:text-gray-400  text-sm transition-all">iBest Techologies</a>
+            </li>
+            <li>
+              <a href="https://www.ibeststudios.com/" className="text-white hover:text-gray-400  text-sm transition-all">iBest Studios</a>
+            </li>
+          </ul>
+        </div>
+
+    </div>
+
+    <div className="flex items-center mt-4">
+        <Link href="/">
+            <Avatar className="w-16 h-16">
+            <AvatarImage src={Logo.src} alt="@shadcn" />  
+            </Avatar>
+        </Link>
+        <h1 className="text-white ml-4">iBest Institute and Consultancy</h1>
+    </div>
+
+      <hr className="my-8 border-gray-600" />
+
+      <div className="flex sm:justify-between flex-wrap gap-6">
+        <div className="flex space-x-5">
+          {/* Instagram */}
+          <a href="https://www.instagram.com/ibest_institute/" target="_blank" rel="noopener noreferrer">
                     <div className="group">
                         <img src={Insta1.src} alt="Instagram" className="w-8 h-8 group-hover:hidden" />
                         <img src={Insta.src} alt="Instagram Hover" className="w-8 h-8 hidden group-hover:block" />
@@ -51,69 +122,14 @@ const Footer: React.FC = () => {
                     <div className="group">
                         <img src={Linkedin1.src} alt="LinkedIn" className="w-8 h-8 group-hover:hidden" />
                         <img src={Linkedin.src} alt="LinkedIn Hover" className="w-8 h-8 hidden group-hover:block" />
-                    </div> 
-                    </a> 
-                </div>
-            </div>
-            <div className="flex justify-start ml-10 gap-x-14 text-white absolute top-14 left-96"> {/* Flexbox for alignment, ml for left margin, gap for spacing */}
-                <div>
-                    <h1 className="font-black hover:text-gray-400">
-                        <a href="/">HOME</a>
-                    </h1>
-                    <h2 className="hover:text-gray-400">
-                        <Link href="#mission">Mission</Link>
-                    </h2>
-                    <h3 className="hover:text-gray-400">
-                        <Link href="#experties">Competencies</Link>
-                    </h3>
-                    <h4 className="hover:text-gray-400">
-                        <Link href="#testimonials">Testimonials</Link>
-                    </h4> 
-                </div>
-                <div>
-                    <h1 className="font-black hover:text-gray-400">
-                        <a href="/courses">SERVICES</a>
-                    </h1>
-                    <h2 className="hover:text-gray-400">
-                        <a href="/courses">Courses</a>
-                    </h2>
-                    <h3 className="hover:text-gray-400">
-                        <a href="/consultancy">Consultancy</a>
-                    </h3> 
-                </div>
-                <div>
-                    <h1 className="font-black hover:text-gray-400">
-                        <a href="/aboutUs">ABOUT US</a>
-                    </h1>
-                    <h2 className="hover:text-gray-400">
-                        <Link href="#vision">Vision</Link>
-                    </h2>
-                    <h3 className="hover:text-gray-400">
-                        <Link href="#values"> Purpose & Values</Link>
-                    </h3>
-                    <h4 className="hover:text-gray-400">
-                        <Link href="#Objectives">Objectives</Link>
-                    </h4> 
-                    <h5 className="hover:text-gray-400">
-                        <Link href="#Team">Team</Link>
-                    </h5>
-                </div>
-                <div >
-                    <h1 className="font-black">Other iBest Websites</h1>
-                    <h2 className="hover:text-gray-400">
-                        <a href="https://www.ibestbhutan.com/">iBest Bhutan</a>
-                    </h2>
-                    <h3 className="hover:text-gray-400">
-                        <a href="https://ibesttechnologies.bt/">iBest Techologies</a>
-                    </h3>
-                    <h4 className="hover:text-gray-400">
-                        <a href="https://www.ibeststudios.com/">iBest Studios</a></h4> 
-                </div>
-            </div>
-            <div className="absolute bottom-0 w-full text-center text-white pb-4">
-                Copyright © iBEST Institute & Consultancy 2024
-            </div>
-    </div>
+                    </div>
+                    </a>
+        </div>
+
+        <p className='text-white text-sm'>Copyright © iBEST Institute & Consultancy 2024
+        </p>
+      </div>
+    </footer>
     );
 };
 
