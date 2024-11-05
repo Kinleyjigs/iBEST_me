@@ -44,7 +44,7 @@ function MyComponent() {
                 </div>
             </div>
             <div className="w-screen h-screen flex items-center justify-center flex-col">
-                <div className="w-3/5 h-full flex items-center justify-center flex-col">
+                <div className="w-3/5 h-full bg-green-50 flex items-center justify-center flex-col">
                     <div className='space-y-5 flex items-center justify-center flex-col'>
                         
                         <h1>With the increasing economic activities in the country, and most youth joining the workforce, the need to guide and assist young entrepreneurs and small business establishment is becoming a necessity!</h1>
