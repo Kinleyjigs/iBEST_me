@@ -3,6 +3,9 @@
 import NavigationBar from "@/reusable_components/nav_bar/page"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import Logo from "../../images/Website Pictures/logo.jpg"
+import Footer from "../../reusable_components/footer/page"
+import SmallNavBar from "../../reusable_components/small_navbar/page";
+import NavBar from '../../reusable_components/nav_bar/page'; 
 import {
     Carousel,
     CarouselContent,
@@ -18,9 +21,12 @@ import Statistics from "@/reusable_components/statistics/page"
 
 export default function Home() {
     return (
+
         <div className="bg-white">
             <div className="w-screen h-screen flex flex-col">
-                <NavigationBar/>
+            <div className="hidden sm:block">
+                <NavBar />
+            </div>
                 {/* <Header></Header> */}
                 <div className="w-screen h-2/5 flex flex-col items-center justify-center  md:h-2/5 lg:h-2/4 bg-[url('./images/building.jpg')] lg:bg-cover  bg-cover">
                     <div className="w-32 h-32">
@@ -174,6 +180,9 @@ export default function Home() {
                 <div className="w-screen h-1/6 "></div>
                 <Statistics />
             </div>
+            <Footer/>
+            <SmallNavBar/>
         </div>  
     )
 }
+

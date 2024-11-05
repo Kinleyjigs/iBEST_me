@@ -3,7 +3,7 @@
 import React from 'react';
 import NavBar from '../../reusable_components/nav_bar/page'; 
 import { Button } from "@/components/ui/button"
-import Footer from "../../reusable_components/test_footer/page"
+import Footer from "../../reusable_components/footer/page"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import logo from "../images/logo1.jpg"
 import SmallNavBar from "../../reusable_components/small_navbar/page";

@@ -82,7 +82,7 @@ const SmallNavBar = () => {
                 </Link>
 
                 {/* CONTACT US */}
-                <Link href="/test_contactus" legacyBehavior passHref>
+                <Link href="/contactus" legacyBehavior passHref>
                     <div className="group" onClick={() => handleLinkClick('/test_contactus')}>
                         <img src={activePage === '/test_contactus' ? Contactus2.src : Contactus.src} alt="Contact Us" className="w-10 h-10" />
                     </div>

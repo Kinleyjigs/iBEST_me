@@ -2,7 +2,7 @@
 import React from 'react';
 import NavBar from '../../reusable_components/nav_bar/page'; 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import Footer from "../../reusable_components/test_footer/page"
+import Footer from "../../reusable_components/footer/page"
 import Team from "../../reusable_components/team/page"
 import Purpose from "../../reusable_components/purpose&value/page"
 import SmallNavBar from "../../reusable_components/small_navbar/page";

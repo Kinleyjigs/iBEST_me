@@ -47,6 +47,14 @@ const config: Config = {
 					"100%": { transform: "translateX(calc(-192px * 8))" },
 				},
 			},
+			height: {
+				'128': '32rem',
+				'192': '48rem', 
+				'256': '64rem', 
+			},
+			boxShadow: {
+				'top': '0 -4px 5px rgba(0, 0, 0, 0.25)',
+			},
 			
 			animation: {
 				slideRight: "slideRight 1s ease-in-out",
@@ -158,6 +166,9 @@ const config: Config = {
 				lg: "var(--radius)",
 				md: "calc(var(--radius) - 2px)",
 				sm: "calc(var(--radius) - 4px)",
+				'6xl': '3rem',
+				'8xl': '4rem',
+				'10xl': '5rem',
 			},
 		},
 	},

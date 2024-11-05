@@ -10,21 +10,22 @@ const Statistics: React.FC = () => {
     // Start counting when the component mounts
     useEffect(() => {
         setStartCount(true);
-    }, []); // Empty dependency array ensures this runs once on mount
+    }, []); 
 
     return (
-        <div className="w-screen h-1/3 flex flex-col items-center  pt-20">
-            <div className="flex justify-center w-2/3 ">
-                {/* Statistics Section */}
-                <div className="w-11/12 flex justify-center items-center space-x-10">
-                    {/* Employee Statistic */}
-                    <div className="flex flex-col w-1/3 items-center space-y-4 h-full">
-                        <div className="w-12 h-12 md:w-20 md:h-20">
-                            <img src={Employee.src} alt="Employee" />
-                        </div>
-                        <p className="text-base md:text-xl pt-3 text-gray-600">Employee</p>
-                        <div className="flex items-baseline">
-                            <span className="text-3xl font-extrabold text-blue-600 pt-10 md:pt-12 lg:pt-5">
+        <div className="flex items-center justify-center mt-24 ">
+        {/* Outer container */}
+        <div className="flex w-full max-w-md p-4 bg-white rounded-lg shadow-2xl border">
+          {/* Three inner boxes in row */}
+          <div className="flex flex-row w-full justify-between gap-1 md:gap-3 lg:gap-5">
+
+  {/* BOX 1 */}
+  <div className="flex-1 h-36 border rounded-md flex items-center justify-center">
+    <div className="flex flex-col items-center"> 
+      <img src={Employee.src} alt="Employee" className="w-10 h-10 mb-1" /> 
+      <h1 className="text-black text-lg">Employee</h1>
+        <div className="flex items-baseline">
+                            <span className="text-3xl font-extrabold text-black pt-2 md:pt-2 lg:pt-2">
                                 <CountUp 
                                     start={10} // Starting count
                                     end={100} // Ending count
@@ -33,37 +34,40 @@ const Statistics: React.FC = () => {
                                     style={{ width: '60px', display: 'inline-block' }}
                                 />
                             </span>
-                            <span className="text-3xl font-extrabold text-blue-600 ml-1">+</span>
-                        </div>
-                    </div>
-                    {/* Services Provided Statistic */}
-                    <div className="flex flex-col items-center w-1/3 space-y-4 h-full">
-                        <div className="w-12 h-12 md:w-20 md:h-20">
-                            <img src={Services.src} alt="Services Provided" />
-                        </div>
-                        <p className="text-base md:text-xl text-gray-600">Services Provided</p>
-                        <div className="flex items-baseline">
-                            <span className="text-3xl font-extrabold text-blue-600 pt-6">
-                                <CountUp 
-                                    start={10} 
-                                    end={100} 
-                                    duration={5} 
-                                    delay={0} 
-                                    style={{ width: '60px', display: 'inline-block' }}
-                                />
-                            </span>
-                            <span className="text-3xl font-extrabold text-blue-600">+</span>
-                        </div>
-                    </div>
+        <span className="text-3xl font-extrabold text-black">+</span>
+    </div>
 
-                    {/* Client Satisfaction Rate Statistic */}
-                    <div className="flex flex-col w-1/3 h-full items-center  space-y-4">
-                        <div className="w-12 h-12 md:w-20 md:h-20">
-                            <img src={Rate.src} alt="Client Satisfaction Rate" />
-                        </div>
-                        <p className="text- md:text-xl text-gray-600 align-middle">Client Satisfaction Rate</p>
-                        <div className="flex items-baseline">
-                            <span className="text-3xl font-extrabold text-blue-600 mb-7 lg:pt-5">
+    </div>
+  </div>
+
+
+  {/* BOX 2 */}
+  <div className="flex-1 h-36 border rounded-md flex items-center justify-center">
+    <div className="flex flex-col items-center">
+      <img src={Services.src} alt="Services" className="w-10 h-10 mb-1" />
+      <h1 className="text-black text-lg">Services</h1> 
+      <div className="flex items-baseline">
+                            <span className="text-3xl font-extrabold text-black pt-2 md:pt-2 lg:pt-2">
+                                <CountUp 
+                                    start={10} // Starting count
+                                    end={100} // Ending count
+                                    duration={5} 
+                                    delay={0} 
+                                    style={{ width: '60px', display: 'inline-block' }}
+                                />
+                            </span>
+                            <span className="text-3xl font-extrabold text-black">+</span>
+    </div>
+
+    </div>
+    </div>
+    {/* BOX 3 */}
+    <div className="flex-1 h-36 border rounded-md flex items-center justify-center">
+    <div className="flex flex-col items-center">
+        <img src={Rate.src} alt="Rate" className="w-10 h-10 mb-1" />
+        <h1 className="text-black text-lg">Rate</h1>
+        <div className="flex items-baseline">
+                            <span className="text-3xl font-extrabold text-black pt-2 md:pt-2 lg:pt-2">
                                 <CountUp 
                                     start={10} 
                                     end={100} 
@@ -72,13 +76,18 @@ const Statistics: React.FC = () => {
                                     style={{ width: '60px', display: 'inline-block' }}
                                 />
                             </span>
-                            <span className="text-3xl font-extrabold text-blue-600 ml-1">%</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                            <span className="text-3xl font-extrabold text-black">+</span>
         </div>
+
+    </div>
+</div>
+</div>
+
+          </div>
+        </div>
+
     );
 }
 
 export default Statistics;
+

@@ -24,7 +24,7 @@ import {
     ResizablePanel,
     ResizablePanelGroup,
 } from "@/components/ui/resizable"
-import Footer from "../../reusable_components/test_footer/page"
+import Footer from "../../reusable_components/footer/page"
 
 function MyComponent() {
     return (
