@@ -67,16 +67,16 @@ const Footer: React.FC = () => {
         </div>
 
         <div>
-          <h2 className="text-white text-lg font-semibold mb-2">Other iBest Websites</h2>
+          <h2 className="text-white text-lg font-semibold mb-2">Other iBEST Websites</h2>
           <ul className="space-y-2 hover:text-gray-400">
             <li>
-              <a href="https://www.ibestbhutan.com/" className="text-white hover:text-gray-400  text-sm transition-all">iBest Bhutan</a>
+              <a href="https://www.ibestbhutan.com/" className="text-white hover:text-gray-400  text-sm transition-all">iBEST Bhutan</a>
             </li>
             <li>
-              <a href="https://ibesttechnologies.bt/" className="text-white hover:text-gray-400  text-sm transition-all">iBest Techologies</a>
+              <a href="https://ibesttechnologies.bt/" className="text-white hover:text-gray-400  text-sm transition-all">iBEST Techologies</a>
             </li>
             <li>
-              <a href="https://www.ibeststudios.com/" className="text-white hover:text-gray-400  text-sm transition-all">iBest Studios</a>
+              <a href="https://www.ibeststudios.com/" className="text-white hover:text-gray-400  text-sm transition-all">iBEST Studios</a>
             </li>
           </ul>
         </div>
@@ -89,7 +89,7 @@ const Footer: React.FC = () => {
             <AvatarImage src={Logo.src} alt="@shadcn" />  
             </Avatar>
         </Link>
-        <h1 className="text-white ml-4">iBest Institute and Consultancy</h1>
+        <h1 className="text-white ml-4">iBEST Institute and Consultancy</h1>
     </div>
 
       <hr className="my-8 border-gray-600" />

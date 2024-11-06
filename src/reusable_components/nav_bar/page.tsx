@@ -107,16 +107,6 @@ const NavigationBar = () => {
 
 export default NavigationBar;
 
-
-
-
-
-
-
-
-
-
-
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
   React.ComponentPropsWithoutRef<"a">

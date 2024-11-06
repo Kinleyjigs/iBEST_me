@@ -12,21 +12,19 @@ import Aboutus from "../../images/navbar/aboutus.png";
 import Aboutus2 from "../../images/navbar/aboutus2.png";
 import Contactus from "../../images/navbar/contactus.png";
 import Contactus2 from "../../images/navbar/contactus2.png";
+import { usePathname } from "next/navigation";
 
 const SmallNavBar = () => {
     const [isVisible, setIsVisible] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
-    const [activePage, setActivePage] = useState('/'); // Track active page
+    const pathname = usePathname();
 
     const controlNavBar = () => {
         if (typeof window !== "undefined") {
             const currentScrollY = window.scrollY;
-
             if (currentScrollY > lastScrollY) {
-                // Scrolling down
                 setIsVisible(false);
             } else {
-                // Scrolling up
                 setIsVisible(true);
             }
             setLastScrollY(currentScrollY);
@@ -40,10 +38,7 @@ const SmallNavBar = () => {
         };
     }, [lastScrollY]);
 
-    // Function to handle link click and set active page
-    const handleLinkClick = (page: React.SetStateAction<string>) => {
-        setActivePage(page);
-    };
+    const isActive = (path: string) => pathname === path;
 
     return (
         <div
@@ -51,40 +46,59 @@ const SmallNavBar = () => {
                 isVisible ? "translate-y-0" : "translate-y-full"
             }`}
         >
-            {/* Navbar content */}
             <div className="flex justify-around items-center w-full h-full">
                 {/* HOME */}
-                <Link href="/" legacyBehavior passHref>
-                    <div className="group" onClick={() => handleLinkClick('/')}>
-                        <img src={activePage === '/' ? Home2.src : Home.src} alt="Home" className="w-10 h-10" />
+                <Link href="/" passHref>
+                    <div className="group">
+                        <img
+                            src={isActive("/") ? Home2.src : Home.src}
+                            alt="Home"
+                            className="w-10 h-10"
+                        />
                     </div>
                 </Link>
 
                 {/* COURSES */}
-                <Link href="/courses" legacyBehavior passHref>
-                    <div className="group" onClick={() => handleLinkClick('/courses')}>
-                        <img src={activePage === '/courses' ? Courses2.src : Courses.src} alt="Courses" className="w-10 h-10" />
+                <Link href="/courses" passHref>
+                    <div className="group">
+                        <img
+                            src={isActive("/courses") ? Courses2.src : Courses.src}
+                            alt="Courses"
+                            className="w-10 h-10"
+                        />
                     </div>
                 </Link>
 
                 {/* CONSULTANCY */}
-                <Link href="/consultancy" legacyBehavior passHref>
-                    <div className="group" onClick={() => handleLinkClick('/consultancy')}>
-                        <img src={activePage === '/consultancy' ? Consultancy2.src : Consultancy.src} alt="Consultancy" className="w-10 h-10" />
+                <Link href="/consultancy" passHref>
+                    <div className="group">
+                        <img
+                            src={isActive("/consultancy") ? Consultancy2.src : Consultancy.src}
+                            alt="Consultancy"
+                            className="w-10 h-10"
+                        />
                     </div>
                 </Link>
 
                 {/* ABOUT US */}
-                <Link href="/aboutUs" legacyBehavior passHref>
-                    <div className="group" onClick={() => handleLinkClick('/aboutUs')}>
-                        <img src={activePage === '/aboutUs' ? Aboutus2.src : Aboutus.src} alt="About Us" className="w-10 h-10" />
+                <Link href="/aboutUs" passHref>
+                    <div className="group">
+                        <img
+                            src={isActive("/aboutUs") ? Aboutus2.src : Aboutus.src}
+                            alt="About Us"
+                            className="w-10 h-10"
+                        />
                     </div>
                 </Link>
 
                 {/* CONTACT US */}
-                <Link href="/contactus" legacyBehavior passHref>
-                    <div className="group" onClick={() => handleLinkClick('/test_contactus')}>
-                        <img src={activePage === '/test_contactus' ? Contactus2.src : Contactus.src} alt="Contact Us" className="w-10 h-10" />
+                <Link href="/contactus" passHref>
+                    <div className="group">
+                        <img
+                            src={isActive("/contactus") ? Contactus2.src : Contactus.src}
+                            alt="Contact Us"
+                            className="w-10 h-10"
+                        />
                     </div>
                 </Link>
             </div>

@@ -17,10 +17,10 @@ const Statistics: React.FC = () => {
         {/* Outer container */}
         <div className="flex w-full max-w-md p-4 bg-white rounded-lg shadow-2xl border">
           {/* Three inner boxes in row */}
-          <div className="flex flex-row w-full justify-between gap-1 md:gap-3 lg:gap-5">
+        <div className="flex flex-row w-full justify-between gap-1 md:gap-3 lg:gap-5">
 
   {/* BOX 1 */}
-  <div className="flex-1 h-36 border rounded-md flex items-center justify-center">
+<div className="flex-1 h-36 border rounded-md flex items-center justify-center">
     <div className="flex flex-col items-center"> 
       <img src={Employee.src} alt="Employee" className="w-10 h-10 mb-1" /> 
       <h1 className="text-black text-lg">Employee</h1>
