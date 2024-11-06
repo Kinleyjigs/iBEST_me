@@ -73,7 +73,7 @@ export default function TestPage(){
                         <div className=" w-full md:w-4/6 lg:w-11/12 h-full bg-gray-100 rounded-lg  md:p-4 lg:p-6 space-y-1 md:space-y-3 lg:space-y-5 lg:h-3/5">
                             <h1 className="font-extrabold text-sm sm:text-lg md:text-4xl mdx:text-5xl text-indigo-700 pl-2 lg:text-3xl">Life Skills Courses</h1>
                             <p className="font-medium text-xs sm:text-lg md:text-xl mdx:text-4xl lg:text-lg pl-2 text-gray-700">What You'll Learn:</p>
-                            <ul className="list-none space-y-3 text-xs sm:text-base sm:space-y-0 md:text-lg mdx:text-3xl mdx:space-y-0 md:space-y-1 lg:space-y-4">
+                            <ul className="list-none space-y-3 text-xs sm:text-base sm:space-y-0 md:text-lg mdx:text-3xl mdx:space-y-0 md:space-y-1 lg:space-y-0 lg:text-lg ">
                                 <li className="flex items-start"><span className="text-indigo-600 mr-2">✔️</span><strong>Integrity:</strong> Uphold honesty and human values.</li>
                                 <li className="flex items-start"><span className="text-indigo-600 mr-2">✔️</span><strong>Boldness:</strong> Foster innovation and leadership.</li>
                                 <li className="flex items-start"><span className="text-indigo-600 mr-2">✔️</span><strong>Empathy:</strong> Build connections through understanding.</li>
@@ -97,10 +97,10 @@ export default function TestPage(){
                                 <h1 className="text-center text-xl md:text-2xl font-semibold text-gray-800">iBest Institute</h1>
                             </div>
                         </div>
-                        <div className="w-full md:w-4/6 lg:w-11/12 h-full bg-gray-100 rounded-lg  md:p-4 lg:p-6 space-y-2 sm:space-y-1 lg:space-y-5 lg:h-3/5">
+                        <div className="w-full md:w-4/6 lg:w-11/12 h-full bg-gray-100 rounded-lg  md:p-4 lg:p-6 space-y-2 sm:space-y-1 lg:space-y-0 lg:h-3/5">
                             <h1 className="font-extrabold text-sm sm:text-lg md:text-4xl mdx:text-5xl text-indigo-700 pl-2 lg:text-3xl">Leadership Courses</h1>
                             <p className="font-medium text-sm sm:text-lg md:text-xl mdx:text-4xl lg:text-lg pl-2 text-gray-700">What You'll Learn:</p>
-                            <ul className="list-none space-y-1 text-xs sm:text-base sm:space-y-0 md:text-base md:space-y-3 mdx:text-3xl mdx:space-y-1 lg:space-y-4">
+                            <ul className="list-none space-y-1 text-xs sm:text-base sm:space-y-0 md:text-base md:space-y-3 mdx:text-3xl mdx:space-y-1 lg:space-y-0 lg:text-lg ">
                                 <li className="flex items-start"><span className="text-indigo-600 mr-2">✔️</span><strong>Leadership Empowerment</strong>: Essential tools for leadership.</li>
                                 <li className="flex items-start"><span className="text-indigo-600 mr-2">✔️</span><strong>Soft Skills Development</strong>: Enhance professional growth.</li>
                                 <li className="flex items-start"><span className="text-indigo-600 mr-2">✔️</span><strong>Personality Benchmarks</strong>: Set standards for any career.</li>
@@ -126,10 +126,10 @@ export default function TestPage(){
                                 <h1 className="text-center text-xl md:text-2xl font-semibold text-gray-800">iBest Institute</h1>
                             </div>
                         </div>
-                        <div className="w-full md:w-4/6 lg:w-11/12 h-full bg-gray-100 rounded-lg  md:p-4 lg:p-6 space-y-1 mdx:space-y-0 sm:space-y-0 md:space-y-3 lg:space-y-5 lg:h-3/5">
+                        <div className="w-full md:w-4/6 lg:w-11/12 h-full bg-gray-100 rounded-lg  md:p-4 lg:p-6 space-y-1 mdx:space-y-0 sm:space-y-0 md:space-y-3 lg:space-y-3 lg:h-3/5">
                             <h1 className="font-extrabold text-sm sm:text-lg md:text-4xl text-indigo-700 mdx:text-4xl pl-2 lg:text-3xl">Management Courses</h1>
                             <p className="font-medium text-xs md:text-xl sm:text-lg lg:text-lg pl-2 text-gray-700 mdx:text-3xl">What You'll Learn:</p>
-                            <ul className="list-none space-y-1 sm:text-base sm:space-y-0 mdx:text-3xl mdx:space-y-0 text-xs md:text-lg md:space-y-1 lg:space-y-4">
+                            <ul className="list-none space-y-1 sm:text-base sm:space-y-0 mdx:text-3xl mdx:space-y-0 text-xs md:text-lg md:space-y-1 lg:space-y-0 lg:text-lg ">
                                 <li className="flex items-start"><span className="text-indigo-600 mr-2">✔️</span><strong>Management Package:</strong> Essential for decision-making roles.</li>
                                 <li className="flex items-start"><span className="text-indigo-600 mr-2">✔️</span><strong>Communication Skills:</strong> Master effective communication.</li>
                                 <li className="flex items-start"><span className="text-indigo-600 mr-2">✔️</span><strong>Planning & Organizing:</strong> Key strategies for efficiency.</li>
@@ -153,10 +153,10 @@ export default function TestPage(){
                                 <h1 className="text-center text-xl md:text-2xl font-semibold text-gray-800">iBest Institute</h1>
                             </div>
                         </div>
-                        <div className="w-ful md:w-4/6 lg:w-11/12 h-full bg-gray-100 rounded-lg  md:p-4 lg:p-6 space-y-2 lg:space-y-5 lg:h-3/5">
-                            <h1 className="font-extrabold text-sm sm:text-base md:text-4xl text-indigo-700 mdx:text-4xl pl-2 lg:text-3xl">Accounting and Financial Courses</h1>
-                            <p className="font-medium text-xs sm:text-base md:text-xl mdx:text-3xl lg:text-lg pl-2 text-gray-700">What You'll Learn:</p>
-                            <ul className="list-none space-y-1 sm:text-base mdx:text-2xl mdx:space-y-2 sm:space-y-0 text-xs md:text-base md:space-y-2 lg:space-y-4">
+                        <div className="w-ful md:w-4/6 lg:w-11/12 h-full bg-gray-100 rounded-lg  md:p-4 lg:p-6 space-y-2 lg:space-y-3 lg:h-3/5">
+                            <h1 className="font-extrabold text-sm sm:text-base md:text-4xl text-indigo-700 mdx:text-4xl pl-2 lg:text-2xl">Accounting and Financial Courses</h1>
+                            <p className="font-medium text-xs sm:text-base md:text-xl mdx:text-3xl lg:text-base pl-2 text-gray-700">What You'll Learn:</p>
+                            <ul className="list-none space-y-1 sm:text-base mdx:text-2xl mdx:space-y-2 sm:space-y-0 text-xs md:text-base md:space-y-2 lg:space-y-0 lg:text-base">
                                 <li className="flex items-start"><span className="text-indigo-600 mr-2">✔️</span><strong>Financial Management: </strong>Build confidence in management</li>
                                 <li className="flex items-start"><span className="text-indigo-600 mr-2">✔️</span><strong>Accounting Insights:</strong> Practical and theoretical concepts.</li>
                                 <li className="flex items-start"><span className="text-indigo-600 mr-2">✔️</span><strong>Active Learning:</strong> Engage for deeper understanding.</li>
@@ -182,10 +182,10 @@ export default function TestPage(){
                                 <h1 className="text-center text-xl md:text-2xl font-semibold text-gray-800">iBest Institute</h1>
                             </div>
                         </div>
-                        <div className="w-full md:w-4/6 lg:w-11/12 h-full bg-gray-100 rounded-lg  md:p-4 lg:p-6 space-y-1 md:space-y-3 lg:space-y-5 lg:h-3/5">
+                        <div className="w-full md:w-4/6 lg:w-11/12 h-full bg-gray-100 rounded-lg  md:p-4 lg:p-6 space-y-1 md:space-y-3 lg:space-y-3 lg:h-3/5">
                             <h1 className="font-extrabold text-sm sm:text-lg md:text-3xl text-indigo-700 mdx:text-5xl pl-2 lg:text-3xl">Entrepreneurship Courses</h1>
                             <p className="font-medium text-xs sm:text-lg md:text-xl lg:text-lg pl-2 text-gray-700 mdx:text-4xl">What You'll Learn:</p>
-                            <ul className="list-none space-y-1 sm:text-base sm:space-y-0 text-xs md:text-lg lg:space-y-4 mdx:text-2xl mdx:space-y-2">
+                            <ul className="list-none space-y-1 sm:text-base sm:space-y-0 text-xs md:text-lg mdx:text-2xl mdx:space-y-2 lg:text-lg lg:space-y-0">
                                 <li className="flex items-start"><span className="text-indigo-600 mr-2">✔️</span><strong>Entrepreneurial Concepts:</strong> Learn principles and skills.</li>
                                 <li className="flex items-start"><span className="text-indigo-600 mr-2">✔️</span><strong>Diverse Courses:</strong> Explore business real applications.</li>
                                 <li className="flex items-start"><span className="text-indigo-600 mr-2">✔️</span><strong>Empowered Decisions:</strong> Analyze marketing effectively.</li>
@@ -209,10 +209,10 @@ export default function TestPage(){
                                 <h1 className="text-center text-xl md:text-2xl font-semibold text-gray-800">iBest Institute</h1>
                             </div>
                         </div>
-                        <div className="w-full md:w-4/6 lg:w-11/12 h-full bg-gray-100 rounded-lg  md:p-4 lg:p-6 space-y-2 sm:space-y-0 lg:space-y-5 lg:h-3/5">
+                        <div className="w-full md:w-4/6 lg:w-11/12 h-full bg-gray-100 rounded-lg  md:p-4 lg:p-6 space-y-2 sm:space-y-0 lg:space-y-0 lg:h-3/5">
                             <h1 className="font-extrabold text-sm sm:text-lg md:text-4xl text-indigo-700 pl-2 lg:text-3xl mdx:text-5xl">Multimedia Courses</h1>
                             <p className="font-medium text-sm sm:text-lg md:text-xl lg:text-lg pl-2 mdx:text-3xl text-gray-700">What You'll Learn:</p>
-                            <ul className="list-none sm:text-base text-xs md:text-base md:space-y-1 mdx:text-3xl mdx:space-y-0 lg:space-y-4">
+                            <ul className="list-none sm:text-base text-xs md:text-base md:space-y-1 mdx:text-3xl mdx:space-y-0 lg:text-lg lg:space-y-0">
                                 <li className="flex items-start"><span className="text-indigo-600 mr-2">✔️</span><strong>Expert Learning:</strong> Learn from industry professionals.</li>
                                 <li className="flex items-start"><span className="text-indigo-600 mr-2">✔️</span><strong>Wide Course Range:</strong> Explore diverse multimedia solutions.</li>
                                 <li className="flex items-start"><span className="text-indigo-600 mr-2">✔️</span><strong>Hands-On Practice:</strong> Gain practical skills with equipment.</li>
@@ -238,10 +238,10 @@ export default function TestPage(){
                                 <h1 className="text-center text-xl md:text-2xl font-semibold text-gray-800">iBest Institute</h1>
                             </div>
                         </div>
-                        <div className="w-full md:w-4/6 lg:w-11/12 h-full bg-gray-100 rounded-lg  md:p-4 lg:p-6 space-y-1 md:space-y-3 lg:space-y-5 lg:h-3/5">
+                        <div className="w-full md:w-4/6 lg:w-11/12 h-full bg-gray-100 rounded-lg  md:p-4 lg:p-6 space-y-1 md:space-y-3 lg:space-y-2 lg:h-3/5">
                             <h1 className="font-extrabold text-sm sm:text-lg md:text-4xl text-indigo-700 pl-2 mdx:text-4xl lg:text-3xl">Film Studies Courses</h1>
                             <p className="font-medium text-xs sm:text-lg md:text-xl lg:text-lg pl-2 text-gray-700 mdx:text-3xl">What You'll Learn:</p>
-                            <ul className="list-none space-y-2 sm:text-base sm:space-y-0 text-xs md:text-lg md:space-y-1 lg:space-y-4 mdx:text-3xl">
+                            <ul className="list-none space-y-2 sm:text-base sm:space-y-0 text-xs md:text-lg md:space-y-1 lg:space-y-0 mdx:text-3xl lg:text-lg">
                                 <li className="flex items-start"><span className="text-indigo-600 mr-2">✔️</span><strong>Fundamentals:</strong> Basics of film and video production.</li>
                                 <li className="flex items-start"><span className="text-indigo-600 mr-2">✔️</span><strong>Theoretical & Practical:</strong> Theory meets hands-on learning.</li>
                                 <li className="flex items-start"><span className="text-indigo-600 mr-2">✔️</span><strong>Key Aspects:</strong> Essential filmmaking elements.</li>
@@ -265,10 +265,10 @@ export default function TestPage(){
                                 <h1 className="text-center text-xl md:text-2xl font-semibold text-gray-800">iBest Institute</h1>
                             </div>
                         </div>
-                        <div className="w-full md:w-4/6 lg:w-11/12 h-full bg-gray-100 rounded-lg  md:p-4 lg:p-6 space-y-2 lg:space-y-5 lg:h-3/5">
-                            <h1 className="font-extrabold text-sm sm:text-lg md:text-2xl text-indigo-700 pl-2 lg:text-3xl mdx:text-4xl">Technical and Engineering Courses</h1>
-                            <p className="font-medium text-sm sm:text-lg md:text-xl lg:text-lg pl-2 text-gray-700 mdx:text-4xl">What You'll Learn:</p>
-                            <ul className="list-none text-xs space-y-3 sm:text-sm sm:space-y-0 md:text-lg md:space-y-1 lg:space-y-4 mdx:text-3xl mdx:space-y-0">
+                        <div className="w-full md:w-4/6 lg:w-11/12 h-full bg-gray-100 rounded-lg  md:p-4 lg:p-6 space-y-2 lg:space-y-0 lg:h-3/5">
+                            <h1 className="font-extrabold text-sm sm:text-lg md:text-2xl text-indigo-700 pl-2 lg:text-xl mdx:text-4xl ">Technical and Engineering Courses</h1>
+                            <p className="font-medium text-sm sm:text-lg md:text-xl lg:text-base pl-2 text-gray-700 mdx:text-4xl">What You'll Learn:</p>
+                            <ul className="list-none text-xs space-y-3 sm:text-sm sm:space-y-0 md:text-lg md:space-y-1 lg:space-y-0 mdx:text-3xl mdx:space-y-0 lg:text-lg">
                                 <li className="flex items-start"><span className="text-indigo-600 mr-2">✔️</span><strong>Relevant Courses:</strong> Key areas in engineering field.</li>
                                 <li className="flex items-start"><span className="text-indigo-600 mr-2">✔️</span><strong>Operational Skills:</strong> Basic maintenance techniques.</li>
                                 <li className="flex items-start"><span className="text-indigo-600 mr-2">✔️</span><strong>Theoretical Knowledge:</strong> Concepts of tools and mechanics.</li>
@@ -279,11 +279,11 @@ export default function TestPage(){
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col items-center justify-center">
+            <div className="w-screen h-screen flex flex-col">
                 <div className="w-screen h-1/2 lg:h-screen lg:w-1/2 flex items-center justify-center relative">
                 <div className="w-11/12 h-5/6 bg-gradient-to-br from-gray-50 to-gray-200 rounded-xl p-6 lg:p-8 flex flex-row lg:flex-col items-center justify-center drop-shadow-lg hover:drop-shadow-2xl border border-slate-300 hover:border-indigo-300 transition-all duration-300 ease-in-out">
                     <div className="w-2/6 hidden h-full lg:h-2/5 lg:w-full md:flex flex-col space-y-3 items-center justify-center pb-10">
-                        <div className="w-11/12 h-2/6 lg:h-3/5 bg-[url('./images/man.jpg')] bg-cover bg-bottom rounded-xl transition-transform transform hover:scale-105 duration-300"></div>
+                        <div className="w-11/12 h-2/6 lg:h-3/5 bg-[url('./images/it.JPG')] bg-center bg-cover rounded-xl transition-transform transform hover:scale-105 duration-300"></div>
                             <div className="w-11/12 h-1/2 lg:h-1/5 flex flex-col lg:flex-row lg:space-x-4 items-center justify-center space-y-4 lg:justify-start">
                                 <div className="w-10 h-20 bg-red-200 md:w-24 md:h-24 lg:w-16 lg:h-16 rounded-full border-2 border-indigo-600 shadow-md overflow-hidden">
                                     <Avatar className="h-full w-full">
@@ -294,10 +294,10 @@ export default function TestPage(){
                                 <h1 className="text-center text-xl md:text-2xl font-semibold text-gray-800">iBest Institute</h1>
                             </div>
                         </div>
-                        <div className="w-full md:w-4/6 lg:w-11/12 h-full bg-gray-100 rounded-lg  md:p-4 lg:p-6 space-y-1 md:space-y-3 lg:space-y-5 lg:h-3/5">
+                        <div className="w-full md:w-4/6 lg:w-11/12 h-full bg-gray-100 rounded-lg  md:p-4 lg:p-6 space-y-1 md:space-y-3 lg:space-y-0 lg:h-3/5">
                             <h1 className="font-extrabold text-sm sm:text-lg md:text-4xl text-indigo-700 pl-2 lg:text-3xl mdx:text-5xl">ICT Courses</h1>
                             <p className="font-medium text-xs sm:text-lg md:text-xl lg:text-lg pl-2 text-gray-700 mdx:text-4xl">What You'll Learn:</p>
-                            <ul className="list-none text-xs sm:text-base md:text-lg md:space-y-1 lg:space-y-4 mdx:text-3xl">
+                            <ul className="list-none text-xs sm:text-base md:text-lg md:space-y-1 lg:space-y-0 mdx:text-3xl lg:text-lg">
                                 <li className="flex items-start"><span className="text-indigo-600 mr-2">✔️</span><strong>IT Education:</strong> Systems, hardware, and operating systems.</li>
                                 <li className="flex items-start"><span className="text-indigo-600 mr-2">✔️</span><strong>Basic Skills:</strong> Proficient in Word, PowerPoint, and Excel.</li>
                                 <li className="flex items-start"><span className="text-indigo-600 mr-2">✔️</span><strong>Advanced Topics:</strong>Digital analytics and programming.</li>

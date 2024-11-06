@@ -47,9 +47,9 @@ export default function TestConsultancy (){
             <div className="w-screen h-screen flex items-center justify-center">
                 <div className="h-screen w-11/12 md:w-10/12 lg:w-3/5 flex flex-col items-center justify-center">
                     <div className="flex flex-col space-y-3">
-                        <h1 className="text-xs sm:text-sm">With the increasing economic activities in the country, and most youth joining the workforce, the need to guide and assist young entrepreneurs and small business establishment is becoming a necessity!</h1>
-                        <h1 className="text-xs sm:text-sm">Through iBEST Consultancy Services, with the team of energetic and enthusiastic experts, we provide our clients with real-time market studies and analysis through which project's feasibility are done. We advise and recommend our clients on the projects they want to execute and the pertinent business processes they have to integrate to make their projects successful.</h1>
-                        <h1 className="text-xs sm:text-sm">Beyond business project proposal writing with strong financial background, we do help and write project proposals for grant applications which are mainly required by the Civil Society Organizations.</h1>
+                        <h1 className="text-xs sm:text-sm lg:text-lg">With the increasing economic activities in the country, and most youth joining the workforce, the need to guide and assist young entrepreneurs and small business establishment is becoming a necessity!</h1>
+                        <h1 className="text-xs sm:text-sm lg:text-lg">Through iBEST Consultancy Services, with the team of energetic and enthusiastic experts, we provide our clients with real-time market studies and analysis through which project's feasibility are done. We advise and recommend our clients on the projects they want to execute and the pertinent business processes they have to integrate to make their projects successful.</h1>
+                        <h1 className="text-xs sm:text-sm lg:text-lg">Beyond business project proposal writing with strong financial background, we do help and write project proposals for grant applications which are mainly required by the Civil Society Organizations.</h1>
                     </div>
                     <h1 className="text-sm font-semibold pt-7 md:text-2xl pb-3 mdx:text-4xl sm:text-2xl">OUR COMPETENCIES</h1>
                     <div className="w-full h-1/2 md:h-3/5 bg-red-50 grid grid-cols-3 lg:grid-cols-5 gap-2 md:gap-5">
@@ -209,7 +209,7 @@ export default function TestConsultancy (){
             <div className="w-screen h-screen flex items-center justify-center">
                 <div className="h-screen w-11/12 md:w-10/12 lg:w-3/5 flex items-center justify-center flex-col space-y-5">
                     <h1 className="text-sm font-semibold pt-28 md:pt-44 lg:pt-10 md:text-2xl pb-3 mdx:text-4xl mdx:pt-10 sm:pt-0 sm:text-2xl">OUR EXPERIENCES</h1>
-                    <h1 className="text-xs md:text-lg mdx:text-2xl sm:text-sm">Since the humble inception of our company, iBESTers as a team have delivered numerous successful project proposals to set up businesses of various categories. Our clients go as far as Trashigang in the far eastern region to Bumthang, Trongsa, and Zhemgang in the center to Sarpang and Samtse in the south to the western dzongkhags.</h1>
+                    <h1 className="text-xs md:text-lg mdx:text-2xl sm:text-sm lg:text-lg">Since the humble inception of our company, iBESTers as a team have delivered numerous successful project proposals to set up businesses of various categories. Our clients go as far as Trashigang in the far eastern region to Bumthang, Trongsa, and Zhemgang in the center to Sarpang and Samtse in the south to the western dzongkhags.</h1>
                     <div className="w-full h-2/5">
                         <div className="w-full h-full rounded flex flex-row space-x-2">
                             <div className="w-1/2 h-full rounded">
@@ -221,7 +221,7 @@ export default function TestConsultancy (){
                                     <ResizableHandle />
                                     <ResizablePanel defaultSize={50}>
                                         <div className="h-full items-center justify-center p-6 flex flex-col">
-                                            <p className='text-white text-sm mdx:text-2xl'>We have assisted our satisfied clients through the simple process of availing trade license and environmental clearances.</p>
+                                            <p className='text-white text-sm mdx:text-2xl lg:text-xl'>We have assisted our satisfied clients through the simple process of availing trade license and environmental clearances.</p>
                                         </div>
                                     </ResizablePanel>
                                 </ResizablePanelGroup>
@@ -235,14 +235,14 @@ export default function TestConsultancy (){
                                     <ResizableHandle />
                                     <ResizablePanel defaultSize={50}>
                                         <div className="h-full items-center justify-center p-6 flex flex-col">
-                                            <p className='text-white text-sm mdx:text-2xl'>We mentor clients from setup to operation, and they continue to seek our expertise.</p>
+                                            <p className='text-white text-sm mdx:text-2xl lg:text-xl'>We mentor clients from setup to operation, and they continue to seek our expertise.</p>
                                         </div>
                                     </ResizablePanel>
                                 </ResizablePanelGroup>
                             </div>
                         </div>
                     </div>
-                    <h1 className="text-xs md:text-lg mdx:text-2xl sm:text-sm">We've successfully established FDI projects and helped agencies secure funding from relevant organizations. Our services include feasibility studies, OMP development, and creating business plans for government entities. Additionally, we provide design, translation, and editing support for our clients' publications.</h1>
+                    <h1 className="text-xs md:text-lg mdx:text-2xl sm:text-sm lg:text-lg">We've successfully established FDI projects and helped agencies secure funding from relevant organizations. Our services include feasibility studies, OMP development, and creating business plans for government entities. Additionally, we provide design, translation, and editing support for our clients' publications.</h1>
                 </div>
             </div>
             <Footer/>
