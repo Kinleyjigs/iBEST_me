@@ -76,7 +76,7 @@ const Statistics: React.FC = () => {
                                     style={{ width: '60px', display: 'inline-block' }}
                                 />
                             </span>
-                            <span className="text-3xl font-extrabold text-black">+</span>
+                            <span className="text-3xl font-extrabold text-black">%</span>
         </div>
 
     </div>

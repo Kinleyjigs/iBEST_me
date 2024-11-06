@@ -6,6 +6,7 @@ import Footer from "../../reusable_components/footer/page"
 import Team from "../../reusable_components/team/page"
 import Purpose from "../../reusable_components/purpose&value/page"
 import SmallNavBar from "../../reusable_components/small_navbar/page";
+
 import {
     ResizableHandle,
     ResizablePanel,
@@ -15,7 +16,9 @@ function MyComponent() {
     return (
         <div>
             <div id='vission' className="w-screen h-screen">
+            <div className="hidden sm:block pt-6">
                 <NavBar />
+            </div>
                 <div className="w-full h-2/6 bg-[url('./images/traning.jpg')] bg-cover flex items-center justify-center text-white">
                     <h1 className='text-4xl font-bold'>About Us</h1>
                 </div>

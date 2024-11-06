@@ -18,6 +18,8 @@ import pic14 from '../images/14.jpg'
 import pic15 from '../images/15.jpg'
 import Image from 'next/image'; 
 import Footer from "@/reusable_components/footer/page"
+import NavBar from "@/reusable_components/nav_bar/page"
+import SmallNavBar from "@/reusable_components/small_navbar/page"
 
 import {
     ResizableHandle,
@@ -28,7 +30,9 @@ import {
 export default function TestConsultancy (){
     return (
         <div className="landingpage">
-            <NavigationBar/>
+            <div className="hidden sm:block pt-6">
+                <NavBar />
+            </div>
             <div className="w-screen h-screen flex flex-col">
                 <div className="w-screen h-2/5 lg:h-3/5 bg-red-50  bg-[url('./images/this.png')] bg-cover bg-center flex items-center justify-center ">
                     <h1 className="text-white font-extrabold text-3xl md:text-6xl lg:text-4xl">Consultancy</h1>
@@ -242,6 +246,7 @@ export default function TestConsultancy (){
                 </div>
             </div>
             <Footer/>
+            <SmallNavBar/>
         </div>
     )
 }
