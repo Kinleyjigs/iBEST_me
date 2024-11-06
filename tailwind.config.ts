@@ -10,11 +10,13 @@ const config: Config = {
 	],
 	theme: {
 		screens: {
-			sm: '640px',
+			sm: '390px',
 			// => @media (min-width: 640px) { ... }
 		
 			md: '768px',
 			// => @media (min-width: 768px) { ... }
+
+			mdx:'912px',
 		
 			lg: '1050px',
 			// => @media (min-width: 1024px) { ... }
