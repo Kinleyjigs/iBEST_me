@@ -1,5 +1,4 @@
 "use client"
-import NavigationBar from "@/reusable_components/nav_bar/page"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import logo from "../images/logo1.jpg"
 import Footer from "@/reusable_components/footer/page"

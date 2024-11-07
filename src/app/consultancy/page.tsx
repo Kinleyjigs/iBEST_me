@@ -1,6 +1,5 @@
 "use client"
 
-import NavigationBar from "@/reusable_components/nav_bar/page"
 import pic1 from '../images/1.jpeg'
 import pic2 from '../images/2.jpg'
 import pic3 from '../images/3.jpeg'
