@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useEffect, useState, useRef } from "react";
 import Logo from "../../images/Website Pictures/logo.jpg";
 import Link from "next/link";
