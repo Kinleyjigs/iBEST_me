@@ -14,36 +14,36 @@ const Purpose: React.FC = () => {
     };
 
     return (
-        <Tabs defaultValue="Purpose" className="w-[500px]" onValueChange={handleTabChange}>
-            <TabsList className="flex w-full h-12 bg-sky-950">
-                <TabsTrigger value="Purpose" className="flex-1 text-center text-lg text-white h-full">
+        <Tabs defaultValue="Purpose" className="w-80  md:w-[500px] mdx:w-[700px] lg:w-[600px]" onValueChange={handleTabChange}>
+            <TabsList className="flex w-full h-12 mdx:h-20 lg:h-16 bg-sky-950">
+                <TabsTrigger value="Purpose" className="flex-1 text-center mdx:text-4xl lg:text-3xl text-lg text-white h-full">
                     Purpose
                 </TabsTrigger>
-                <TabsTrigger value="Values" className="flex-1 text-center text-lg text-white h-full">
+                <TabsTrigger value="Values" className="flex-1 text-center text-lg mdx:text-4xl lg:text-3xl text-white h-full">
                     Values
                 </TabsTrigger>
             </TabsList>
 
-            <div className="relative flex-grow h-[260px] overflow-hidden"> {/* Set a fixed height for the container */}
+            <div className="relative flex-grow h-[260px] mdx:h-[400px] lg:h-[300px] overflow-hidden"> {/* Set a fixed height for the container */}
                 <TabsContent value="Purpose" className={`absolute inset-0 transition-transform duration-500 ${activeTab === "Purpose" ? "translate-x-0" : slideDirection === "right" ? "translate-x-full" : "-translate-x-full"}`}>
                     <Card className="h-full">
-                        <div className="text-black text-center mt-12 leading-8">
-                            iBEST is dedicated towards improving the lives of <br /> 
-                            our clients and communities around us and beyond <br /> 
-                            through our excellence learning experience driven by <br /> 
+                        <div className="text-black text-base md:text-xl mdx:text-3xl md:p-10 text-center m-5 lg:text-2xl leading-8">
+                            iBEST is dedicated towards improving the lives of 
+                            our clients and communities around us and beyond 
+                            through our excellence learning experience driven by 
                             research. Our maxim is “…aspire to learn more and apply”.
                         </div>
                     </Card>
                 </TabsContent>
                 <TabsContent value="Values" className={`absolute inset-0 transition-transform duration-500 ${activeTab === "Values" ? "translate-x-0" : slideDirection === "right" ? "-translate-x-full" : "translate-x-full"}`}>
                     <Card className="h-full">
-                        <div className="ml-8 mt-8 leading-8">
-                            <ul className="list-disc list-inside space-y-2"> {/* Added list styles */}
-                                <li>Integrity: Uphold honesty and human values.</li>
-                                <li>Boldness: Foster innovation and leadership.</li>
-                                <li>Empathy: Build connections through understanding.</li>
-                                <li>Social Responsibility: Contribute to community growth.</li>
-                                <li>Trust: Prioritize transparency and accountability.</li>
+                        <div className="ml-8 mt-3 mdx:mt-5 leading-8">
+                            <ul className="list-disc text-base md:text-lg md:space-y-3 mdx:text-3xl lg:text-2xl lg:space-y-1 list-inside "> {/* Added list styles */}
+                                <li><strong>Integrity:</strong> Uphold honesty and human values.</li>
+                                <li><strong>Boldness:</strong> Foster innovation and leadership.</li>
+                                <li><strong>Empathy:</strong> Build connections through understanding.</li>
+                                <li><strong>Social Responsibility:</strong> Contribute to community growth.</li>
+                                <li><strong>Trust:</strong> Prioritize transparency and accountability.</li>
                             </ul>
                         </div>
                     </Card>

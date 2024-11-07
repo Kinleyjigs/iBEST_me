@@ -19,13 +19,13 @@ function MyComponent() {
             <div className="hidden sm:block pt-6">
                 <NavBar />
             </div>
-                <div className="w-full h-2/6 bg-[url('./images/traning.jpg')] bg-cover flex items-center justify-center text-white">
-                    <h1 className='text-4xl font-bold'>About Us</h1>
+                <div className="w-screen h-2/6 bg-[url('./images/traning.jpg')] bg-cover flex items-center justify-center text-white">
+                    <h1 className='text-4xl font-bold lg:text-5xl'>About Us</h1>
                 </div>
-                <div id='values' className="w-full h-3/6 bg-bb flex flex-row">
-                    <div className="w-1/2 h-full bg-[url('./images/about.png')] bg-cover bg-bottom"></div>
+                <div id='values' className="w-full h-3/6 bg-bb flex flex-row items-center justify-center">
+                    <div className="w-1/2 h-full bg-[url('./images/about.png')] hidden sm:hidden md:hidden mdx:hidden lg:block bg-cover bg-bottom"></div>
                     <div className="w-1/2 h-full bg-bb flex items-center justify-center">
-                        <div>
+                        <div className=''>
                             <h1 className='text-3xl font-semibold pt-10 pb-5'>Our Vision</h1>
                             <h1 className='text-xl animate-slideRight'>“To become an acclaimed institution</h1>
                             <h1 className='text-xl'>and one-stop learning center in Bhutan</h1>
@@ -34,9 +34,9 @@ function MyComponent() {
                     </div>
                 </div>
             </div>
-            <div id='Objectives' className="w-screen h-screen flex flex-col items-center justify-center space-y-24 ">
+            <div id='Objectives' className="w-screen h-screen bg-green-200 flex flex-col items-center justify-center space-y-24 ">
                 <Purpose />
-                <h1 className='text-2xl font-semibold'>OUR OBJECTIVES</h1>
+                <h1 className='text-2xl lg:text-5xl font-semibold'>OUR OBJECTIVES</h1>
                 <div className="w-4/5 h-2/5 flex flex-row">
                     <div className="w-2/5 h-full flex items-center justify-center">
                         <ResizablePanelGroup direction="vertical" className="h-full w-4/6 rounded-lg border  bg-slate-500">
