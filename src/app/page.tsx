@@ -5,7 +5,7 @@ import SmallNavBar from "../reusable_components/small_navbar/page";
 import TestNavbar from "../reusable_components/Navbar/page" 
 import Building from "../images/Website Pictures/building.jpg"
 import Logo from "../images/Website Pictures/logo.png"
-import TVET from "../images/logo/tvet.png"
+import TVET from "../images/logo/TVET.png"
 import RGOB from "../images/logo/2.png"
 import MOH from "../images/logo/3.png"
 import Business from "../images/expertise/business.png"
