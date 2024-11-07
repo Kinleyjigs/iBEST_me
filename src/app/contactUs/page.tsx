@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';   
-import NavBar from '../../reusable_components/nav_bar/page'; 
+import TestNavbar from "../../reusable_components/Navbar/page" 
 import dynamic from 'next/dynamic';
 import SmallNavBar from "../../reusable_components/small_navbar/page";
 import Insta from "../../images/footer/instagram.png";
@@ -51,7 +51,7 @@ function MyComponent() {
     return (
         <div className="">
             <div className="hidden sm:block pt-6">
-                <NavBar />
+                <TestNavbar />
             </div>
             <div className="flex flex-col items-center mt-4">
                 <h1 className="text-gray-800 text-3xl font-extrabold">Contact Us</h1>

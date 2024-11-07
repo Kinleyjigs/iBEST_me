@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react'; 
 import Footer from "../reusable_components/footer/page";
 import SmallNavBar from "../reusable_components/small_navbar/page";
-import NavBar from '../reusable_components/nav_bar/page'; 
+import TestNavbar from "../reusable_components/Navbar/page" 
 import Building from "../images/Website Pictures/building.jpg"
 import Logo from "../images/Website Pictures/logo.png"
 import TVET from "../images/logo/tvet.png"
@@ -48,7 +48,7 @@ export default function Home() {
     return (
         <div className=''>
         <div className="hidden sm:block pt-6">
-            <NavBar />
+            <TestNavbar />
         </div>
     
         <div className="w-screen h-screen flex flex-col items-center justify-center md:h-[70vh] lg:h-[75vh] bg-[url('./images/building.jpg')] lg:bg-cover bg-cover">

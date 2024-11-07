@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import NavBar from '../../reusable_components/nav_bar/page'; 
+import NavBar from '../../reusable_components/Navbar/page'; 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import Footer from "../../reusable_components/footer/page"
 import Team from "../../reusable_components/team/page"

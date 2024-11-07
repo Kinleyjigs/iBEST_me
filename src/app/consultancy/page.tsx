@@ -18,7 +18,7 @@ import pic14 from '../images/14.jpg'
 import pic15 from '../images/15.jpg'
 import Image from 'next/image'; 
 import Footer from "@/reusable_components/footer/page"
-import NavBar from "@/reusable_components/nav_bar/page"
+import TestNavbar from "../../reusable_components/Navbar/page"
 import SmallNavBar from "@/reusable_components/small_navbar/page"
 
 import {
@@ -31,7 +31,7 @@ export default function TestConsultancy (){
     return (
         <div className="landingpage">
             <div className="hidden sm:block pt-6">
-                <NavBar />
+                <TestNavbar />
             </div>
             <div className="w-screen h-screen flex flex-col">
                 <div className="w-screen h-2/5 sm:h-3/5 mdx:h-3/5 lg:h-3/5 bg-red-50  bg-[url('./images/this.png')] bg-cover bg-center flex items-center justify-center ">

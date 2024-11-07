@@ -3,14 +3,14 @@ import NavigationBar from "@/reusable_components/nav_bar/page"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import logo from "../images/logo1.jpg"
 import Footer from "@/reusable_components/footer/page"
-import NavBar  from "../../reusable_components/nav_bar/page";
+import TestNavbar from "../../reusable_components/Navbar/page"
 import SmallNavBar from "../../reusable_components/small_navbar/page";
 
 export default function TestPage(){
     return (
         <div className="landingpage flex flex-col">
             <div className="hidden sm:block pt-6">
-                <NavBar />
+                <TestNavbar />
             </div>
             <div className="w-screen h-screen flex mdx:items-center mdx:justify-center lg:items-center lg:justify-center flex-col">
                 <div className="w-screen h-2/5 sm:h-3/5 md:h-1/2 lg:h-1/2 bg-[url('./images/courses1.png')] bg-cover bg-center flex items-center justify-center">
