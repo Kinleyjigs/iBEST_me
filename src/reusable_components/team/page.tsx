@@ -33,7 +33,7 @@ const Team = () => {
 
     return (
         <div className="overflow-hidden mx-auto relative">
-            <div className="text-2xl font-semibold text-center mb-4"> 
+            <div className="font-bold md:text-2xl lg:pt-2 text-center mt-12 text-lg mb-6"> 
                 Our Team
             </div>
             <div className="bg-white w-screen py-4 px-4 overflow-hidden">

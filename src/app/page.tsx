@@ -50,17 +50,16 @@ export default function Home() {
         <div className="hidden sm:block pt-6">
             <TestNavbar />
         </div>
-    
-        <div className="w-screen h-screen flex flex-col items-center justify-center md:h-[70vh] lg:h-[75vh] bg-[url('./images/building.jpg')] lg:bg-cover bg-cover">
-    <div className="w-48 h-48 md:w-48 md:h-48 lg:w-56 lg:h-56"> {/* Increased logo size for all screen sizes */}
-        <Avatar className="w-full h-full border-current m-auto">
-            <AvatarImage src={Logo.src} alt="@shadcn" />
-        </Avatar>
-    </div>
-    <h1 className="text-center font-extrabold text-xl md:text-4xl lg:text-4xl text-white animate-slideLeft stroke-black">“To become an acclaimed institution</h1>
-    <h1 className="text-center font-extrabold text-lg md:text-3xl lg:text-3xl text-white animate-slideLeft stroke-black">and one-stop learning center in</h1>
-    <h1 className="text-center font-extrabold text-lg md:text-3xl lg:text-3xl text-white animate-slideLeft stroke-black">Bhutan and beyond”</h1>
-</div>
+        <div className="w-screen h-96 flex flex-col items-center justify-center md:h-[70vh] lg:h-[75vh] bg-[url('./images/building.jpg')] lg:bg-cover bg-cover">
+        <div className="w-48 h-48 md:w-48 md:h-48 lg:w-56 lg:h-56"> {/* Increased logo size for all screen sizes */}
+            <Avatar className="w-full h-full border-current m-auto">
+                <AvatarImage src={Logo.src} alt="@shadcn" />
+            </Avatar>
+        </div>
+            <h1 className="text-center font-extrabold text-xl md:text-4xl lg:text-4xl text-white animate-slideLeft stroke-black">“To become an acclaimed institution</h1>
+            <h1 className="text-center font-extrabold text-lg md:text-3xl lg:text-3xl text-white animate-slideLeft stroke-black">and one-stop learning center in</h1>
+            <h1 className="text-center font-extrabold text-lg md:text-3xl lg:text-3xl text-white animate-slideLeft stroke-black">Bhutan and beyond”</h1>
+        </div>
 
         <div className="mt-4 transform">
             <div className="flex justify-center text-center text-lg ">
