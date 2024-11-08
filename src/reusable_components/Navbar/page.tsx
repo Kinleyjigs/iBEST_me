@@ -76,7 +76,7 @@ const TestNavbar = () => {
             {showLogo && (
               <div
                 id="logoContainer"
-                className="h-full w-1/6 flex items-center justify-center hidden lg:flex"
+                className="h-full w-1/6 items-center justify-center hidden lg:flex"
               >
                 <Link href="/">
                   <Avatar className="bg-red-400 rounded-full border-current w-20 h-20 md:w-16 md:h-16">
@@ -89,7 +89,7 @@ const TestNavbar = () => {
             {/* Text - hidden on small screens */}
             <div
               ref={textRef}
-              className="h-full w-full lg:w-2/6 flex items-center lg:justify-start justify-center hidden lg:flex"
+              className="h-full w-full lg:w-2/6  items-center lg:justify-start justify-center hidden lg:flex"
             >
               <h1 className="text-black text-left lg:text-lg">
                 Get skilled today for a bright future!
