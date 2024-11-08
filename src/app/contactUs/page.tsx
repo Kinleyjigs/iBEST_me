@@ -188,23 +188,23 @@ function MyComponent() {
                         </Button>
                     </form>
 
-        </div>
-        <div className="grid items-start gap-16 p-4 md:p-8 lg:p-16 mx-auto">
-        {/* Map iframe */}
-{isMounted && (
-    <div className="relative w-full h-0" style={{ paddingBottom: '56.25%' /* 16:9 Aspect Ratio */ }}>
-        <iframe 
-            className="absolute top-0 left-0 w-full h-full rounded-lg"
-            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=ibest,%20thimphu+(ibest)&amp;t=h&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-            frameBorder="0"
-            allowFullScreen
-        ></iframe>
-    </div>
-)}
-</div>
+                    </div>
+                    <div className="grid items-start gap-16 p-4 md:p-8 lg:p-16 mx-auto">
+                    {/* Map iframe */}
+                    {isMounted && (
+                        <div className="relative w-full h-0" style={{ paddingBottom: '56.25%' /* 16:9 Aspect Ratio */ }}>
+                            <iframe 
+                            className="absolute top-0 left-0 w-full h-full rounded-lg"
+                            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=ibest,%20thimphu+(ibest)&amp;t=h&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                            frameBorder="0"
+                            allowFullScreen
+                            ></iframe>
+                        </div>
+                    )}
+                    </div>
 
-        <SmallNavBar />
-        <Footer />
+                    <SmallNavBar />
+                    <Footer />
 
         </div>
         
@@ -213,3 +213,4 @@ function MyComponent() {
 }
 
 export default MyComponent;
+
