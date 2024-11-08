@@ -8,7 +8,7 @@ import Twitter from "../../images/footer/twitter.webp";
 import Twitter1 from "../../images/footer/twitter1.webp";
 import Linkedin from "../../images/footer/linkedin.webp";
 import Linkedin1 from "../../images/footer/linkedin1.webp";
-import Logo from "../../images/Website Pictures/logo.jpg"
+import Logo from "../../images/logo/images.webp";
 import Link from "next/link";
 
 const Footer: React.FC = () => {

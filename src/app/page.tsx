@@ -49,7 +49,7 @@ export default function Home() {
         <div className="hidden sm:block pt-6">
             <TestNavbar />
         </div>
-        <div className="w-screen h-96 flex flex-col items-center justify-center md:h-[70vh] lg:h-[75vh] bg-[url('./images/building.jpg')] lg:bg-cover bg-cover">
+        <div className="w-screen h-96 flex flex-col items-center justify-center md:h-[70vh] lg:h-[75vh] bg-[url('./images/building.webp')] lg:bg-cover bg-cover">
         <div className="w-48 h-48 md:w-48 md:h-48 lg:w-56 lg:h-56"> {/* Increased logo size for all screen sizes */}
             <Avatar className="w-full h-full border-current m-auto">
                 <AvatarImage src={Logo.src} alt="@shadcn" />
